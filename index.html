@@ -27,24 +27,20 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <style>
-  
-    .captcha-container {
-        margin: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .captcha {
-        font-size: 24px;
-        font-weight: bold;
-        background: #eee;
-        padding: 10px;
-        display: inline-block;
-        letter-spacing: 2px;
-        user-select: none;
-    }
-  
-</style>
+    .captcha-container { margin: 20px; display: flex; align-items: center; justify-content: center; }
+    .captcha { font-size: 24px; font-weight: bold; background: #eee; padding: 10px; display: inline-block; letter-spacing: 2px; user-select: none; }
+
+    /* Hero */
+    .hero-badge { display: inline-flex; align-items: center; gap: .4rem; background: rgba(71,178,228,.12); border: 1px solid rgba(71,178,228,.45); color: #47b2e4; border-radius: 20px; padding: .3rem .9rem; font-size: .82rem; font-weight: 600; margin-bottom: 1.25rem; width: fit-content; }
+    .hero-stats { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1.5rem; }
+    .stat-pill { background: rgba(255,255,255,.08); border: 1px solid rgba(71,178,228,.35); border-radius: 20px; padding: .3rem .85rem; font-size: .82rem; color: rgba(255,255,255,.85); }
+    .stat-pill strong { color: #47b2e4; }
+    .typed-cursor { animation: blink .75s step-end infinite; color: #47b2e4; }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+    .agent-network-wrap { max-width: 430px; margin: 0 auto; }
+    .flow-line { animation: flowDash 1.5s linear infinite; }
+    @keyframes flowDash { to { stroke-dashoffset: -18; } }
+  </style>
 
 </head>
 
@@ -99,18 +95,99 @@
     <section id="hero" class="hero section dark-background">
 
       <div class="container">
-        <div class="row gy-4">
+        <div class="row gy-4 align-items-center">
+
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
-            <h1>Automating Solutions For Your Business</h1>
-            <p>We are team of talented engineers automating your workflows with the best technology</p>
-            <div class="d-flex">
-              <a href="#about" class="btn-get-started">Get Started</a>
-              <!--a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a-->
+            <div class="hero-badge"><i class="bi bi-robot"></i> Powered by Agentic AI</div>
+            <h1>AI Agents That<br>Think, Plan &amp; Execute</h1>
+            <p>We build autonomous AI agents that handle <span id="typed-text" style="color:#47b2e4;font-weight:600">customer support</span><span class="typed-cursor">|</span><br>so your team can focus on what matters most.</p>
+            <div class="hero-stats">
+              <span class="stat-pill"><strong>75%</strong> less manual work</span>
+              <span class="stat-pill"><strong>24/7</strong> autonomous ops</span>
+              <span class="stat-pill"><strong>90%</strong> fewer errors</span>
+            </div>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="ai-agentic-solutions.html" class="btn-get-started">Explore AI Agents</a>
+              <a href="#contact" class="btn btn-outline-light px-4">Get in Touch</a>
             </div>
           </div>
-          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-out" data-aos-delay="200">
+            <div class="agent-network-wrap">
+              <svg viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+                <defs>
+                  <path id="ap0" d="M180,180 L180,52"/>
+                  <path id="ap1" d="M180,180 L292,116"/>
+                  <path id="ap2" d="M180,180 L292,244"/>
+                  <path id="ap3" d="M180,180 L180,308"/>
+                  <path id="ap4" d="M180,180 L68,244"/>
+                  <path id="ap5" d="M180,180 L68,116"/>
+                  <radialGradient id="cg" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#47b2e4"/>
+                    <stop offset="100%" stop-color="#2271a3"/>
+                  </radialGradient>
+                </defs>
+
+                <!-- Connection lines -->
+                <path d="M180,180 L180,52"   fill="none" stroke="rgba(71,178,228,.35)" stroke-width="1.5" stroke-dasharray="5 4" class="flow-line"/>
+                <path d="M180,180 L292,116"  fill="none" stroke="rgba(71,178,228,.35)" stroke-width="1.5" stroke-dasharray="5 4" class="flow-line" style="animation-delay:-.42s"/>
+                <path d="M180,180 L292,244"  fill="none" stroke="rgba(71,178,228,.35)" stroke-width="1.5" stroke-dasharray="5 4" class="flow-line" style="animation-delay:-.83s"/>
+                <path d="M180,180 L180,308"  fill="none" stroke="rgba(71,178,228,.35)" stroke-width="1.5" stroke-dasharray="5 4" class="flow-line" style="animation-delay:-1.25s"/>
+                <path d="M180,180 L68,244"   fill="none" stroke="rgba(71,178,228,.35)" stroke-width="1.5" stroke-dasharray="5 4" class="flow-line" style="animation-delay:-1.67s"/>
+                <path d="M180,180 L68,116"   fill="none" stroke="rgba(71,178,228,.35)" stroke-width="1.5" stroke-dasharray="5 4" class="flow-line" style="animation-delay:-2.08s"/>
+
+                <!-- Traveling signal dots -->
+                <circle r="4" fill="#47b2e4" opacity=".9"><animateMotion dur="2s" repeatCount="indefinite" begin="0s"><mpath href="#ap0"/></animateMotion></circle>
+                <circle r="4" fill="#47b2e4" opacity=".9"><animateMotion dur="2s" repeatCount="indefinite" begin="-.33s"><mpath href="#ap1"/></animateMotion></circle>
+                <circle r="4" fill="#47b2e4" opacity=".9"><animateMotion dur="2s" repeatCount="indefinite" begin="-.67s"><mpath href="#ap2"/></animateMotion></circle>
+                <circle r="4" fill="#47b2e4" opacity=".9"><animateMotion dur="2s" repeatCount="indefinite" begin="-1s"><mpath href="#ap3"/></animateMotion></circle>
+                <circle r="4" fill="#47b2e4" opacity=".9"><animateMotion dur="2s" repeatCount="indefinite" begin="-1.33s"><mpath href="#ap4"/></animateMotion></circle>
+                <circle r="4" fill="#47b2e4" opacity=".9"><animateMotion dur="2s" repeatCount="indefinite" begin="-1.67s"><mpath href="#ap5"/></animateMotion></circle>
+
+                <!-- Outer nodes -->
+                <circle cx="180" cy="52"  r="32" fill="rgba(55,81,126,.9)" stroke="#47b2e4" stroke-width="1.5"/>
+                <text x="180" y="48"  text-anchor="middle" fill="#47b2e4" font-size="10" font-family="Poppins,sans-serif" font-weight="600">Research</text>
+                <text x="180" y="62"  text-anchor="middle" fill="rgba(255,255,255,.6)" font-size="8.5" font-family="Poppins,sans-serif">Agent</text>
+
+                <circle cx="292" cy="116" r="32" fill="rgba(55,81,126,.9)" stroke="#47b2e4" stroke-width="1.5"/>
+                <text x="292" y="112" text-anchor="middle" fill="#47b2e4" font-size="10" font-family="Poppins,sans-serif" font-weight="600">Process</text>
+                <text x="292" y="126" text-anchor="middle" fill="rgba(255,255,255,.6)" font-size="8.5" font-family="Poppins,sans-serif">Agent</text>
+
+                <circle cx="292" cy="244" r="32" fill="rgba(55,81,126,.9)" stroke="#47b2e4" stroke-width="1.5"/>
+                <text x="292" y="240" text-anchor="middle" fill="#47b2e4" font-size="9" font-family="Poppins,sans-serif" font-weight="600">Integration</text>
+                <text x="292" y="254" text-anchor="middle" fill="rgba(255,255,255,.6)" font-size="8.5" font-family="Poppins,sans-serif">Agent</text>
+
+                <circle cx="180" cy="308" r="32" fill="rgba(55,81,126,.9)" stroke="#47b2e4" stroke-width="1.5"/>
+                <text x="180" y="304" text-anchor="middle" fill="#47b2e4" font-size="10" font-family="Poppins,sans-serif" font-weight="600">Support</text>
+                <text x="180" y="318" text-anchor="middle" fill="rgba(255,255,255,.6)" font-size="8.5" font-family="Poppins,sans-serif">Agent</text>
+
+                <circle cx="68"  cy="244" r="32" fill="rgba(55,81,126,.9)" stroke="#47b2e4" stroke-width="1.5"/>
+                <text x="68"  y="240" text-anchor="middle" fill="#47b2e4" font-size="10" font-family="Poppins,sans-serif" font-weight="600">Decisions</text>
+                <text x="68"  y="254" text-anchor="middle" fill="rgba(255,255,255,.6)" font-size="8.5" font-family="Poppins,sans-serif">Agent</text>
+
+                <circle cx="68"  cy="116" r="32" fill="rgba(55,81,126,.9)" stroke="#47b2e4" stroke-width="1.5"/>
+                <text x="68"  y="112" text-anchor="middle" fill="#47b2e4" font-size="10" font-family="Poppins,sans-serif" font-weight="600">Data</text>
+                <text x="68"  y="126" text-anchor="middle" fill="rgba(255,255,255,.6)" font-size="8.5" font-family="Poppins,sans-serif">Agent</text>
+
+                <!-- Center pulse rings (SMIL) -->
+                <circle cx="180" cy="180" fill="none" stroke="#47b2e4" stroke-width="1.5">
+                  <animate attributeName="r" from="44" to="72" dur="2.5s" repeatCount="indefinite"/>
+                  <animate attributeName="opacity" from="0.6" to="0" dur="2.5s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="180" cy="180" fill="none" stroke="#47b2e4" stroke-width="1.5">
+                  <animate attributeName="r" from="44" to="72" dur="2.5s" begin="-1.25s" repeatCount="indefinite"/>
+                  <animate attributeName="opacity" from="0.6" to="0" dur="2.5s" begin="-1.25s" repeatCount="indefinite"/>
+                </circle>
+
+                <!-- Center node -->
+                <circle cx="180" cy="180" r="40" fill="rgba(71,178,228,.15)" stroke="#47b2e4" stroke-width="2"/>
+                <circle cx="180" cy="180" r="32" fill="url(#cg)"/>
+                <text x="180" y="176" text-anchor="middle" fill="white" font-size="13" font-family="Poppins,sans-serif" font-weight="700">AI</text>
+                <text x="180" y="191" text-anchor="middle" fill="rgba(255,255,255,.85)" font-size="9" font-family="Poppins,sans-serif" font-weight="500">Orchestrator</text>
+              </svg>
+            </div>
           </div>
+
         </div>
       </div>
 
@@ -835,6 +912,22 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/neuronprocess.js"></script>
+  <script>
+    (function() {
+      const words = ['customer support','document processing','financial reconciliation','supply chain ops','sales intelligence','IT incident response'];
+      let i = 0, c = 0, del = false;
+      const el = document.getElementById('typed-text');
+      if (!el) return;
+      function tick() {
+        const w = words[i];
+        el.textContent = w.slice(0, c);
+        if (!del) { if (++c > w.length) { del = true; setTimeout(tick, 1800); return; } }
+        else { if (--c < 0) { c = 0; del = false; i = (i + 1) % words.length; } }
+        setTimeout(tick, del ? 55 : 85);
+      }
+      tick();
+    })();
+  </script>
 </body>
 
 </html>
