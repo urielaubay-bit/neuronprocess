@@ -189,6 +189,31 @@
     .step-strip .step-item.dim { opacity: 0.45; }
     .step-strip .step-item.active { opacity: 1; }
 
+    /* Scrum vs Playbacks comparison table */
+    .compare-table th { background: #37517e; color: #fff; border: none; padding: 0.85rem 1rem; }
+    .compare-table td { padding: 0.85rem 1rem; vertical-align: middle; border-color: #e9ecef; }
+    .compare-table tr:nth-child(even) td { background: #f8f9fa; }
+    .compare-table .highlight td { background: #eaf6fd !important; font-weight: 600; }
+    .check-yes { color: #47b2e4; font-size: 1.1rem; }
+    .check-no  { color: #adb5bd; font-size: 1.1rem; }
+    .check-partial { color: #f0a500; font-size: 1.1rem; }
+
+    /* Context card */
+    .context-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 1.5rem 1.75rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+      height: 100%;
+      border-top: 4px solid #dee2e6;
+    }
+    .context-card.good { border-top-color: #47b2e4; }
+    .context-card.bad  { border-top-color: #adb5bd; }
+    .context-card h6 { font-weight: 700; color: #37517e; margin-bottom: 0.75rem; }
+    .context-card .icon { font-size: 1.8rem; margin-bottom: 0.75rem; }
+    .context-card.good .icon { color: #47b2e4; }
+    .context-card.bad  .icon { color: #adb5bd; }
+
     /* WhatsApp CTA */
     .wa-cta-box {
       background: linear-gradient(135deg, #37517e 0%, #47b2e4 100%);
@@ -263,13 +288,13 @@
         <div class="row gy-5 align-items-center">
 
           <div class="col-lg-6" data-aos="fade-right">
-            <span class="specialist-badge"><i class="bi bi-patch-check me-1"></i> Iterative BPM Delivery</span>
+            <span class="specialist-badge"><i class="bi bi-patch-check me-1"></i> Purpose-Built for Business Process Automation</span>
             <h2 style="font-weight: 700; color: #37517e;">Show Progress at Every Step — Not Just at the End</h2>
             <p class="mt-3">
-              Traditional software projects deliver a final product after months of invisible work — then discover misaligned expectations too late to fix. The Playbacks Methodology turns that model upside down.
+              Business Process Automation is not general software development. You are not building a new product from scratch — you are modeling, automating, and integrating a real process that already exists, with real owners, real systems, and real organizational expectations. That requires a delivery approach designed specifically for this context.
             </p>
             <p>
-              A <strong>Playback</strong> is a focused, structured demonstration of a process solution at a specific stage of development — shown to the right stakeholders at the right moment — followed by a real discussion. Each Playback surfaces misalignments early, when course corrections are cheap, and builds stakeholder confidence before the next stage begins.
+              The Playbacks Methodology is that approach. A <strong>Playback</strong> is a focused, structured demonstration of a process solution at a specific stage of development — shown to the right stakeholders at the right moment — followed by a real discussion. Each Playback surfaces misalignments early, when course corrections are cheap, and builds stakeholder confidence before the next stage begins.
             </p>
             <ul class="mt-3" style="list-style: none; padding: 0;">
               <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Four structured checkpoints from discovery to production-ready</li>
@@ -514,6 +539,119 @@
 
       </div>
     </section><!-- /Three Principles Section -->
+
+    <!-- Scrum vs Playbacks Section -->
+    <section class="section light-background" style="padding: 60px 0;">
+      <div class="container">
+
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Playbacks vs. Scrum</h2>
+          <p>Both are iterative. But they solve different problems — and confusing them is one of the most common reasons BPA projects struggle.</p>
+        </div>
+
+        <!-- Context cards -->
+        <div class="row gy-4 mt-2 mb-5">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <div class="context-card good">
+              <div class="icon"><i class="bi bi-gear-wide-connected"></i></div>
+              <h6>Scrum is designed for product development</h6>
+              <p class="text-muted mb-0">Scrum was built for building <em>new</em> products where requirements are unknown and discovered through rapid iteration. The backlog evolves continuously, scope is flexible, and any sprint can change direction based on what the team learned. This works well when you don't yet know what you're building.</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+            <div class="context-card bad" style="border-top-color: #47b2e4;">
+              <div class="icon" style="color: #47b2e4;"><i class="bi bi-diagram-3"></i></div>
+              <h6>Playbacks is designed for process automation</h6>
+              <p class="text-muted mb-0">In BPA, there <em>is</em> a real process to model. There are real owners, real systems to integrate with, and real organizational expectations to meet. The work is not discovering what to build — it is implementing, integrating, and validating something that already exists in the business. That demands a stage-gate approach, not an open backlog.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comparison table -->
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-11">
+            <div class="table-responsive">
+              <table class="table compare-table rounded overflow-hidden">
+                <thead>
+                  <tr>
+                    <th style="width: 36%;">Dimension</th>
+                    <th class="text-center" style="width: 32%;">Scrum</th>
+                    <th class="text-center" style="width: 32%; background: #2175b0;">Playbacks (BPA)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Designed for</td>
+                    <td class="text-center" style="font-size: 0.9rem;">New product development</td>
+                    <td class="text-center" style="font-size: 0.9rem;">Business process automation &amp; integration</td>
+                  </tr>
+                  <tr>
+                    <td>Iteration unit</td>
+                    <td class="text-center" style="font-size: 0.9rem;">Sprint (1–4 weeks, repeating)</td>
+                    <td class="text-center" style="font-size: 0.9rem;">Playback (stage-gate, sequential)</td>
+                  </tr>
+                  <tr>
+                    <td>Scope flexibility</td>
+                    <td class="text-center" style="font-size: 0.9rem;">Backlog evolves each sprint</td>
+                    <td class="text-center" style="font-size: 0.9rem;">Scope defined per stage; changes are costed and scheduled</td>
+                  </tr>
+                  <tr class="highlight">
+                    <td>Who leads the review</td>
+                    <td class="text-center" style="font-size: 0.9rem;">Product Owner (often internal proxy)</td>
+                    <td class="text-center" style="font-size: 0.9rem;">Business sponsor and process owners directly</td>
+                  </tr>
+                  <tr>
+                    <td>Definition of done</td>
+                    <td class="text-center" style="font-size: 0.9rem;">Working software per sprint goal</td>
+                    <td class="text-center" style="font-size: 0.9rem;">Working process accepted by the process owner</td>
+                  </tr>
+                  <tr>
+                    <td>Integration handling</td>
+                    <td class="text-center" style="font-size: 0.9rem;">Incremental, may defer to end</td>
+                    <td class="text-center" style="font-size: 0.9rem;">Dedicated integration Playback (PB2) with explicit sign-off</td>
+                  </tr>
+                  <tr class="highlight">
+                    <td>Handles process complexity</td>
+                    <td class="text-center"><i class="bi bi-dash-circle check-partial" title="Partially"></i></td>
+                    <td class="text-center"><i class="bi bi-check-circle-fill check-yes"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Swim-lanes, roles &amp; SLAs as first-class concerns</td>
+                    <td class="text-center"><i class="bi bi-dash-circle check-no"></i></td>
+                    <td class="text-center"><i class="bi bi-check-circle-fill check-yes"></i></td>
+                  </tr>
+                  <tr>
+                    <td>AI agent simulation before live wiring</td>
+                    <td class="text-center"><i class="bi bi-dash-circle check-no"></i></td>
+                    <td class="text-center"><i class="bi bi-check-circle-fill check-yes"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Formal UAT entry gate</td>
+                    <td class="text-center"><i class="bi bi-dash-circle check-no"></i></td>
+                    <td class="text-center"><i class="bi bi-check-circle-fill check-yes"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Uncertainty management</td>
+                    <td class="text-center" style="font-size: 0.9rem;">Velocity-based sprint forecasting</td>
+                    <td class="text-center" style="font-size: 0.9rem;">Progressive precision (±4× at PB0 → tight at PB3)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-10 offset-lg-1">
+            <div style="background: #fff; border-radius: 8px; padding: 1.75rem 2rem; border-left: 4px solid #47b2e4; box-shadow: 0 4px 20px rgba(0,0,0,0.07);">
+              <h5 style="color: #37517e; font-weight: 700;"><i class="bi bi-lightbulb me-2 text-primary"></i>Can they coexist?</h5>
+              <p class="mb-0">Yes — and many organizations use both. Scrum works well for building the <em>surrounding</em> product (web portals, mobile apps, reporting layers). Playbacks govern the <em>process core</em>: the BPM layer, integrations, business rules, and AI agent workflows. The two can run in parallel as separate tracks, coordinating at defined integration points — a model NeuronProcess applies regularly in hybrid delivery programs.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- /Scrum vs Playbacks Section -->
 
     <!-- WhatsApp CTA Section -->
     <section class="section" style="padding: 60px 0;">
