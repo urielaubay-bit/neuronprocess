@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Process Maturity Assessment - NeuronProcess</title>
+  <meta name="description" content="Discover your organization's process maturity level — from ad-hoc operations to AI-driven Agentic automation. Get a free maturity assessment from NeuronProcess.">
+  <meta name="keywords" content="process maturity model, maturity assessment, business process maturity, agentic AI maturity, BPM maturity, NeuronProcess">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .page-title {
+      padding: 60px 0 30px;
+      background: linear-gradient(135deg, #37517e 0%, #2c3e6b 100%);
+      color: #fff;
+    }
+    .page-title h1 { color: #fff; }
+    .page-title .breadcrumbs ol { background: transparent; padding: 0; }
+    .page-title .breadcrumbs a { color: #47b2e4; }
+    .page-title .breadcrumbs .current { color: rgba(255,255,255,0.7); }
+    .page-title .breadcrumbs li + li::before { content: "/"; padding: 0 0.5rem; color: rgba(255,255,255,0.4); }
+
+    .specialist-badge {
+      display: inline-block;
+      background: #47b2e4;
+      color: #fff;
+      padding: 0.3rem 1rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+    }
+
+    /* Maturity level cards */
+    .maturity-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 1.75rem 1.5rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+      height: 100%;
+      position: relative;
+      border-left: 5px solid #dee2e6;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .maturity-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 28px rgba(0,0,0,0.11);
+    }
+    .maturity-card .level-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      background: #dee2e6;
+      color: #555;
+    }
+    .maturity-card h5 {
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+      color: #37517e;
+    }
+    .maturity-card .level-subtitle {
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.75rem;
+      color: #888;
+    }
+    /* Color scale: cold → warm → brand blue */
+    .level-1 { border-left-color: #adb5bd; }
+    .level-1 .level-badge { background: #adb5bd; color: #fff; }
+
+    .level-2 { border-left-color: #6ea8d8; }
+    .level-2 .level-badge { background: #6ea8d8; color: #fff; }
+
+    .level-3 { border-left-color: #3a9bd5; }
+    .level-3 .level-badge { background: #3a9bd5; color: #fff; }
+
+    .level-4 { border-left-color: #2175b0; }
+    .level-4 .level-badge { background: #2175b0; color: #fff; }
+
+    .level-5 { border-left-color: #37517e; }
+    .level-5 .level-badge { background: #37517e; color: #fff; }
+
+    /* Agentic level — gold / accent treatment */
+    .level-agentic {
+      border-left-color: #47b2e4;
+      background: linear-gradient(135deg, #eaf6fd 0%, #fff 100%);
+    }
+    .level-agentic .level-badge {
+      background: #47b2e4;
+      color: #fff;
+    }
+    .level-agentic h5 { color: #1a7ab5; }
+    .level-agentic .level-subtitle { color: #47b2e4; }
+    .agentic-tag {
+      display: inline-block;
+      background: #47b2e4;
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.15rem 0.55rem;
+      border-radius: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+    }
+
+    /* Progress arrow between levels */
+    .level-connector {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #adb5bd;
+      font-size: 1.5rem;
+      padding: 0.25rem 0;
+    }
+
+    /* WhatsApp CTA box */
+    .wa-cta-box {
+      background: linear-gradient(135deg, #37517e 0%, #47b2e4 100%);
+      border-radius: 14px;
+      padding: 3rem 2rem;
+      text-align: center;
+      color: #fff;
+    }
+    .wa-cta-box h3 { font-weight: 700; color: #fff; margin-bottom: 1rem; }
+    .wa-cta-box p { opacity: 0.9; max-width: 560px; margin: 0 auto 1.75rem; }
+    .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: #25d366;
+      color: #fff;
+      border-radius: 30px;
+      padding: 0.75rem 2rem;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-whatsapp:hover {
+      background: #1ebe5d;
+      color: #fff;
+      transform: translateY(-2px);
+    }
+    .btn-whatsapp i { font-size: 1.3rem; }
+
+    /* Assessment includes cards */
+    .includes-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+      height: 100%;
+      text-align: center;
+    }
+    .includes-card .icon {
+      font-size: 2rem;
+      color: #47b2e4;
+      margin-bottom: 0.75rem;
+    }
+    .includes-card h6 {
+      font-weight: 700;
+      color: #37517e;
+      margin-bottom: 0.4rem;
+    }
+  </style>
+</head>
+
+<body class="service-details-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/neuronlogo.png" alt="NeuronProcess">
+        <h1 class="sitename">NeuronProcess</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services" class="active">Services</a></li>
+          <li><a href="index.html#team">Team</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ol class="d-flex list-unstyled gap-0 mb-2">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li class="current">Maturity Assessment</li>
+          </ol>
+        </nav>
+        <h1>Process Maturity Assessment</h1>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Intro Section -->
+    <section class="section" style="padding-top: 60px;">
+      <div class="container">
+        <div class="row gy-5 align-items-center">
+
+          <div class="col-lg-6" data-aos="fade-right">
+            <span class="specialist-badge"><i class="bi bi-patch-check me-1"></i> Free Assessment Available</span>
+            <h2 style="font-weight: 700; color: #37517e;">Know Exactly Where You Stand — and Where to Go Next</h2>
+            <p class="mt-3">
+              Before you can improve a process, you need to understand it. Our <strong>Process Maturity Assessment</strong> gives you a clear, honest picture of where your organization operates today — and a roadmap to reach the next level.
+            </p>
+            <p>
+              We use a proven 6-level maturity model, from reactive ad-hoc operations all the way to fully <strong>Agentic AI-driven</strong> processes that manage, optimize, and adapt themselves — with humans staying in control of what matters.
+            </p>
+            <ul class="mt-3" style="list-style: none; padding: 0;">
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Structured interviews and process workshops with your team</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Scored across 5 dimensions: visibility, standardization, measurement, automation, and intelligence</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Prioritized improvement opportunities with estimated ROI</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Clear next step: quick wins vs. transformational moves</li>
+            </ul>
+            <a href="https://wa.me/525522436914?text=Hi%2C%20I'd%20like%20to%20request%20a%20free%20Process%20Maturity%20Assessment%20for%20my%20organization." class="btn-whatsapp mt-4 d-inline-flex" target="_blank" rel="noopener">
+              <i class="bi bi-whatsapp"></i> Ask for Your Free Assessment
+            </a>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+            <div style="background: linear-gradient(135deg, #37517e, #47b2e4); border-radius: 12px; padding: 2.5rem; color: #fff;">
+              <i class="bi bi-speedometer2" style="font-size: 3rem; opacity: 0.9;"></i>
+              <h4 class="mt-3 mb-3" style="font-weight: 700;">Why Maturity Matters</h4>
+              <p style="opacity: 0.9;">Organizations that understand their process maturity level make better investment decisions — they avoid over-automating immature processes and under-investing in processes that are ready to leap forward.</p>
+              <hr style="border-color: rgba(255,255,255,0.3);">
+              <div class="row text-center mt-3 g-3">
+                <div class="col-4">
+                  <i class="bi bi-search" style="font-size: 1.5rem;"></i>
+                  <p class="mb-0 mt-1" style="font-size: 0.85rem;">Diagnose</p>
+                </div>
+                <div class="col-4">
+                  <i class="bi bi-map" style="font-size: 1.5rem;"></i>
+                  <p class="mb-0 mt-1" style="font-size: 0.85rem;">Roadmap</p>
+                </div>
+                <div class="col-4">
+                  <i class="bi bi-graph-up-arrow" style="font-size: 1.5rem;"></i>
+                  <p class="mb-0 mt-1" style="font-size: 0.85rem;">Grow</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /Intro Section -->
+
+    <!-- Maturity Model Section -->
+    <section class="section light-background" style="padding: 60px 0;">
+      <div class="container">
+
+        <div class="container section-title" data-aos="fade-up">
+          <h2>The Process Maturity Model</h2>
+          <p>Six levels that describe how organizations manage and evolve their business processes — from chaos to autonomous intelligence.</p>
+        </div>
+
+        <div class="row gy-4 mt-2">
+
+          <!-- Level 1 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="maturity-card level-1">
+              <div class="level-badge">1</div>
+              <div class="level-subtitle">Initial</div>
+              <h5>Ad-Hoc</h5>
+              <p>Processes are unstructured, undocumented, and entirely dependent on individual heroics. Outcomes are unpredictable and vary person to person.</p>
+              <p class="mb-0"><small class="text-muted"><strong>Signs:</strong> "We do it differently every time," high staff dependency, firefighting culture.</small></p>
+            </div>
+          </div>
+
+          <!-- Level 2 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="maturity-card level-2">
+              <div class="level-badge">2</div>
+              <div class="level-subtitle">Managed</div>
+              <h5>Repeatable</h5>
+              <p>Basic project management is in place. Teams follow similar steps and results are somewhat repeatable, but documentation is informal or incomplete.</p>
+              <p class="mb-0"><small class="text-muted"><strong>Signs:</strong> Checklists in spreadsheets, outcomes vary by team, occasional manual controls.</small></p>
+            </div>
+          </div>
+
+          <!-- Level 3 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="maturity-card level-3">
+              <div class="level-badge">3</div>
+              <div class="level-subtitle">Defined</div>
+              <h5>Standardized</h5>
+              <p>Processes are formally documented, approved, and trained across the organization. Consistent outcomes are expected and mostly achieved.</p>
+              <p class="mb-0"><small class="text-muted"><strong>Signs:</strong> Process maps exist, onboarding follows procedures, first automation pilots live.</small></p>
+            </div>
+          </div>
+
+          <!-- Level 4 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="maturity-card level-4">
+              <div class="level-badge">4</div>
+              <div class="level-subtitle">Quantitatively Managed</div>
+              <h5>Measured</h5>
+              <p>Processes are monitored with KPIs and SLAs. Data drives decisions, variation is understood statistically, and problems are detected proactively.</p>
+              <p class="mb-0"><small class="text-muted"><strong>Signs:</strong> Dashboards for cycle time & error rates, automated alerts, SLA breach tracking.</small></p>
+            </div>
+          </div>
+
+          <!-- Level 5 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="maturity-card level-5">
+              <div class="level-badge">5</div>
+              <div class="level-subtitle">Optimizing</div>
+              <h5>Continuously Improving</h5>
+              <p>The organization treats process improvement as a core discipline. Feedback loops are institutionalized; teams experiment, learn, and iterate constantly.</p>
+              <p class="mb-0"><small class="text-muted"><strong>Signs:</strong> Regular kaizen cycles, RPA/BPM fully in production, process owners with autonomy to improve.</small></p>
+            </div>
+          </div>
+
+          <!-- Level Agentic -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+            <div class="maturity-card level-agentic">
+              <div class="level-badge">6</div>
+              <div class="level-subtitle">Agentic <span class="agentic-tag">New</span></div>
+              <h5>AI-Driven &amp; Autonomous</h5>
+              <p>AI agents perceive process state in real time, make decisions, execute actions, and self-optimize — while humans focus on strategy, exceptions, and oversight.</p>
+              <p class="mb-0"><small style="color: #1a7ab5;"><strong>Signs:</strong> Autonomous end-to-end workflows, AI orchestrating multi-step tasks, measurable human time recaptured.</small></p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Visual progression bar -->
+        <div class="row mt-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-12">
+            <div style="background: #fff; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.07);">
+              <p class="text-center mb-3" style="font-weight: 600; color: #37517e;">Where does your organization sit today?</p>
+              <div class="d-flex align-items-center gap-1 flex-wrap justify-content-center">
+                <div style="text-align:center; flex: 1; min-width: 70px;">
+                  <div style="height: 12px; background: #adb5bd; border-radius: 6px 0 0 6px;"></div>
+                  <small class="text-muted d-block mt-1" style="font-size: 0.72rem;">Ad-Hoc</small>
+                </div>
+                <div style="text-align:center; flex: 1; min-width: 70px;">
+                  <div style="height: 12px; background: #6ea8d8;"></div>
+                  <small class="text-muted d-block mt-1" style="font-size: 0.72rem;">Repeatable</small>
+                </div>
+                <div style="text-align:center; flex: 1; min-width: 70px;">
+                  <div style="height: 12px; background: #3a9bd5;"></div>
+                  <small class="text-muted d-block mt-1" style="font-size: 0.72rem;">Standardized</small>
+                </div>
+                <div style="text-align:center; flex: 1; min-width: 70px;">
+                  <div style="height: 12px; background: #2175b0;"></div>
+                  <small class="text-muted d-block mt-1" style="font-size: 0.72rem;">Measured</small>
+                </div>
+                <div style="text-align:center; flex: 1; min-width: 70px;">
+                  <div style="height: 12px; background: #37517e;"></div>
+                  <small class="text-muted d-block mt-1" style="font-size: 0.72rem;">Optimizing</small>
+                </div>
+                <div style="text-align:center; flex: 1; min-width: 70px;">
+                  <div style="height: 12px; background: #47b2e4; border-radius: 0 6px 6px 0;"></div>
+                  <small style="color:#47b2e4; font-size: 0.72rem; font-weight: 700;" class="d-block mt-1">Agentic</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- /Maturity Model Section -->
+
+    <!-- What's Included Section -->
+    <section class="section" style="padding: 60px 0;">
+      <div class="container">
+
+        <div class="container section-title" data-aos="fade-up">
+          <h2>What the Assessment Covers</h2>
+          <p>A structured review across five dimensions to give you a complete and actionable picture.</p>
+        </div>
+
+        <div class="row gy-4 mt-2 justify-content-center">
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="includes-card">
+              <div class="icon"><i class="bi bi-eye"></i></div>
+              <h6>Visibility</h6>
+              <p class="mb-0 text-muted" style="font-size: 0.92rem;">Are your processes documented and visible to the right people? Can you trace what happened and when?</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="includes-card">
+              <div class="icon"><i class="bi bi-card-checklist"></i></div>
+              <h6>Standardization</h6>
+              <p class="mb-0 text-muted" style="font-size: 0.92rem;">Are steps defined, agreed, and followed consistently across teams, locations, and people?</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="includes-card">
+              <div class="icon"><i class="bi bi-graph-up"></i></div>
+              <h6>Measurement</h6>
+              <p class="mb-0 text-muted" style="font-size: 0.92rem;">Do you track cycle time, error rates, SLAs, and cost-per-transaction? Are decisions data-driven?</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="includes-card">
+              <div class="icon"><i class="bi bi-gear-wide-connected"></i></div>
+              <h6>Automation</h6>
+              <p class="mb-0 text-muted" style="font-size: 0.92rem;">What percentage of steps are automated today? Where are the manual bottlenecks and why?</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
+            <div class="includes-card">
+              <div class="icon"><i class="bi bi-robot"></i></div>
+              <h6>Intelligence</h6>
+              <p class="mb-0 text-muted" style="font-size: 0.92rem;">Are AI or ML capabilities in use? Is the organization ready for Agentic AI — and what would it take to get there?</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- /What's Included Section -->
+
+    <!-- WhatsApp CTA Section -->
+    <section class="section light-background" style="padding: 60px 0;">
+      <div class="container" data-aos="zoom-in">
+        <div class="wa-cta-box">
+          <i class="bi bi-clipboard2-pulse" style="font-size: 3rem; opacity: 0.85; margin-bottom: 1rem; display: block;"></i>
+          <h3>Ask for Your Free Maturity Assessment</h3>
+          <p>Send us a quick message on WhatsApp. We'll schedule a short conversation to understand your context and walk you through where your processes stand — at no cost, no commitment.</p>
+          <a href="https://wa.me/525522436914?text=Hi%2C%20I'd%20like%20to%20request%20a%20free%20Process%20Maturity%20Assessment%20for%20my%20organization." class="btn-whatsapp" target="_blank" rel="noopener">
+            <i class="bi bi-whatsapp"></i> WhatsApp Us Now
+          </a>
+          <p class="mt-3 mb-0" style="font-size: 0.85rem; opacity: 0.75;">Typically replies within a few hours &middot; Available in English &amp; Spanish</p>
+        </div>
+      </div>
+    </section><!-- /WhatsApp CTA Section -->
+
+    <!-- Bottom CTA -->
+    <section class="call-to-action section dark-background">
+      <img src="assets/img/cta-bg.jpg" alt="">
+      <div class="container">
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-9 text-center text-xl-start">
+            <h3>Ready to reach Level 6 — Agentic?</h3>
+            <p>Once you know your maturity level, we can show you exactly what it takes to automate intelligently and deploy AI agents that deliver measurable ROI.</p>
+          </div>
+          <div class="col-xl-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="ai-agentic-solutions.html">Explore AI Agents</a>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Bottom CTA -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">Neuron Process</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Queretaro, Mexico</p>
+            <p><strong>Phone:</strong> <span>+52 5522436914</span></p>
+            <p><strong>Email:</strong> <span>contact@neuronprocess.com</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#about">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Services</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="maturity-assessment.html">Maturity Assessment</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Process Automation</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="ai-agentic-solutions.html">AI Agentic Solutions</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h4>Follow Us</h4>
+          <p>We are in social networks!</p>
+          <div class="social-links d-flex">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/neuron-process-mx/"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Neuron Process</strong> <span>All Rights Reserved</span></p>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
