@@ -137,14 +137,19 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="/#hero">Home</a></li>
-          <li><a href="/#about">About</a></li>
-          <li><a href="/#services" class="active">Services</a></li>
-          <li><a href="/#team">Team</a></li>
-          <li><a href="/#contact">Contact</a></li>
+          <li><a href="/#hero" data-i18n="nav_home">Home</a></li>
+          <li><a href="/#about" data-i18n="nav_about">About</a></li>
+          <li><a href="/#services" class="active" data-i18n="nav_services">Services</a></li>
+          <li><a href="/#team" data-i18n="nav_team">Team</a></li>
+          <li><a href="/#contact" data-i18n="nav_contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang-btn="en" onclick="setLanguage('en')">EN</button>
+        <button type="button" data-lang-btn="es" onclick="setLanguage('es')">ES</button>
+      </div>
 
     </div>
   </header>
@@ -156,12 +161,12 @@
       <div class="container">
         <nav class="breadcrumbs">
           <ol class="d-flex list-unstyled gap-0 mb-2">
-            <li><a href="/">Home</a></li>
-            <li><a href="/#services">Services</a></li>
-            <li class="current">AI Agentic Solutions</li>
+            <li><a href="/" data-i18n="nav_home">Home</a></li>
+            <li><a href="/#services" data-i18n="nav_services">Services</a></li>
+            <li class="current" data-i18n="aas_pagetitle">AI Agentic Solutions</li>
           </ol>
         </nav>
-        <h1>AI Agentic Solutions</h1>
+        <h1 data-i18n="aas_pagetitle">AI Agentic Solutions</h1>
       </div>
     </div><!-- End Page Title -->
 
@@ -171,41 +176,41 @@
         <div class="row gy-5 align-items-center">
 
           <div class="col-lg-6" data-aos="fade-right">
-            <span class="specialist-badge"><i class="bi bi-patch-check me-1"></i> Specialists in Agentic AI</span>
-            <h2 style="font-weight: 700; color: #37517e;">We Build AI Agents That Work For Your Business</h2>
-            <p class="mt-3">
+            <span class="specialist-badge"><i class="bi bi-patch-check me-1"></i> <span data-i18n="aas_badge">Specialists in Agentic AI</span></span>
+            <h2 style="font-weight: 700; color: #37517e;" data-i18n="aas_intro_title">We Build AI Agents That Work For Your Business</h2>
+            <p class="mt-3" data-i18n="aas_intro_p1">
               At NeuronProcess, we go beyond traditional automation. We design and deploy <strong>AI Agentic Systems</strong> — autonomous software agents capable of reasoning, planning, and executing multi-step tasks with minimal human intervention.
             </p>
-            <p>
+            <p data-i18n="aas_intro_p2">
               Our agents don't just follow rules — they adapt. Powered by large language models and integrated with your existing systems, they perceive their environment, make decisions, use tools, and deliver results around the clock.
             </p>
             <ul class="mt-3" style="list-style: none; padding: 0;">
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Deep expertise in multi-agent orchestration frameworks (LangGraph, CrewAI, n8n AI)</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>End-to-end implementation: from architecture design to production deployment</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Seamless integration with your ERP, CRM, and existing APIs</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Human-in-the-loop controls and full observability built in</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="aas_intro_b1">Deep expertise in multi-agent orchestration frameworks (LangGraph, CrewAI, n8n AI)</span></li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="aas_intro_b2">End-to-end implementation: from architecture design to production deployment</span></li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="aas_intro_b3">Seamless integration with your ERP, CRM, and existing APIs</span></li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="aas_intro_b4">Human-in-the-loop controls and full observability built in</span></li>
             </ul>
-            <a href="/#contact" class="btn-get-started mt-4 d-inline-block">Let's Talk</a>
+            <a href="/#contact" class="btn-get-started mt-4 d-inline-block" data-i18n="aas_lets_talk">Let's Talk</a>
           </div>
 
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
             <div style="background: linear-gradient(135deg, #37517e, #47b2e4); border-radius: 12px; padding: 2.5rem; color: #fff;">
               <i class="bi bi-robot" style="font-size: 3rem; opacity: 0.9;"></i>
-              <h4 class="mt-3 mb-3" style="font-weight: 700; color: #fff;">What is an AI Agent?</h4>
-              <p style="opacity: 0.9;">An AI agent is an autonomous system that perceives inputs, reasons through a goal, selects the right tools or APIs to call, and executes actions — then evaluates the result and adjusts. Unlike a chatbot that answers questions, an agent <em>gets things done</em>.</p>
+              <h4 class="mt-3 mb-3" style="font-weight: 700; color: #fff;" data-i18n="aas_whatis_title">What is an AI Agent?</h4>
+              <p style="opacity: 0.9;" data-i18n="aas_whatis_desc">An AI agent is an autonomous system that perceives inputs, reasons through a goal, selects the right tools or APIs to call, and executes actions — then evaluates the result and adjusts. Unlike a chatbot that answers questions, an agent <em>gets things done</em>.</p>
               <hr style="border-color: rgba(255,255,255,0.3);">
               <div class="row text-center mt-3 g-3">
                 <div class="col-4">
                   <i class="bi bi-eye" style="font-size: 1.5rem;"></i>
-                  <p class="mb-0 mt-1" style="font-size: 0.85rem;">Perceive</p>
+                  <p class="mb-0 mt-1" style="font-size: 0.85rem;" data-i18n="aas_perceive">Perceive</p>
                 </div>
                 <div class="col-4">
                   <i class="bi bi-cpu" style="font-size: 1.5rem;"></i>
-                  <p class="mb-0 mt-1" style="font-size: 0.85rem;">Reason</p>
+                  <p class="mb-0 mt-1" style="font-size: 0.85rem;" data-i18n="aas_reason">Reason</p>
                 </div>
                 <div class="col-4">
                   <i class="bi bi-lightning-charge" style="font-size: 1.5rem;"></i>
-                  <p class="mb-0 mt-1" style="font-size: 0.85rem;">Act</p>
+                  <p class="mb-0 mt-1" style="font-size: 0.85rem;" data-i18n="aas_act">Act</p>
                 </div>
               </div>
             </div>
@@ -220,39 +225,39 @@
       <div class="container">
 
         <div class="container section-title" data-aos="fade-up">
-          <h2>Featured Solution: Conversational Agents as a Service</h2>
-          <p>A productized, multichannel AI assistant for your business — live in days, not months.</p>
+          <h2 data-i18n="caas_section_title">Featured Solution: Conversational Agents as a Service</h2>
+          <p data-i18n="caas_section_sub">A productized, multichannel AI assistant for your business — live in days, not months.</p>
         </div>
 
         <div class="row gy-5 align-items-center mt-2">
 
           <div class="col-lg-6" data-aos="fade-right">
-            <span class="specialist-badge"><i class="bi bi-stars me-1"></i> CAaaS — Conversational Agents as a Service</span>
-            <h3 style="font-weight: 700; color: #37517e;">An AI assistant your customers talk to — on the apps they already use</h3>
-            <p class="mt-3">
+            <span class="specialist-badge"><i class="bi bi-stars me-1"></i> <span data-i18n="caas_badge">CAaaS — Conversational Agents as a Service</span></span>
+            <h3 style="font-weight: 700; color: #37517e;" data-i18n="caas_title">An AI assistant your customers talk to — on the apps they already use</h3>
+            <p class="mt-3" data-i18n="caas_desc">
               We deploy a <strong>Claude-powered conversational agent</strong> that answers your customers in natural language over <strong>WhatsApp, Telegram, and more</strong> — grounded in <em>your</em> data, not generic answers. Each client gets an isolated, secure deployment we provision on command.
             </p>
             <ul class="mt-3" style="list-style: none; padding: 0;">
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><strong>Multichannel:</strong> one agent, delivered on WhatsApp, Telegram, and other channels</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><strong>Grounded answers:</strong> connects to your APIs, databases, documents and knowledge base (RAG)</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><strong>Bilingual:</strong> replies automatically in the user's language (Spanish / English)</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><strong>Access control:</strong> serves only authorized users — allowlist + optional PIN</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><strong>Cost-capped &amp; isolated:</strong> per-client budget cap and dedicated, private resources on AWS</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><strong>Deploy per command:</strong> a new business goes live as a configured tenant, not a rebuild</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="caas_b1"><strong>Multichannel:</strong> one agent, delivered on WhatsApp, Telegram, and other channels</span></li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="caas_b2"><strong>Grounded answers:</strong> connects to your APIs, databases, documents and knowledge base (RAG)</span></li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="caas_b3"><strong>Bilingual:</strong> replies automatically in the user's language (Spanish / English)</span></li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="caas_b4"><strong>Access control:</strong> serves only authorized users — allowlist + optional PIN</span></li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="caas_b5"><strong>Cost-capped &amp; isolated:</strong> per-client budget cap and dedicated, private resources on AWS</span></li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="caas_b6"><strong>Deploy per command:</strong> a new business goes live as a configured tenant, not a rebuild</span></li>
             </ul>
             <div class="mt-4 d-flex align-items-center flex-wrap gap-3">
-              <a href="/#contact" class="btn-get-started d-inline-block">Request a Demo</a>
-              <span style="color: #37517e; font-weight: 600;"><i class="bi bi-tag me-1 text-primary"></i>Starting from $300 USD / month</span>
+              <a href="/#contact" class="btn-get-started d-inline-block" data-i18n="caas_demo_btn">Request a Demo</a>
+              <span style="color: #37517e; font-weight: 600;"><i class="bi bi-tag me-1 text-primary"></i><span data-i18n="caas_price">Starting from $300 USD / month</span></span>
             </div>
           </div>
 
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
             <div style="background: linear-gradient(135deg, #37517e, #47b2e4); border-radius: 12px; padding: 2.5rem; color: #fff;">
               <i class="bi bi-chat-dots" style="font-size: 3rem; opacity: 0.9;"></i>
-              <h4 class="mt-3 mb-3" style="font-weight: 700; color: #fff;">A Conversational Agent is <span style="text-decoration: underline;">not</span> a simple bot</h4>
-              <p style="opacity: 0.92;">A bot follows fixed buttons and scripted replies. A conversational agent <strong>understands, reasons, looks up real data, and converses</strong> — in the user's own language, around the clock.</p>
+              <h4 class="mt-3 mb-3" style="font-weight: 700; color: #fff;" data-i18n="caas_notbot_title">A Conversational Agent is <span style="text-decoration: underline;">not</span> a simple bot</h4>
+              <p style="opacity: 0.92;" data-i18n="caas_notbot_desc">A bot follows fixed buttons and scripted replies. A conversational agent <strong>understands, reasons, looks up real data, and converses</strong> — in the user's own language, around the clock.</p>
               <hr style="border-color: rgba(255,255,255,0.3);">
-              <p class="mb-2" style="font-size: 0.85rem; opacity: 0.85; letter-spacing: 0.5px;">DELIVERED ON</p>
+              <p class="mb-2" style="font-size: 0.85rem; opacity: 0.85; letter-spacing: 0.5px;" data-i18n="caas_delivered_on">DELIVERED ON</p>
               <div class="row text-center g-3">
                 <div class="col-4">
                   <i class="bi bi-whatsapp" style="font-size: 1.6rem;"></i>
@@ -264,7 +269,7 @@
                 </div>
                 <div class="col-4">
                   <i class="bi bi-plus-circle" style="font-size: 1.6rem;"></i>
-                  <p class="mb-0 mt-1" style="font-size: 0.85rem;">&amp; more</p>
+                  <p class="mb-0 mt-1" style="font-size: 0.85rem;" data-i18n="caas_more">&amp; more</p>
                 </div>
               </div>
             </div>
@@ -279,8 +284,8 @@
       <div class="container">
 
         <div class="container section-title" data-aos="fade-up">
-          <h2>Built for Your Business</h2>
-          <p>One platform, configured for your industry. A few of the agents we deliver:</p>
+          <h2 data-i18n="biz_title">Built for Your Business</h2>
+          <p data-i18n="biz_sub">One platform, configured for your industry. A few of the agents we deliver:</p>
         </div>
 
         <div class="row gy-4 mt-2">
@@ -288,48 +293,48 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="use-case-card">
               <div class="icon"><i class="bi bi-building"></i></div>
-              <h5>Condominiums &amp; HOAs</h5>
-              <p>A virtual assistant for residents: maintenance balances, dues, announcements, amenity bookings, and rules — answered 24/7, only for verified residents.</p>
+              <h5 data-i18n="biz_condo_t">Condominiums &amp; HOAs</h5>
+              <p data-i18n="biz_condo_d">A virtual assistant for residents: maintenance balances, dues, announcements, amenity bookings, and rules — answered 24/7, only for verified residents.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="use-case-card">
               <div class="icon"><i class="bi bi-mortarboard"></i></div>
-              <h5>Schools &amp; Education</h5>
-              <p>Answers parents in real time — grades, payments, attendance, schedules — by securely connecting to the school information system, plus personalized announcements.</p>
+              <h5 data-i18n="biz_school_t">Schools &amp; Education</h5>
+              <p data-i18n="biz_school_d">Answers parents in real time — grades, payments, attendance, schedules — by securely connecting to the school information system, plus personalized announcements.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="use-case-card">
               <div class="icon"><i class="bi bi-graph-up-arrow"></i></div>
-              <h5>Sales Qualification</h5>
-              <p>Engages inbound leads instantly, captures and scores them against your ICP, books follow-ups, and alerts your sales team the moment a lead qualifies.</p>
+              <h5 data-i18n="biz_sales_t">Sales Qualification</h5>
+              <p data-i18n="biz_sales_d">Engages inbound leads instantly, captures and scores them against your ICP, books follow-ups, and alerts your sales team the moment a lead qualifies.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="use-case-card">
               <div class="icon"><i class="bi bi-headset"></i></div>
-              <h5>Customer Support</h5>
-              <p>Deflects routine questions using your FAQs, manuals, and policies — grounded in your own content — and escalates cleanly to a human when needed.</p>
+              <h5 data-i18n="biz_support_t">Customer Support</h5>
+              <p data-i18n="biz_support_d">Deflects routine questions using your FAQs, manuals, and policies — grounded in your own content — and escalates cleanly to a human when needed.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="use-case-card">
               <div class="icon"><i class="bi bi-people"></i></div>
-              <h5>Internal Helpdesk</h5>
-              <p>An employee-facing assistant for HR policies, IT requests, and internal processes — answering from your private knowledge base, on the tools your team already uses.</p>
+              <h5 data-i18n="biz_helpdesk_t">Internal Helpdesk</h5>
+              <p data-i18n="biz_helpdesk_d">An employee-facing assistant for HR policies, IT requests, and internal processes — answering from your private knowledge base, on the tools your team already uses.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="use-case-card">
               <div class="icon"><i class="bi bi-sliders"></i></div>
-              <h5>Custom Personas</h5>
-              <p>Have a different use case? The persona, scope, tone, and data sources are configurable — we tailor an agent to your exact workflow.</p>
+              <h5 data-i18n="biz_custom_t">Custom Personas</h5>
+              <p data-i18n="biz_custom_d">Have a different use case? The persona, scope, tone, and data sources are configurable — we tailor an agent to your exact workflow.</p>
             </div>
           </div>
 
@@ -342,8 +347,8 @@
       <div class="container">
 
         <div class="container section-title" data-aos="fade-up">
-          <h2>Common Use Cases</h2>
-          <p>Real-world examples of AI agents delivering value across industries.</p>
+          <h2 data-i18n="uc_title">Common Use Cases</h2>
+          <p data-i18n="uc_sub">Real-world examples of AI agents delivering value across industries.</p>
         </div>
 
         <div class="row gy-4 mt-2">
@@ -351,54 +356,54 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="use-case-card">
               <div class="icon"><i class="bi bi-headset"></i></div>
-              <h5>Intelligent Customer Support</h5>
-              <p>An agent that reads incoming tickets, queries your knowledge base and CRM, drafts responses, escalates when needed, and closes resolved cases — without a human touching routine requests.</p>
-              <p class="mb-0"><small class="text-muted"><strong>Result:</strong> 60–70% reduction in first-response time.</small></p>
+              <h5 data-i18n="uc_support_t">Intelligent Customer Support</h5>
+              <p data-i18n="uc_support_d">An agent that reads incoming tickets, queries your knowledge base and CRM, drafts responses, escalates when needed, and closes resolved cases — without a human touching routine requests.</p>
+              <p class="mb-0"><small class="text-muted"><strong data-i18n="uc_result">Result:</strong> <span data-i18n="uc_support_r">60–70% reduction in first-response time.</span></small></p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="use-case-card">
               <div class="icon"><i class="bi bi-file-earmark-text"></i></div>
-              <h5>Document Processing & Routing</h5>
-              <p>Agents that ingest invoices, contracts, or forms from any source, extract key fields, validate data against your systems, flag exceptions, and route documents to the right people automatically.</p>
-              <p class="mb-0"><small class="text-muted"><strong>Result:</strong> 80% less manual data entry.</small></p>
+              <h5 data-i18n="uc_doc_t">Document Processing & Routing</h5>
+              <p data-i18n="uc_doc_d">Agents that ingest invoices, contracts, or forms from any source, extract key fields, validate data against your systems, flag exceptions, and route documents to the right people automatically.</p>
+              <p class="mb-0"><small class="text-muted"><strong data-i18n="uc_result">Result:</strong> <span data-i18n="uc_doc_r">80% less manual data entry.</span></small></p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="use-case-card">
               <div class="icon"><i class="bi bi-bar-chart-steps"></i></div>
-              <h5>Sales & Lead Intelligence</h5>
-              <p>An agent that researches prospects, enriches CRM records, drafts personalized outreach, schedules follow-ups, and summarizes pipeline health for your sales team every morning.</p>
-              <p class="mb-0"><small class="text-muted"><strong>Result:</strong> 3× more qualified leads touched per rep.</small></p>
+              <h5 data-i18n="uc_sales_t">Sales & Lead Intelligence</h5>
+              <p data-i18n="uc_sales_d">An agent that researches prospects, enriches CRM records, drafts personalized outreach, schedules follow-ups, and summarizes pipeline health for your sales team every morning.</p>
+              <p class="mb-0"><small class="text-muted"><strong data-i18n="uc_result">Result:</strong> <span data-i18n="uc_sales_r">3× more qualified leads touched per rep.</span></small></p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="use-case-card">
               <div class="icon"><i class="bi bi-boxes"></i></div>
-              <h5>Supply Chain Monitoring</h5>
-              <p>Agents that watch inventory levels, supplier feeds, and logistics APIs in real time — triggering reorders, alerting on delays, and adjusting forecasts before problems escalate.</p>
-              <p class="mb-0"><small class="text-muted"><strong>Result:</strong> 40% fewer stockout incidents.</small></p>
+              <h5 data-i18n="uc_supply_t">Supply Chain Monitoring</h5>
+              <p data-i18n="uc_supply_d">Agents that watch inventory levels, supplier feeds, and logistics APIs in real time — triggering reorders, alerting on delays, and adjusting forecasts before problems escalate.</p>
+              <p class="mb-0"><small class="text-muted"><strong data-i18n="uc_result">Result:</strong> <span data-i18n="uc_supply_r">40% fewer stockout incidents.</span></small></p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="use-case-card">
               <div class="icon"><i class="bi bi-calculator"></i></div>
-              <h5>Financial Reconciliation</h5>
-              <p>Agents that match transactions across systems, identify discrepancies, investigate root causes using audit trails, and produce reconciliation reports — daily, automatically.</p>
-              <p class="mb-0"><small class="text-muted"><strong>Result:</strong> Month-end close 50% faster.</small></p>
+              <h5 data-i18n="uc_fin_t">Financial Reconciliation</h5>
+              <p data-i18n="uc_fin_d">Agents that match transactions across systems, identify discrepancies, investigate root causes using audit trails, and produce reconciliation reports — daily, automatically.</p>
+              <p class="mb-0"><small class="text-muted"><strong data-i18n="uc_result">Result:</strong> <span data-i18n="uc_fin_r">Month-end close 50% faster.</span></small></p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="use-case-card">
               <div class="icon"><i class="bi bi-diagram-3"></i></div>
-              <h5>IT Operations & Incident Response</h5>
-              <p>Agents that monitor alerts, correlate events, execute runbooks, open tickets, and notify the right team — resolving a large share of incidents before a human ever sees them.</p>
-              <p class="mb-0"><small class="text-muted"><strong>Result:</strong> Mean time to resolve cut by 55%.</small></p>
+              <h5 data-i18n="uc_it_t">IT Operations & Incident Response</h5>
+              <p data-i18n="uc_it_d">Agents that monitor alerts, correlate events, execute runbooks, open tickets, and notify the right team — resolving a large share of incidents before a human ever sees them.</p>
+              <p class="mb-0"><small class="text-muted"><strong data-i18n="uc_result">Result:</strong> <span data-i18n="uc_it_r">Mean time to resolve cut by 55%.</span></small></p>
             </div>
           </div>
 
@@ -411,8 +416,8 @@
       <div class="container">
 
         <div class="container section-title" data-aos="fade-up">
-          <h2>Return on Investment</h2>
-          <p>AI Agentic Solutions deliver measurable, compounding value from day one.</p>
+          <h2 data-i18n="roi_title">Return on Investment</h2>
+          <p data-i18n="roi_sub">AI Agentic Solutions deliver measurable, compounding value from day one.</p>
         </div>
 
         <div class="row gy-4 mt-2 justify-content-center">
@@ -420,28 +425,28 @@
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
             <div class="roi-card">
               <div class="roi-number">75%</div>
-              <div class="roi-label">Reduction in manual task time across automated workflows</div>
+              <div class="roi-label" data-i18n="roi_1">Reduction in manual task time across automated workflows</div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="roi-card">
               <div class="roi-number">24/7</div>
-              <div class="roi-label">Operations without additional headcount — agents never sleep</div>
+              <div class="roi-label" data-i18n="roi_2">Operations without additional headcount — agents never sleep</div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="roi-card">
               <div class="roi-number">90%</div>
-              <div class="roi-label">Fewer human errors in repetitive high-volume processes</div>
+              <div class="roi-label" data-i18n="roi_3">Fewer human errors in repetitive high-volume processes</div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
             <div class="roi-card">
               <div class="roi-number">6mo</div>
-              <div class="roi-label">Typical payback period for a mid-scale agentic deployment</div>
+              <div class="roi-label" data-i18n="roi_4">Typical payback period for a mid-scale agentic deployment</div>
             </div>
           </div>
 
@@ -450,9 +455,9 @@
         <div class="row mt-5" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-8 offset-lg-2">
             <div style="background: #f8f9fa; border-radius: 8px; padding: 2rem; border-left: 4px solid #47b2e4;">
-              <h5 style="color: #37517e; font-weight: 700;"><i class="bi bi-graph-up-arrow me-2 text-primary"></i>How We Measure Your ROI</h5>
-              <p class="mb-2">Before any implementation, we run a <strong><a href="maturity-assessment.html">Maturity Assessment</a></strong> to baseline your current process costs: time spent, error rates, headcount, and cycle times. After deployment, we track the same metrics to give you a concrete, auditable picture of the value delivered.</p>
-              <p class="mb-0">Every agent we build ships with an <strong>observability dashboard</strong> so you can see exactly how many tasks it handled, where it escalated to humans, and how performance improves over time.</p>
+              <h5 style="color: #37517e; font-weight: 700;"><i class="bi bi-graph-up-arrow me-2 text-primary"></i><span data-i18n="roi_measure_title">How We Measure Your ROI</span></h5>
+              <p class="mb-2" data-i18n="roi_measure_p1">Before any implementation, we run a <strong><a href="maturity-assessment.html">Maturity Assessment</a></strong> to baseline your current process costs: time spent, error rates, headcount, and cycle times. After deployment, we track the same metrics to give you a concrete, auditable picture of the value delivered.</p>
+              <p class="mb-0" data-i18n="roi_measure_p2">Every agent we build ships with an <strong>observability dashboard</strong> so you can see exactly how many tasks it handled, where it escalated to humans, and how performance improves over time.</p>
             </div>
           </div>
         </div>
@@ -466,11 +471,11 @@
       <div class="container">
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-9 text-center text-xl-start">
-            <h3>Ready to deploy your first AI Agent?</h3>
-            <p>Let's start with a free 30-minute discovery call. We'll identify the highest-ROI process in your organization and sketch the agent that can automate it.</p>
+            <h3 data-i18n="cta_agentic_title">Ready to deploy your first AI Agent?</h3>
+            <p data-i18n="cta_agentic_desc">Let's start with a free 30-minute discovery call. We'll identify the highest-ROI process in your organization and sketch the agent that can automate it.</p>
           </div>
           <div class="col-xl-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="/#contact">Contact Us</a>
+            <a class="cta-btn align-middle" href="/#contact" data-i18n="cta_contact_btn">Contact Us</a>
           </div>
         </div>
       </div>
@@ -487,36 +492,36 @@
             <span class="sitename">Neuron Process</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>Queretaro, Mexico</p>
-            <p><strong>Phone:</strong> <span>+52 5522436914</span></p>
-            <p><strong>Email:</strong> <span>contact@neuronprocess.com</span></p>
+            <p data-i18n="footer_location">Queretaro, Mexico</p>
+            <p><strong data-i18n="footer_phone_label">Phone:</strong> <span>+52 5522436914</span></p>
+            <p><strong data-i18n="footer_email_label">Email:</strong> <span>contact@neuronprocess.com</span></p>
           </div>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
+          <h4 data-i18n="footer_useful">Useful Links</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="/">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="/#about">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="/#services">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="/" data-i18n="footer_useful_home">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="/#about" data-i18n="footer_useful_about">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="/#services" data-i18n="footer_useful_services">Services</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
+          <h4 data-i18n="footer_services">Our Services</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="maturity-assessment.html">Maturity Assessment</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="neuron-method.html">Neuron Method</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="playbacks-methodology.html">Playbacks Methodology</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="process-automation.html">Process Automation</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="ai-agentic-solutions.html">AI Agentic Solutions</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="private-ai-platform.html">Private AI Platform</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="maturity-assessment.html" data-i18n="footer_svc_maturity">Maturity Assessment</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="neuron-method.html" data-i18n="footer_svc_method">Neuron Method</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="playbacks-methodology.html" data-i18n="footer_svc_playbacks">Playbacks Methodology</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="process-automation.html" data-i18n="footer_svc_automation">Process Automation</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="ai-agentic-solutions.html" data-i18n="footer_svc_agentic">AI Agentic Solutions</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="private-ai-platform.html" data-i18n="footer_svc_private">Private AI Platform</a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-12">
-          <h4>Follow Us</h4>
-          <p>We are in social networks!</p>
+          <h4 data-i18n="footer_follow">Follow Us</h4>
+          <p data-i18n="footer_follow_desc">We are in social networks!</p>
           <div class="social-links d-flex">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -529,7 +534,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Neuron Process</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Neuron Process</strong> <span data-i18n="footer_rights">All Rights Reserved</span></p>
     </div>
 
   </footer>
@@ -549,6 +554,10 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- i18n (EN/ES) -->
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/i18n.js"></script>
 
 </body>
 
