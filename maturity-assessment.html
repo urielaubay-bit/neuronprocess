@@ -244,14 +244,19 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="/#hero">Home</a></li>
-          <li><a href="/#about">About</a></li>
-          <li><a href="/#services" class="active">Services</a></li>
-          <li><a href="/#team">Team</a></li>
-          <li><a href="/#contact">Contact</a></li>
+          <li><a href="/#hero" data-i18n="nav_home">Home</a></li>
+          <li><a href="/#about" data-i18n="nav_about">About</a></li>
+          <li><a href="/#services" class="active" data-i18n="nav_services">Services</a></li>
+          <li><a href="/#team" data-i18n="nav_team">Team</a></li>
+          <li><a href="/#contact" data-i18n="nav_contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang-btn="en" onclick="setLanguage('en')">EN</button>
+        <button type="button" data-lang-btn="es" onclick="setLanguage('es')">ES</button>
+      </div>
 
     </div>
   </header>
@@ -263,12 +268,12 @@
       <div class="container">
         <nav class="breadcrumbs">
           <ol class="d-flex list-unstyled gap-0 mb-2">
-            <li><a href="/">Home</a></li>
-            <li><a href="/#services">Services</a></li>
-            <li class="current">Maturity Assessment</li>
+            <li><a href="/" data-i18n="nav_home">Home</a></li>
+            <li><a href="/#services" data-i18n="nav_services">Services</a></li>
+            <li class="current" data-i18n="mat_bc">Maturity Assessment</li>
           </ol>
         </nav>
-        <h1>Process Maturity Assessment</h1>
+        <h1 data-i18n="mat_title">Process Maturity Assessment</h1>
       </div>
     </div><!-- End Page Title -->
 
@@ -278,43 +283,43 @@
         <div class="row gy-5 align-items-center">
 
           <div class="col-lg-6" data-aos="fade-right">
-            <span class="specialist-badge"><i class="bi bi-patch-check me-1"></i> Free Assessment Available</span>
-            <h2 style="font-weight: 700; color: #37517e;">Know Exactly Where You Stand — and Where to Go Next</h2>
-            <p class="mt-3">
+            <span class="specialist-badge"><i class="bi bi-patch-check me-1"></i> <span data-i18n="mat_badge">Free Assessment Available</span></span>
+            <h2 style="font-weight: 700; color: #37517e;" data-i18n="mat_h2">Know Exactly Where You Stand — and Where to Go Next</h2>
+            <p class="mt-3" data-i18n="mat_p1">
               Before you can improve a process, you need to understand it. Our <strong>Process Maturity Assessment</strong> gives you a clear, honest picture of where your organization operates today — and a roadmap to reach the next level.
             </p>
-            <p>
+            <p data-i18n="mat_p2">
               We use a proven 6-level maturity model, from reactive ad-hoc operations all the way to fully <strong>Agentic AI-driven</strong> processes that manage, optimize, and adapt themselves — with humans staying in control of what matters.
             </p>
             <ul class="mt-3" style="list-style: none; padding: 0;">
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Structured interviews and process workshops with your team</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Scored across 5 dimensions: visibility, standardization, measurement, automation, and intelligence</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Prioritized improvement opportunities with estimated ROI</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Clear next step: quick wins vs. transformational moves</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="mat_li1">Structured interviews and process workshops with your team</span></li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="mat_li2">Scored across 5 dimensions: visibility, standardization, measurement, automation, and intelligence</span></li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="mat_li3">Prioritized improvement opportunities with estimated ROI</span></li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="mat_li4">Clear next step: quick wins vs. transformational moves</span></li>
             </ul>
             <a href="https://wa.me/525522436914?text=Hi%2C%20I'd%20like%20to%20request%20a%20free%20Process%20Maturity%20Assessment%20for%20my%20organization." class="btn-whatsapp mt-4 d-inline-flex" target="_blank" rel="noopener">
-              <i class="bi bi-whatsapp"></i> Ask for Your Free Assessment
+              <i class="bi bi-whatsapp"></i> <span data-i18n="mat_cta_btn">Ask for Your Free Assessment</span>
             </a>
           </div>
 
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
             <div style="background: linear-gradient(135deg, #37517e, #47b2e4); border-radius: 12px; padding: 2.5rem; color: #fff;">
               <i class="bi bi-speedometer2" style="font-size: 3rem; opacity: 0.9;"></i>
-              <h4 class="mt-3 mb-3" style="font-weight: 700; color: #fff;">Why Maturity Matters</h4>
-              <p style="opacity: 0.9;">Organizations that understand their process maturity level make better investment decisions — they avoid over-automating immature processes and under-investing in processes that are ready to leap forward.</p>
+              <h4 class="mt-3 mb-3" style="font-weight: 700; color: #fff;" data-i18n="mat_why_title">Why Maturity Matters</h4>
+              <p style="opacity: 0.9;" data-i18n="mat_why_p">Organizations that understand their process maturity level make better investment decisions — they avoid over-automating immature processes and under-investing in processes that are ready to leap forward.</p>
               <hr style="border-color: rgba(255,255,255,0.3);">
               <div class="row text-center mt-3 g-3">
                 <div class="col-4">
                   <i class="bi bi-search" style="font-size: 1.5rem;"></i>
-                  <p class="mb-0 mt-1" style="font-size: 0.85rem;">Diagnose</p>
+                  <p class="mb-0 mt-1" style="font-size: 0.85rem;" data-i18n="mat_diagnose">Diagnose</p>
                 </div>
                 <div class="col-4">
                   <i class="bi bi-map" style="font-size: 1.5rem;"></i>
-                  <p class="mb-0 mt-1" style="font-size: 0.85rem;">Roadmap</p>
+                  <p class="mb-0 mt-1" style="font-size: 0.85rem;" data-i18n="mat_roadmap">Roadmap</p>
                 </div>
                 <div class="col-4">
                   <i class="bi bi-graph-up-arrow" style="font-size: 1.5rem;"></i>
-                  <p class="mb-0 mt-1" style="font-size: 0.85rem;">Grow</p>
+                  <p class="mb-0 mt-1" style="font-size: 0.85rem;" data-i18n="mat_grow">Grow</p>
                 </div>
               </div>
             </div>
@@ -329,8 +334,8 @@
       <div class="container">
 
         <div class="container section-title" data-aos="fade-up">
-          <h2>The Process Maturity Model</h2>
-          <p>Six levels that describe how organizations manage and evolve their business processes — from chaos to autonomous intelligence.</p>
+          <h2 data-i18n="mat_model_title">The Process Maturity Model</h2>
+          <p data-i18n="mat_model_sub">Six levels that describe how organizations manage and evolve their business processes — from chaos to autonomous intelligence.</p>
         </div>
 
         <div class="row gy-4 mt-2">
@@ -339,10 +344,10 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="maturity-card level-1">
               <div class="level-badge">1</div>
-              <div class="level-subtitle">Initial</div>
-              <h5>Ad-Hoc</h5>
-              <p>Processes are unstructured, undocumented, and entirely dependent on individual heroics. Outcomes are unpredictable and vary person to person.</p>
-              <p class="mb-0"><small class="text-muted"><strong>Signs:</strong> "We do it differently every time," high staff dependency, firefighting culture.</small></p>
+              <div class="level-subtitle" data-i18n="mat_l1_sub">Initial</div>
+              <h5 data-i18n="mat_l1_name">Ad-Hoc</h5>
+              <p data-i18n="mat_l1_p">Processes are unstructured, undocumented, and entirely dependent on individual heroics. Outcomes are unpredictable and vary person to person.</p>
+              <p class="mb-0"><small class="text-muted" data-i18n="mat_l1_signs"><strong>Signs:</strong> "We do it differently every time," high staff dependency, firefighting culture.</small></p>
             </div>
           </div>
 
@@ -350,10 +355,10 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
             <div class="maturity-card level-2">
               <div class="level-badge">2</div>
-              <div class="level-subtitle">Managed</div>
-              <h5>Repeatable</h5>
-              <p>Basic project management is in place. Teams follow similar steps and results are somewhat repeatable, but documentation is informal or incomplete.</p>
-              <p class="mb-0"><small class="text-muted"><strong>Signs:</strong> Checklists in spreadsheets, outcomes vary by team, occasional manual controls.</small></p>
+              <div class="level-subtitle" data-i18n="mat_l2_sub">Managed</div>
+              <h5 data-i18n="mat_l2_name">Repeatable</h5>
+              <p data-i18n="mat_l2_p">Basic project management is in place. Teams follow similar steps and results are somewhat repeatable, but documentation is informal or incomplete.</p>
+              <p class="mb-0"><small class="text-muted" data-i18n="mat_l2_signs"><strong>Signs:</strong> Checklists in spreadsheets, outcomes vary by team, occasional manual controls.</small></p>
             </div>
           </div>
 
@@ -361,10 +366,10 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="maturity-card level-3">
               <div class="level-badge">3</div>
-              <div class="level-subtitle">Defined</div>
-              <h5>Standardized</h5>
-              <p>Processes are formally documented, approved, and trained across the organization. Consistent outcomes are expected and mostly achieved.</p>
-              <p class="mb-0"><small class="text-muted"><strong>Signs:</strong> Process maps exist, onboarding follows procedures, first automation pilots live.</small></p>
+              <div class="level-subtitle" data-i18n="mat_l3_sub">Defined</div>
+              <h5 data-i18n="mat_l3_name">Standardized</h5>
+              <p data-i18n="mat_l3_p">Processes are formally documented, approved, and trained across the organization. Consistent outcomes are expected and mostly achieved.</p>
+              <p class="mb-0"><small class="text-muted" data-i18n="mat_l3_signs"><strong>Signs:</strong> Process maps exist, onboarding follows procedures, first automation pilots live.</small></p>
             </div>
           </div>
 
@@ -372,10 +377,10 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
             <div class="maturity-card level-4">
               <div class="level-badge">4</div>
-              <div class="level-subtitle">Quantitatively Managed</div>
-              <h5>Measured</h5>
-              <p>Processes are monitored with KPIs and SLAs. Data drives decisions, variation is understood statistically, and problems are detected proactively.</p>
-              <p class="mb-0"><small class="text-muted"><strong>Signs:</strong> Dashboards for cycle time & error rates, automated alerts, SLA breach tracking.</small></p>
+              <div class="level-subtitle" data-i18n="mat_l4_sub">Quantitatively Managed</div>
+              <h5 data-i18n="mat_l4_name">Measured</h5>
+              <p data-i18n="mat_l4_p">Processes are monitored with KPIs and SLAs. Data drives decisions, variation is understood statistically, and problems are detected proactively.</p>
+              <p class="mb-0"><small class="text-muted" data-i18n="mat_l4_signs"><strong>Signs:</strong> Dashboards for cycle time & error rates, automated alerts, SLA breach tracking.</small></p>
             </div>
           </div>
 
@@ -383,10 +388,10 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="maturity-card level-5">
               <div class="level-badge">5</div>
-              <div class="level-subtitle">Optimizing</div>
-              <h5>Continuously Improving</h5>
-              <p>The organization treats process improvement as a core discipline. Feedback loops are institutionalized; teams experiment, learn, and iterate constantly.</p>
-              <p class="mb-0"><small class="text-muted"><strong>Signs:</strong> Regular kaizen cycles, RPA/BPM fully in production, process owners with autonomy to improve.</small></p>
+              <div class="level-subtitle" data-i18n="mat_l5_sub">Optimizing</div>
+              <h5 data-i18n="mat_l5_name">Continuously Improving</h5>
+              <p data-i18n="mat_l5_p">The organization treats process improvement as a core discipline. Feedback loops are institutionalized; teams experiment, learn, and iterate constantly.</p>
+              <p class="mb-0"><small class="text-muted" data-i18n="mat_l5_signs"><strong>Signs:</strong> Regular kaizen cycles, RPA/BPM fully in production, process owners with autonomy to improve.</small></p>
             </div>
           </div>
 
@@ -394,10 +399,10 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
             <div class="maturity-card level-agentic">
               <div class="level-badge">6</div>
-              <div class="level-subtitle">Agentic <span class="agentic-tag">New</span></div>
-              <h5>AI-Driven &amp; Autonomous</h5>
-              <p>AI agents perceive process state in real time, make decisions, execute actions, and self-optimize — while humans focus on strategy, exceptions, and oversight.</p>
-              <p class="mb-0"><small style="color: #1a7ab5;"><strong>Signs:</strong> Autonomous end-to-end workflows, AI orchestrating multi-step tasks, measurable human time recaptured.</small></p>
+              <div class="level-subtitle"><span data-i18n="mat_l6_sub">Agentic</span> <span class="agentic-tag" data-i18n="mat_new">New</span></div>
+              <h5 data-i18n="mat_l6_name">AI-Driven &amp; Autonomous</h5>
+              <p data-i18n="mat_l6_p">AI agents perceive process state in real time, make decisions, execute actions, and self-optimize — while humans focus on strategy, exceptions, and oversight.</p>
+              <p class="mb-0"><small style="color: #1a7ab5;" data-i18n="mat_l6_signs"><strong>Signs:</strong> Autonomous end-to-end workflows, AI orchestrating multi-step tasks, measurable human time recaptured.</small></p>
             </div>
           </div>
 
@@ -407,31 +412,31 @@
         <div class="row mt-5" data-aos="fade-up" data-aos-delay="100">
           <div class="col-12">
             <div style="background: #fff; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.07);">
-              <p class="text-center mb-3" style="font-weight: 600; color: #37517e;">Where does your organization sit today?</p>
+              <p class="text-center mb-3" style="font-weight: 600; color: #37517e;" data-i18n="mat_bar_q">Where does your organization sit today?</p>
               <div class="d-flex align-items-center gap-1 flex-wrap justify-content-center">
                 <div style="text-align:center; flex: 1; min-width: 70px;">
                   <div style="height: 12px; background: #adb5bd; border-radius: 6px 0 0 6px;"></div>
-                  <small class="text-muted d-block mt-1" style="font-size: 0.72rem;">Ad-Hoc</small>
+                  <small class="text-muted d-block mt-1" style="font-size: 0.72rem;" data-i18n="mat_bar_1">Ad-Hoc</small>
                 </div>
                 <div style="text-align:center; flex: 1; min-width: 70px;">
                   <div style="height: 12px; background: #6ea8d8;"></div>
-                  <small class="text-muted d-block mt-1" style="font-size: 0.72rem;">Repeatable</small>
+                  <small class="text-muted d-block mt-1" style="font-size: 0.72rem;" data-i18n="mat_bar_2">Repeatable</small>
                 </div>
                 <div style="text-align:center; flex: 1; min-width: 70px;">
                   <div style="height: 12px; background: #3a9bd5;"></div>
-                  <small class="text-muted d-block mt-1" style="font-size: 0.72rem;">Standardized</small>
+                  <small class="text-muted d-block mt-1" style="font-size: 0.72rem;" data-i18n="mat_bar_3">Standardized</small>
                 </div>
                 <div style="text-align:center; flex: 1; min-width: 70px;">
                   <div style="height: 12px; background: #2175b0;"></div>
-                  <small class="text-muted d-block mt-1" style="font-size: 0.72rem;">Measured</small>
+                  <small class="text-muted d-block mt-1" style="font-size: 0.72rem;" data-i18n="mat_bar_4">Measured</small>
                 </div>
                 <div style="text-align:center; flex: 1; min-width: 70px;">
                   <div style="height: 12px; background: #37517e;"></div>
-                  <small class="text-muted d-block mt-1" style="font-size: 0.72rem;">Optimizing</small>
+                  <small class="text-muted d-block mt-1" style="font-size: 0.72rem;" data-i18n="mat_bar_5">Optimizing</small>
                 </div>
                 <div style="text-align:center; flex: 1; min-width: 70px;">
                   <div style="height: 12px; background: #47b2e4; border-radius: 0 6px 6px 0;"></div>
-                  <small style="color:#47b2e4; font-size: 0.72rem; font-weight: 700;" class="d-block mt-1">Agentic</small>
+                  <small style="color:#47b2e4; font-size: 0.72rem; font-weight: 700;" class="d-block mt-1" data-i18n="mat_bar_6">Agentic</small>
                 </div>
               </div>
             </div>
@@ -446,8 +451,8 @@
       <div class="container">
 
         <div class="container section-title" data-aos="fade-up">
-          <h2>What the Assessment Covers</h2>
-          <p>A structured review across five dimensions to give you a complete and actionable picture.</p>
+          <h2 data-i18n="mat_inc_title">What the Assessment Covers</h2>
+          <p data-i18n="mat_inc_sub">A structured review across five dimensions to give you a complete and actionable picture.</p>
         </div>
 
         <div class="row gy-4 mt-2 justify-content-center">
@@ -455,40 +460,40 @@
           <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
             <div class="includes-card">
               <div class="icon"><i class="bi bi-eye"></i></div>
-              <h6>Visibility</h6>
-              <p class="mb-0 text-muted" style="font-size: 0.92rem;">Are your processes documented and visible to the right people? Can you trace what happened and when?</p>
+              <h6 data-i18n="mat_inc_vis">Visibility</h6>
+              <p class="mb-0 text-muted" style="font-size: 0.92rem;" data-i18n="mat_inc_vis_d">Are your processes documented and visible to the right people? Can you trace what happened and when?</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="includes-card">
               <div class="icon"><i class="bi bi-card-checklist"></i></div>
-              <h6>Standardization</h6>
-              <p class="mb-0 text-muted" style="font-size: 0.92rem;">Are steps defined, agreed, and followed consistently across teams, locations, and people?</p>
+              <h6 data-i18n="mat_inc_std">Standardization</h6>
+              <p class="mb-0 text-muted" style="font-size: 0.92rem;" data-i18n="mat_inc_std_d">Are steps defined, agreed, and followed consistently across teams, locations, and people?</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="includes-card">
               <div class="icon"><i class="bi bi-graph-up"></i></div>
-              <h6>Measurement</h6>
-              <p class="mb-0 text-muted" style="font-size: 0.92rem;">Do you track cycle time, error rates, SLAs, and cost-per-transaction? Are decisions data-driven?</p>
+              <h6 data-i18n="mat_inc_meas">Measurement</h6>
+              <p class="mb-0 text-muted" style="font-size: 0.92rem;" data-i18n="mat_inc_meas_d">Do you track cycle time, error rates, SLAs, and cost-per-transaction? Are decisions data-driven?</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
             <div class="includes-card">
               <div class="icon"><i class="bi bi-gear-wide-connected"></i></div>
-              <h6>Automation</h6>
-              <p class="mb-0 text-muted" style="font-size: 0.92rem;">What percentage of steps are automated today? Where are the manual bottlenecks and why?</p>
+              <h6 data-i18n="mat_inc_auto">Automation</h6>
+              <p class="mb-0 text-muted" style="font-size: 0.92rem;" data-i18n="mat_inc_auto_d">What percentage of steps are automated today? Where are the manual bottlenecks and why?</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
             <div class="includes-card">
               <div class="icon"><i class="bi bi-robot"></i></div>
-              <h6>Intelligence</h6>
-              <p class="mb-0 text-muted" style="font-size: 0.92rem;">Are AI or ML capabilities in use? Is the organization ready for Agentic AI — and what would it take to get there?</p>
+              <h6 data-i18n="mat_inc_intel">Intelligence</h6>
+              <p class="mb-0 text-muted" style="font-size: 0.92rem;" data-i18n="mat_inc_intel_d">Are AI or ML capabilities in use? Is the organization ready for Agentic AI — and what would it take to get there?</p>
             </div>
           </div>
 
@@ -502,12 +507,12 @@
       <div class="container" data-aos="zoom-in">
         <div class="wa-cta-box">
           <i class="bi bi-clipboard2-pulse" style="font-size: 3rem; opacity: 0.85; margin-bottom: 1rem; display: block;"></i>
-          <h3>Ask for Your Free Maturity Assessment</h3>
-          <p>Send us a quick message on WhatsApp. We'll schedule a short conversation to understand your context and walk you through where your processes stand — at no cost, no commitment.</p>
+          <h3 data-i18n="mat_wa_title">Ask for Your Free Maturity Assessment</h3>
+          <p data-i18n="mat_wa_p">Send us a quick message on WhatsApp. We'll schedule a short conversation to understand your context and walk you through where your processes stand — at no cost, no commitment.</p>
           <a href="https://wa.me/525522436914?text=Hi%2C%20I'd%20like%20to%20request%20a%20free%20Process%20Maturity%20Assessment%20for%20my%20organization." class="btn-whatsapp" target="_blank" rel="noopener">
-            <i class="bi bi-whatsapp"></i> WhatsApp Us Now
+            <i class="bi bi-whatsapp"></i> <span data-i18n="mat_wa_btn">WhatsApp Us Now</span>
           </a>
-          <p class="mt-3 mb-0" style="font-size: 0.85rem; opacity: 0.75;">Typically replies within a few hours &middot; Available in English &amp; Spanish</p>
+          <p class="mt-3 mb-0" style="font-size: 0.85rem; opacity: 0.75;" data-i18n="mat_wa_note">Typically replies within a few hours &middot; Available in English &amp; Spanish</p>
         </div>
       </div>
     </section><!-- /WhatsApp CTA Section -->
@@ -518,11 +523,11 @@
       <div class="container">
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-9 text-center text-xl-start">
-            <h3>Ready to reach Level 6 — Agentic?</h3>
-            <p>Once you know your maturity level, we can show you exactly what it takes to automate intelligently and deploy AI agents that deliver measurable ROI.</p>
+            <h3 data-i18n="mat_bcta_title">Ready to reach Level 6 — Agentic?</h3>
+            <p data-i18n="mat_bcta_desc">Once you know your maturity level, we can show you exactly what it takes to automate intelligently and deploy AI agents that deliver measurable ROI.</p>
           </div>
           <div class="col-xl-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="ai-agentic-solutions.html">Explore AI Agents</a>
+            <a class="cta-btn align-middle" href="ai-agentic-solutions.html" data-i18n="mat_bcta_btn">Explore AI Agents</a>
           </div>
         </div>
       </div>
@@ -539,36 +544,36 @@
             <span class="sitename">Neuron Process</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>Queretaro, Mexico</p>
-            <p><strong>Phone:</strong> <span>+52 5522436914</span></p>
-            <p><strong>Email:</strong> <span>contact@neuronprocess.com</span></p>
+            <p data-i18n="footer_location">Queretaro, Mexico</p>
+            <p><strong data-i18n="footer_phone_label">Phone:</strong> <span>+52 5522436914</span></p>
+            <p><strong data-i18n="footer_email_label">Email:</strong> <span>contact@neuronprocess.com</span></p>
           </div>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
+          <h4 data-i18n="footer_useful">Useful Links</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="/">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="/#about">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="/#services">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="/" data-i18n="footer_useful_home">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="/#about" data-i18n="footer_useful_about">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="/#services" data-i18n="footer_useful_services">Services</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
+          <h4 data-i18n="footer_services">Our Services</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="maturity-assessment.html">Maturity Assessment</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="neuron-method.html">Neuron Method</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="playbacks-methodology.html">Playbacks Methodology</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="process-automation.html">Process Automation</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="ai-agentic-solutions.html">AI Agentic Solutions</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="private-ai-platform.html">Private AI Platform</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="maturity-assessment.html" data-i18n="footer_svc_maturity">Maturity Assessment</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="neuron-method.html" data-i18n="footer_svc_method">Neuron Method</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="playbacks-methodology.html" data-i18n="footer_svc_playbacks">Playbacks Methodology</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="process-automation.html" data-i18n="footer_svc_automation">Process Automation</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="ai-agentic-solutions.html" data-i18n="footer_svc_agentic">AI Agentic Solutions</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="private-ai-platform.html" data-i18n="footer_svc_private">Private AI Platform</a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-12">
-          <h4>Follow Us</h4>
-          <p>We are in social networks!</p>
+          <h4 data-i18n="footer_follow">Follow Us</h4>
+          <p data-i18n="footer_follow_desc">We are in social networks!</p>
           <div class="social-links d-flex">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -581,7 +586,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Neuron Process</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Neuron Process</strong> <span data-i18n="footer_rights">All Rights Reserved</span></p>
     </div>
 
   </footer>
@@ -601,6 +606,10 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- i18n (EN/ES) -->
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/i18n.js"></script>
 
 </body>
 
