@@ -34,12 +34,13 @@
   function injectStyles() {
     if (document.getElementById("np-i18n-style")) return;
     var css =
-      ".lang-switch{display:inline-flex;border:1px solid rgba(255,255,255,.35);" +
+      ".lang-switch{display:inline-flex;border:1px solid rgba(255,255,255,.45);" +
       "border-radius:20px;overflow:hidden;margin-left:1rem;vertical-align:middle}" +
-      ".lang-switch button{background:transparent;border:0;color:#37517e;" +
-      "font:600 0.8rem/1 'Open Sans',sans-serif;padding:.35rem .7rem;cursor:pointer}" +
-      ".lang-switch button.active{background:#47b2e4;color:#fff}" +
-      ".header .lang-switch{border-color:rgba(55,81,126,.3)}" +
+      ".lang-switch button{background:transparent;border:0;color:#fff;opacity:.8;" +
+      "font:600 0.8rem/1 'Open Sans',sans-serif;padding:.35rem .7rem;cursor:pointer;" +
+      "transition:opacity .15s,background .15s}" +
+      ".lang-switch button:hover{opacity:1}" +
+      ".lang-switch button.active{background:#47b2e4;color:#fff;opacity:1}" +
       "@media (max-width:1199px){.lang-switch{margin-left:.5rem}}";
     var s = document.createElement("style");
     s.id = "np-i18n-style";
