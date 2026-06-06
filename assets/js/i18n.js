@@ -41,7 +41,11 @@
       "transition:opacity .15s,background .15s}" +
       ".lang-switch button:hover{opacity:1}" +
       ".lang-switch button.active{background:#47b2e4;color:#fff;opacity:1}" +
-      "@media (max-width:1199px){.lang-switch{margin-left:.5rem}}";
+      // On mobile the BizLand header assigns order:1 to the logo, so an
+      // unordered switcher (order:0) renders BEFORE the logo and overlaps it.
+      // Pin it after the logo, next to the hamburger.
+      "@media (max-width:1200px){.header .lang-switch{order:2;margin-left:0;" +
+      "margin-right:.5rem}}";
     var s = document.createElement("style");
     s.id = "np-i18n-style";
     s.appendChild(document.createTextNode(css));
