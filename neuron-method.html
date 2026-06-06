@@ -231,14 +231,20 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="/#hero">Home</a></li>
-          <li><a href="/#about">About</a></li>
-          <li><a href="/#services" class="active">Services</a></li>
-          <li><a href="/#team">Team</a></li>
-          <li><a href="/#contact">Contact</a></li>
+          <li><a href="/#hero" data-i18n="nav_home">Home</a></li>
+          <li><a href="/#about" data-i18n="nav_about">About</a></li>
+          <li><a href="/#services" class="active" data-i18n="nav_services">Services</a></li>
+          <li><a href="/#team" data-i18n="nav_team">Team</a></li>
+          <li><a href="/#contact" data-i18n="nav_contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+
+
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang-btn="en" onclick="setLanguage('en')">EN</button>
+        <button type="button" data-lang-btn="es" onclick="setLanguage('es')">ES</button>
+      </div>
 
     </div>
   </header>
@@ -250,12 +256,12 @@
       <div class="container">
         <nav class="breadcrumbs">
           <ol class="d-flex list-unstyled gap-0 mb-2">
-            <li><a href="/">Home</a></li>
-            <li><a href="/#services">Services</a></li>
-            <li class="current">Neuron Method</li>
+            <li><a href="/" data-i18n="nav_home">Home</a></li>
+            <li><a href="/#services" data-i18n="nav_services">Services</a></li>
+            <li class="current" data-i18n="nm_bc">Neuron Method</li>
           </ol>
         </nav>
-        <h1>The Neuron Method</h1>
+        <h1 data-i18n="nm_title">The Neuron Method</h1>
       </div>
     </div><!-- End Page Title -->
 
@@ -265,42 +271,42 @@
         <div class="row gy-5 align-items-center">
 
           <div class="col-lg-6" data-aos="fade-right">
-            <span class="specialist-badge"><i class="bi bi-patch-check me-1"></i> AI-Native Design Workshop</span>
-            <h2 style="font-weight: 700; color: #37517e;">Design Thinking — Rebuilt for the Age of AI Agents</h2>
-            <p class="mt-3">
+            <span class="specialist-badge"><i class="bi bi-patch-check me-1"></i> <span data-i18n="nm_badge">AI-Native Design Workshop</span></span>
+            <h2 style="font-weight: 700; color: #37517e;" data-i18n="nm_h2">Design Thinking — Rebuilt for the Age of AI Agents</h2>
+            <p class="mt-3" data-i18n="nm_p1">
               The Neuron Method is our structured facilitation approach for solving complex business problems. It takes the best of <strong>Design Thinking</strong> — empathy, ideation, rapid validation — and extends it with two critical dimensions that traditional workshops miss: a <strong>business process perspective</strong> and <strong>AI agent collaboration</strong>.
             </p>
-            <p>
+            <p data-i18n="nm_p2">
               The result is not just a great idea on a sticky note. It's a concrete, prioritized blueprint that your team can act on — with a clear picture of which steps humans own, which automation can handle, and where AI agents unlock the biggest leverage.
             </p>
             <div class="mt-3 d-flex flex-wrap gap-1">
-              <span class="diff-tag"><i class="bi bi-diagram-2"></i> Process-Native Ideation</span>
-              <span class="diff-tag"><i class="bi bi-robot"></i> AI-Agent Collaboration</span>
-              <span class="diff-tag"><i class="bi bi-people"></i> Cross-Functional Workshops</span>
-              <span class="diff-tag"><i class="bi bi-graph-up-arrow"></i> Outcome-Anchored</span>
+              <span class="diff-tag"><i class="bi bi-diagram-2"></i> <span data-i18n="nm_diff1">Process-Native Ideation</span></span>
+              <span class="diff-tag"><i class="bi bi-robot"></i> <span data-i18n="nm_diff2">AI-Agent Collaboration</span></span>
+              <span class="diff-tag"><i class="bi bi-people"></i> <span data-i18n="nm_diff3">Cross-Functional Workshops</span></span>
+              <span class="diff-tag"><i class="bi bi-graph-up-arrow"></i> <span data-i18n="nm_diff4">Outcome-Anchored</span></span>
             </div>
             <a href="https://wa.me/525522436914?text=Hi%2C%20I'd%20like%20to%20learn%20more%20about%20the%20Neuron%20Method%20workshop%20for%20my%20organization." class="btn-whatsapp mt-4 d-inline-flex" target="_blank" rel="noopener">
-              <i class="bi bi-whatsapp"></i> Schedule a Workshop
+              <i class="bi bi-whatsapp"></i> <span data-i18n="nm_cta_btn">Schedule a Workshop</span>
             </a>
           </div>
 
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
             <div style="background: linear-gradient(135deg, #37517e, #47b2e4); border-radius: 12px; padding: 2.5rem; color: #fff;">
               <i class="bi bi-bounding-box-circles" style="font-size: 3rem; opacity: 0.9;"></i>
-              <h4 class="mt-3 mb-3" style="font-weight: 700; color: #fff;">Three Lenses, One Workshop</h4>
-              <p style="opacity: 0.9; margin-bottom: 1.25rem;">Most design workshops answer <em>"what do users need?"</em> The Neuron Method answers three questions simultaneously:</p>
+              <h4 class="mt-3 mb-3" style="font-weight: 700; color: #fff;" data-i18n="nm_lens_title">Three Lenses, One Workshop</h4>
+              <p style="opacity: 0.9; margin-bottom: 1.25rem;" data-i18n="nm_lens_p">Most design workshops answer <em>"what do users need?"</em> The Neuron Method answers three questions simultaneously:</p>
               <div class="d-flex flex-column gap-3">
                 <div style="background: rgba(255,255,255,0.12); border-radius: 8px; padding: 0.85rem 1rem;">
-                  <strong><i class="bi bi-person-heart me-2"></i>Human</strong>
-                  <p class="mb-0 mt-1" style="font-size: 0.88rem; opacity: 0.9;">What do people really need? Where is frustration hiding in the current experience?</p>
+                  <strong><i class="bi bi-person-heart me-2"></i><span data-i18n="nm_lens_h">Human</span></strong>
+                  <p class="mb-0 mt-1" style="font-size: 0.88rem; opacity: 0.9;" data-i18n="nm_lens_hd">What do people really need? Where is frustration hiding in the current experience?</p>
                 </div>
                 <div style="background: rgba(255,255,255,0.12); border-radius: 8px; padding: 0.85rem 1rem;">
-                  <strong><i class="bi bi-diagram-3 me-2"></i>Process</strong>
-                  <p class="mb-0 mt-1" style="font-size: 0.88rem; opacity: 0.9;">How does the work actually flow today? Which steps add value, which create waste?</p>
+                  <strong><i class="bi bi-diagram-3 me-2"></i><span data-i18n="nm_lens_pr">Process</span></strong>
+                  <p class="mb-0 mt-1" style="font-size: 0.88rem; opacity: 0.9;" data-i18n="nm_lens_prd">How does the work actually flow today? Which steps add value, which create waste?</p>
                 </div>
                 <div style="background: rgba(255,255,255,0.12); border-radius: 8px; padding: 0.85rem 1rem;">
-                  <strong><i class="bi bi-robot me-2"></i>AI Agent</strong>
-                  <p class="mb-0 mt-1" style="font-size: 0.88rem; opacity: 0.9;">What could an autonomous agent handle here? Where does human judgment remain essential?</p>
+                  <strong><i class="bi bi-robot me-2"></i><span data-i18n="nm_lens_ai">AI Agent</span></strong>
+                  <p class="mb-0 mt-1" style="font-size: 0.88rem; opacity: 0.9;" data-i18n="nm_lens_aid">What could an autonomous agent handle here? Where does human judgment remain essential?</p>
                 </div>
               </div>
             </div>
@@ -315,8 +321,8 @@
       <div class="container">
 
         <div class="container section-title" data-aos="fade-up">
-          <h2>The Six Phases</h2>
-          <p>A structured sequence that moves your team from problem clarity to an actionable, AI-ready solution blueprint.</p>
+          <h2 data-i18n="nm_phases_title">The Six Phases</h2>
+          <p data-i18n="nm_phases_sub">A structured sequence that moves your team from problem clarity to an actionable, AI-ready solution blueprint.</p>
         </div>
 
         <div class="row gy-4 mt-2">
@@ -325,13 +331,13 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="phase-card">
               <div class="phase-number">1</div>
-              <div class="phase-subtitle">Phase 1 — Discover</div>
-              <h5>Listen &amp; Observe</h5>
-              <p>We go deep into your organization before the workshop starts. Structured interviews with stakeholders at every level, process shadowing sessions, and review of available data reveal the real problems — not just the reported ones.</p>
+              <div class="phase-subtitle" data-i18n="nm_ph1_sub">Phase 1 — Discover</div>
+              <h5 data-i18n="nm_ph1_name">Listen &amp; Observe</h5>
+              <p data-i18n="nm_ph1_body">We go deep into your organization before the workshop starts. Structured interviews with stakeholders at every level, process shadowing sessions, and review of available data reveal the real problems — not just the reported ones.</p>
               <div class="ai-role">
-                <i class="bi bi-robot me-1"></i><strong>AI assist:</strong> Analyzes interview transcripts, support tickets, and process logs to surface recurring patterns and hidden pain points at scale.
+                <i class="bi bi-robot me-1"></i><strong data-i18n="nm_aiassist">AI assist:</strong> <span data-i18n="nm_ph1_ai">Analyzes interview transcripts, support tickets, and process logs to surface recurring patterns and hidden pain points at scale.</span>
               </div>
-              <div class="deliverable"><strong>Output:</strong> Stakeholder map, pain point inventory, process observation notes</div>
+              <div class="deliverable"><strong data-i18n="nm_output">Output:</strong> <span data-i18n="nm_ph1_out">Stakeholder map, pain point inventory, process observation notes</span></div>
             </div>
           </div>
 
@@ -339,13 +345,13 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
             <div class="phase-card">
               <div class="phase-number">2</div>
-              <div class="phase-subtitle">Phase 2 — Define</div>
-              <h5>Map &amp; Prioritize</h5>
-              <p>We map the AS-IS process end-to-end — every step, handoff, system, and decision point. Then we run a prioritization exercise to focus the workshop on the highest-value opportunities, anchored to your <a href="maturity-assessment.html">process maturity level</a>.</p>
+              <div class="phase-subtitle" data-i18n="nm_ph2_sub">Phase 2 — Define</div>
+              <h5 data-i18n="nm_ph2_name">Map &amp; Prioritize</h5>
+              <p data-i18n="nm_ph2_body">We map the AS-IS process end-to-end — every step, handoff, system, and decision point. Then we run a prioritization exercise to focus the workshop on the highest-value opportunities, anchored to your <a href="maturity-assessment.html">process maturity level</a>.</p>
               <div class="ai-role">
-                <i class="bi bi-robot me-1"></i><strong>AI assist:</strong> Generates structured problem statements and dependency maps; flags which process segments are candidates for automation vs. agentic AI.
+                <i class="bi bi-robot me-1"></i><strong data-i18n="nm_aiassist">AI assist:</strong> <span data-i18n="nm_ph2_ai">Generates structured problem statements and dependency maps; flags which process segments are candidates for automation vs. agentic AI.</span>
               </div>
-              <div class="deliverable"><strong>Output:</strong> AS-IS process map, opportunity matrix, agreed problem statement</div>
+              <div class="deliverable"><strong data-i18n="nm_output">Output:</strong> <span data-i18n="nm_ph2_out">AS-IS process map, opportunity matrix, agreed problem statement</span></div>
             </div>
           </div>
 
@@ -353,13 +359,13 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="phase-card">
               <div class="phase-number">3</div>
-              <div class="phase-subtitle">Phase 3 — Ideate</div>
-              <h5>Generate &amp; Explore</h5>
-              <p>The creative core of the method. Cross-functional teams generate solutions using adapted "How Might We" questions — but with a crucial addition: for every idea, we ask <em>"could an AI agent own this step?"</em> This expands the solution space beyond what a traditional workshop surfaces.</p>
+              <div class="phase-subtitle" data-i18n="nm_ph3_sub">Phase 3 — Ideate</div>
+              <h5 data-i18n="nm_ph3_name">Generate &amp; Explore</h5>
+              <p data-i18n="nm_ph3_body">The creative core of the method. Cross-functional teams generate solutions using adapted "How Might We" questions — but with a crucial addition: for every idea, we ask <em>"could an AI agent own this step?"</em> This expands the solution space beyond what a traditional workshop surfaces.</p>
               <div class="ai-role">
-                <i class="bi bi-robot me-1"></i><strong>AI assist:</strong> Acts as an active ideation partner — proposing agent architectures, surfacing analogous solutions from other industries, and stress-testing ideas in real time.
+                <i class="bi bi-robot me-1"></i><strong data-i18n="nm_aiassist">AI assist:</strong> <span data-i18n="nm_ph3_ai">Acts as an active ideation partner — proposing agent architectures, surfacing analogous solutions from other industries, and stress-testing ideas in real time.</span>
               </div>
-              <div class="deliverable"><strong>Output:</strong> Prioritized idea backlog with human/automation/agent ownership tags</div>
+              <div class="deliverable"><strong data-i18n="nm_output">Output:</strong> <span data-i18n="nm_ph3_out">Prioritized idea backlog with human/automation/agent ownership tags</span></div>
             </div>
           </div>
 
@@ -367,13 +373,13 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
             <div class="phase-card">
               <div class="phase-number">4</div>
-              <div class="phase-subtitle">Phase 4 — Blueprint</div>
-              <h5>Design the Solution</h5>
-              <p>We design the TO-BE process: every step mapped to a human, a rule-based automation, or an AI agent. Governance and oversight checkpoints are built in from the start — not added as an afterthought. Technology choices are grounded in what actually exists in your environment.</p>
+              <div class="phase-subtitle" data-i18n="nm_ph4_sub">Phase 4 — Blueprint</div>
+              <h5 data-i18n="nm_ph4_name">Design the Solution</h5>
+              <p data-i18n="nm_ph4_body">We design the TO-BE process: every step mapped to a human, a rule-based automation, or an AI agent. Governance and oversight checkpoints are built in from the start — not added as an afterthought. Technology choices are grounded in what actually exists in your environment.</p>
               <div class="ai-role">
-                <i class="bi bi-robot me-1"></i><strong>AI assist:</strong> Proposes multi-agent architectures, identifies integration points with your existing systems, and estimates implementation complexity for each design option.
+                <i class="bi bi-robot me-1"></i><strong data-i18n="nm_aiassist">AI assist:</strong> <span data-i18n="nm_ph4_ai">Proposes multi-agent architectures, identifies integration points with your existing systems, and estimates implementation complexity for each design option.</span>
               </div>
-              <div class="deliverable"><strong>Output:</strong> TO-BE process map, agent touchpoint diagram, technology stack recommendation</div>
+              <div class="deliverable"><strong data-i18n="nm_output">Output:</strong> <span data-i18n="nm_ph4_out">TO-BE process map, agent touchpoint diagram, technology stack recommendation</span></div>
             </div>
           </div>
 
@@ -381,13 +387,13 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="phase-card">
               <div class="phase-number">5</div>
-              <div class="phase-subtitle">Phase 5 — Validate</div>
-              <h5>Test &amp; Align</h5>
-              <p>We run structured <a href="playbacks-methodology.html">Playback sessions</a> — rapid demos or walkthroughs of the proposed solution — with key stakeholders. Feedback is collected and integrated in real time. The goal is stakeholder confidence before a single line of code is written.</p>
+              <div class="phase-subtitle" data-i18n="nm_ph5_sub">Phase 5 — Validate</div>
+              <h5 data-i18n="nm_ph5_name">Test &amp; Align</h5>
+              <p data-i18n="nm_ph5_body">We run structured <a href="playbacks-methodology.html">Playback sessions</a> — rapid demos or walkthroughs of the proposed solution — with key stakeholders. Feedback is collected and integrated in real time. The goal is stakeholder confidence before a single line of code is written.</p>
               <div class="ai-role">
-                <i class="bi bi-robot me-1"></i><strong>AI assist:</strong> Simulates agent behavior in the proposed workflow so stakeholders can see how automation will act before committing to implementation.
+                <i class="bi bi-robot me-1"></i><strong data-i18n="nm_aiassist">AI assist:</strong> <span data-i18n="nm_ph5_ai">Simulates agent behavior in the proposed workflow so stakeholders can see how automation will act before committing to implementation.</span>
               </div>
-              <div class="deliverable"><strong>Output:</strong> Validated blueprint, resolved objections log, stakeholder sign-off</div>
+              <div class="deliverable"><strong data-i18n="nm_output">Output:</strong> <span data-i18n="nm_ph5_out">Validated blueprint, resolved objections log, stakeholder sign-off</span></div>
             </div>
           </div>
 
@@ -395,13 +401,13 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
             <div class="phase-card">
               <div class="phase-number">6</div>
-              <div class="phase-subtitle">Phase 6 — Accelerate</div>
-              <h5>Plan &amp; Launch</h5>
-              <p>The workshop closes with a prioritized execution roadmap: quick wins that build momentum in weeks, and transformational initiatives that reshape the process over months. Success metrics and measurement checkpoints are agreed before anyone leaves the room.</p>
+              <div class="phase-subtitle" data-i18n="nm_ph6_sub">Phase 6 — Accelerate</div>
+              <h5 data-i18n="nm_ph6_name">Plan &amp; Launch</h5>
+              <p data-i18n="nm_ph6_body">The workshop closes with a prioritized execution roadmap: quick wins that build momentum in weeks, and transformational initiatives that reshape the process over months. Success metrics and measurement checkpoints are agreed before anyone leaves the room.</p>
               <div class="ai-role">
-                <i class="bi bi-robot me-1"></i><strong>AI assist:</strong> Generates a structured implementation plan with effort/impact scoring and flags dependencies across workstreams.
+                <i class="bi bi-robot me-1"></i><strong data-i18n="nm_aiassist">AI assist:</strong> <span data-i18n="nm_ph6_ai">Generates a structured implementation plan with effort/impact scoring and flags dependencies across workstreams.</span>
               </div>
-              <div class="deliverable"><strong>Output:</strong> Execution roadmap, quick-win list, KPI baseline &amp; targets</div>
+              <div class="deliverable"><strong data-i18n="nm_output">Output:</strong> <span data-i18n="nm_ph6_out">Execution roadmap, quick-win list, KPI baseline &amp; targets</span></div>
             </div>
           </div>
 
@@ -414,8 +420,8 @@
       <div class="container">
 
         <div class="container section-title" data-aos="fade-up">
-          <h2>How It Compares</h2>
-          <p>The Neuron Method builds on Design Thinking and adds what business transformation actually requires.</p>
+          <h2 data-i18n="nm_cmp_title">How It Compares</h2>
+          <p data-i18n="nm_cmp_sub">The Neuron Method builds on Design Thinking and adds what business transformation actually requires.</p>
         </div>
 
         <div class="row justify-content-center mt-4" data-aos="fade-up" data-aos-delay="100">
@@ -424,54 +430,54 @@
               <table class="table compare-table rounded overflow-hidden">
                 <thead>
                   <tr>
-                    <th style="width: 40%;">Capability</th>
-                    <th class="text-center" style="width: 30%;">Traditional Design Thinking</th>
-                    <th class="text-center" style="width: 30%; background: #2175b0;">Neuron Method</th>
+                    <th style="width: 40%;" data-i18n="nm_cmp_cap">Capability</th>
+                    <th class="text-center" style="width: 30%;" data-i18n="nm_cmp_trad">Traditional Design Thinking</th>
+                    <th class="text-center" style="width: 30%; background: #2175b0;" data-i18n="nm_cmp_nm">Neuron Method</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>User empathy &amp; qualitative research</td>
+                    <td data-i18n="nm_cmp_r1">User empathy &amp; qualitative research</td>
                     <td class="text-center"><i class="bi bi-check-circle-fill check-yes"></i></td>
                     <td class="text-center"><i class="bi bi-check-circle-fill check-yes"></i></td>
                   </tr>
                   <tr>
-                    <td>Cross-functional ideation sessions</td>
+                    <td data-i18n="nm_cmp_r2">Cross-functional ideation sessions</td>
                     <td class="text-center"><i class="bi bi-check-circle-fill check-yes"></i></td>
                     <td class="text-center"><i class="bi bi-check-circle-fill check-yes"></i></td>
                   </tr>
                   <tr>
-                    <td>AS-IS process mapping &amp; analysis</td>
+                    <td data-i18n="nm_cmp_r3">AS-IS process mapping &amp; analysis</td>
                     <td class="text-center"><i class="bi bi-dash-circle check-no"></i></td>
                     <td class="text-center"><i class="bi bi-check-circle-fill check-yes"></i></td>
                   </tr>
                   <tr>
-                    <td>Process maturity baseline as starting point</td>
+                    <td data-i18n="nm_cmp_r4">Process maturity baseline as starting point</td>
                     <td class="text-center"><i class="bi bi-dash-circle check-no"></i></td>
                     <td class="text-center"><i class="bi bi-check-circle-fill check-yes"></i></td>
                   </tr>
                   <tr>
-                    <td>Human / automation / AI agent ownership mapping</td>
+                    <td data-i18n="nm_cmp_r5">Human / automation / AI agent ownership mapping</td>
                     <td class="text-center"><i class="bi bi-dash-circle check-no"></i></td>
                     <td class="text-center"><i class="bi bi-check-circle-fill check-yes"></i></td>
                   </tr>
                   <tr class="highlight">
-                    <td>AI agents as active ideation collaborators</td>
+                    <td data-i18n="nm_cmp_r6">AI agents as active ideation collaborators</td>
                     <td class="text-center"><i class="bi bi-dash-circle check-no"></i></td>
                     <td class="text-center"><i class="bi bi-check-circle-fill check-yes"></i></td>
                   </tr>
                   <tr>
-                    <td>Stakeholder validation playbacks</td>
+                    <td data-i18n="nm_cmp_r7">Stakeholder validation playbacks</td>
                     <td class="text-center"><i class="bi bi-check-circle-fill check-yes"></i></td>
                     <td class="text-center"><i class="bi bi-check-circle-fill check-yes"></i></td>
                   </tr>
                   <tr>
-                    <td>Execution roadmap with KPI targets</td>
+                    <td data-i18n="nm_cmp_r8">Execution roadmap with KPI targets</td>
                     <td class="text-center"><i class="bi bi-dash-circle check-no"></i></td>
                     <td class="text-center"><i class="bi bi-check-circle-fill check-yes"></i></td>
                   </tr>
                   <tr>
-                    <td>Connected path to implementation</td>
+                    <td data-i18n="nm_cmp_r9">Connected path to implementation</td>
                     <td class="text-center"><i class="bi bi-dash-circle check-no"></i></td>
                     <td class="text-center"><i class="bi bi-check-circle-fill check-yes"></i></td>
                   </tr>
@@ -489,8 +495,8 @@
       <div class="container">
 
         <div class="container section-title" data-aos="fade-up">
-          <h2>What Teams Walk Away With</h2>
-          <p>Every Neuron Method engagement produces concrete, actionable deliverables — not slide decks.</p>
+          <h2 data-i18n="nm_out_title">What Teams Walk Away With</h2>
+          <p data-i18n="nm_out_sub">Every Neuron Method engagement produces concrete, actionable deliverables — not slide decks.</p>
         </div>
 
         <div class="row gy-4 mt-2 justify-content-center">
@@ -498,28 +504,28 @@
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
             <div class="outcome-card">
               <div class="outcome-number">1</div>
-              <div class="outcome-label">Agreed problem statement that the whole team stands behind</div>
+              <div class="outcome-label" data-i18n="nm_oc1">Agreed problem statement that the whole team stands behind</div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="outcome-card">
               <div class="outcome-number">TO-BE</div>
-              <div class="outcome-label">Process blueprint with clear human, automation, and AI agent ownership</div>
+              <div class="outcome-label" data-i18n="nm_oc2">Process blueprint with clear human, automation, and AI agent ownership</div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="outcome-card">
               <div class="outcome-number">3+</div>
-              <div class="outcome-label">Validated quick wins ready to implement within 30 days</div>
+              <div class="outcome-label" data-i18n="nm_oc3">Validated quick wins ready to implement within 30 days</div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
             <div class="outcome-card">
               <div class="outcome-number">ROI</div>
-              <div class="outcome-label">Estimated return on investment for each initiative in the roadmap</div>
+              <div class="outcome-label" data-i18n="nm_oc4">Estimated return on investment for each initiative in the roadmap</div>
             </div>
           </div>
 
@@ -528,9 +534,9 @@
         <div class="row mt-5" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-8 offset-lg-2">
             <div style="background: #fff; border-radius: 8px; padding: 2rem; border-left: 4px solid #47b2e4; box-shadow: 0 4px 20px rgba(0,0,0,0.07);">
-              <h5 style="color: #37517e; font-weight: 700;"><i class="bi bi-lightbulb me-2 text-primary"></i>The Method in Practice</h5>
-              <p class="mb-2">The Neuron Method typically runs as a 1–2 day on-site workshop, preceded by a discovery sprint of 1–2 weeks. Remote and hybrid formats are available. Sessions are facilitated by NeuronProcess consultants with hands-on experience in both <a href="maturity-assessment.html">process transformation</a> and <a href="ai-agentic-solutions.html">AI agent deployment</a>.</p>
-              <p class="mb-0">The workshop is designed for decision-makers and process owners — not just IT. The most valuable insights come when business, operations, and technology sit in the same room and explore the same problem through different lenses.</p>
+              <h5 style="color: #37517e; font-weight: 700;"><i class="bi bi-lightbulb me-2 text-primary"></i><span data-i18n="nm_mip_title">The Method in Practice</span></h5>
+              <p class="mb-2" data-i18n="nm_mip_p1">The Neuron Method typically runs as a 1–2 day on-site workshop, preceded by a discovery sprint of 1–2 weeks. Remote and hybrid formats are available. Sessions are facilitated by NeuronProcess consultants with hands-on experience in both <a href="maturity-assessment.html">process transformation</a> and <a href="ai-agentic-solutions.html">AI agent deployment</a>.</p>
+              <p class="mb-0" data-i18n="nm_mip_p2">The workshop is designed for decision-makers and process owners — not just IT. The most valuable insights come when business, operations, and technology sit in the same room and explore the same problem through different lenses.</p>
             </div>
           </div>
         </div>
@@ -543,12 +549,12 @@
       <div class="container" data-aos="zoom-in">
         <div class="wa-cta-box">
           <i class="bi bi-calendar2-check" style="font-size: 3rem; opacity: 0.85; margin-bottom: 1rem; display: block;"></i>
-          <h3>Ready to Run a Neuron Method Workshop?</h3>
-          <p>Send us a message on WhatsApp and we'll set up a short call to understand your context, define the right scope, and schedule a session with your team.</p>
+          <h3 data-i18n="nm_wa_title">Ready to Run a Neuron Method Workshop?</h3>
+          <p data-i18n="nm_wa_p">Send us a message on WhatsApp and we'll set up a short call to understand your context, define the right scope, and schedule a session with your team.</p>
           <a href="https://wa.me/525522436914?text=Hi%2C%20I'd%20like%20to%20learn%20more%20about%20the%20Neuron%20Method%20workshop%20for%20my%20organization." class="btn-whatsapp" target="_blank" rel="noopener">
-            <i class="bi bi-whatsapp"></i> WhatsApp Us to Schedule
+            <i class="bi bi-whatsapp"></i> <span data-i18n="nm_wa_btn">WhatsApp Us to Schedule</span>
           </a>
-          <p class="mt-3 mb-0" style="font-size: 0.85rem; opacity: 0.75;">Available in English &amp; Spanish &middot; On-site or remote</p>
+          <p class="mt-3 mb-0" style="font-size: 0.85rem; opacity: 0.75;" data-i18n="nm_wa_note">Available in English &amp; Spanish &middot; On-site or remote</p>
         </div>
       </div>
     </section><!-- /WhatsApp CTA Section -->
@@ -559,11 +565,11 @@
       <div class="container">
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-9 text-center text-xl-start">
-            <h3>Not sure where to start? Begin with your Maturity Assessment.</h3>
-            <p>The Neuron Method is most powerful when anchored to your current process maturity level. A free assessment gives you and your team the shared baseline you need before the workshop begins.</p>
+            <h3 data-i18n="nm_bcta_title">Not sure where to start? Begin with your Maturity Assessment.</h3>
+            <p data-i18n="nm_bcta_desc">The Neuron Method is most powerful when anchored to your current process maturity level. A free assessment gives you and your team the shared baseline you need before the workshop begins.</p>
           </div>
           <div class="col-xl-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="maturity-assessment.html">Free Assessment</a>
+            <a class="cta-btn align-middle" href="maturity-assessment.html" data-i18n="nm_bcta_btn">Free Assessment</a>
           </div>
         </div>
       </div>
@@ -580,36 +586,36 @@
             <span class="sitename">Neuron Process</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>Queretaro, Mexico</p>
-            <p><strong>Phone:</strong> <span>+52 5522436914</span></p>
-            <p><strong>Email:</strong> <span>contact@neuronprocess.com</span></p>
+            <p data-i18n="footer_location">Queretaro, Mexico</p>
+            <p><strong data-i18n="footer_phone_label">Phone:</strong> <span>+52 5522436914</span></p>
+            <p><strong data-i18n="footer_email_label">Email:</strong> <span>contact@neuronprocess.com</span></p>
           </div>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
+          <h4 data-i18n="footer_useful">Useful Links</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="/">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="/#about">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="/#services">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="/" data-i18n="footer_useful_home">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="/#about" data-i18n="footer_useful_about">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="/#services" data-i18n="footer_useful_services">Services</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
+          <h4 data-i18n="footer_services">Our Services</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="maturity-assessment.html">Maturity Assessment</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="neuron-method.html">Neuron Method</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="playbacks-methodology.html">Playbacks Methodology</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="process-automation.html">Process Automation</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="ai-agentic-solutions.html">AI Agentic Solutions</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="private-ai-platform.html">Private AI Platform</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="maturity-assessment.html" data-i18n="footer_svc_maturity">Maturity Assessment</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="neuron-method.html" data-i18n="footer_svc_method">Neuron Method</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="playbacks-methodology.html" data-i18n="footer_svc_playbacks">Playbacks Methodology</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="process-automation.html" data-i18n="footer_svc_automation">Process Automation</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="ai-agentic-solutions.html" data-i18n="footer_svc_agentic">AI Agentic Solutions</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="private-ai-platform.html" data-i18n="footer_svc_private">Private AI Platform</a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-12">
-          <h4>Follow Us</h4>
-          <p>We are in social networks!</p>
+          <h4 data-i18n="footer_follow">Follow Us</h4>
+          <p data-i18n="footer_follow_desc">We are in social networks!</p>
           <div class="social-links d-flex">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -622,7 +628,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Neuron Process</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Neuron Process</strong> <span data-i18n="footer_rights">All Rights Reserved</span></p>
     </div>
 
   </footer>
@@ -642,6 +648,10 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- i18n (EN/ES) -->
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/i18n.js"></script>
 
 </body>
 
