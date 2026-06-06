@@ -117,11 +117,11 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><a href="#hero" class="active" data-i18n="nav_home">Home</a></li>
+          <li><a href="#about" data-i18n="nav_about">About</a></li>
+          <li><a href="#services" data-i18n="nav_services">Services</a></li>
           <!--li><a href="#portfolio">Portfolio</a></li-->
-          <li><a href="#team">Team</a></li>
+          <li><a href="#team" data-i18n="nav_team">Team</a></li>
           <!--li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
@@ -139,12 +139,15 @@
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li-->
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <!--a class="btn-getstarted" href="#contact">Get Started</a-->
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang-btn="en" onclick="setLanguage('en')">EN</button>
+        <button type="button" data-lang-btn="es" onclick="setLanguage('es')">ES</button>
+      </div>
 
     </div>
   </header>
@@ -158,17 +161,17 @@
         <div class="row gy-4 align-items-center">
 
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
-            <div class="hero-badge"><i class="bi bi-robot"></i> Powered by Agentic AI</div>
-            <h1>AI Agents That<br>Think, Plan &amp; Execute</h1>
-            <p>We build autonomous AI agents that handle <span id="typed-text" style="color:#47b2e4;font-weight:600">customer support</span><span class="typed-cursor">|</span><br>so your team can focus on what matters most.</p>
+            <div class="hero-badge"><i class="bi bi-robot"></i> <span data-i18n="hero_badge">Powered by Agentic AI</span></div>
+            <h1 data-i18n="hero_title">AI Agents That<br>Think, Plan &amp; Execute</h1>
+            <p><span data-i18n="hero_p_pre">We build autonomous AI agents that handle </span><span id="typed-text" style="color:#47b2e4;font-weight:600">customer support</span><span class="typed-cursor">|</span><br><span data-i18n="hero_p_post">so your team can focus on what matters most.</span></p>
             <div class="hero-stats">
-              <span class="stat-pill"><strong>75%</strong> less manual work</span>
-              <span class="stat-pill"><strong>24/7</strong> autonomous ops</span>
-              <span class="stat-pill"><strong>90%</strong> fewer errors</span>
+              <span class="stat-pill"><strong>75%</strong> <span data-i18n="hero_stat1">less manual work</span></span>
+              <span class="stat-pill"><strong>24/7</strong> <span data-i18n="hero_stat2">autonomous ops</span></span>
+              <span class="stat-pill"><strong>90%</strong> <span data-i18n="hero_stat3">fewer errors</span></span>
             </div>
             <div class="d-flex flex-wrap gap-3 mt-4">
-              <a href="ai-agentic-solutions.html" class="btn-get-started">Explore AI Agents</a>
-              <a href="#contact" class="btn btn-outline-light px-4">Get in Touch</a>
+              <a href="ai-agentic-solutions.html" class="btn-get-started" data-i18n="hero_btn_explore">Explore AI Agents</a>
+              <a href="#contact" class="btn btn-outline-light px-4" data-i18n="hero_btn_touch">Get in Touch</a>
             </div>
           </div>
 
@@ -317,8 +320,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>About Us</h2>
-        <p>We are a process automation and AI specialist firm based in Querétaro, Mexico — partnering with organizations across Latin America and beyond.</p>
+        <h2 data-i18n="about_title">About Us</h2>
+        <p data-i18n="about_sub">We are a process automation and AI specialist firm based in Querétaro, Mexico — partnering with organizations across Latin America and beyond.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -326,22 +329,22 @@
         <div class="row gy-4">
 
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <p>
+            <p data-i18n="about_p1">
               NeuronProcess was built around one conviction: <strong>operational excellence is not a destination, it’s a discipline</strong>. We combine deep expertise in business process management with hands-on experience in the latest generation of AI agents — so we can help your organization at any point in the automation journey, from the first process conversation to a fully autonomous AI-driven operation.
             </p>
-            <p>
+            <p data-i18n="about_p2">
               Our background spans BPM, RPA, iPaaS integration, decision management, and agentic AI. We are practitioners, not resellers — we implement alongside your team and stay accountable for the results.
             </p>
             <ul>
-              <li><i class="bi bi-check2-circle"></i> <span>We baseline your operations with a structured <a href="maturity-assessment.html">Process Maturity Assessment</a> before recommending any solution.</span></li>
-              <li><i class="bi bi-check2-circle"></i> <span>We design the right solution together using the <a href="neuron-method.html">Neuron Method</a> — an AI-native evolution of Design Thinking built for process contexts.</span></li>
-              <li><i class="bi bi-check2-circle"></i> <span>We deliver iteratively through <a href="playbacks-methodology.html">structured Playback checkpoints</a>, so stakeholders validate every stage before the next begins.</span></li>
-              <li><i class="bi bi-check2-circle"></i> <span>We automate with the right tool for each context — from <a href="process-automation.html">iPaaS and BPM platforms</a> to fully autonomous <a href="ai-agentic-solutions.html">AI Agentic Systems</a>.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span data-i18n="about_li1">We baseline your operations with a structured <a href="maturity-assessment.html">Process Maturity Assessment</a> before recommending any solution.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span data-i18n="about_li2">We design the right solution together using the <a href="neuron-method.html">Neuron Method</a> — an AI-native evolution of Design Thinking built for process contexts.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span data-i18n="about_li3">We deliver iteratively through <a href="playbacks-methodology.html">structured Playback checkpoints</a>, so stakeholders validate every stage before the next begins.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span data-i18n="about_li4">We automate with the right tool for each context — from <a href="process-automation.html">iPaaS and BPM platforms</a> to fully autonomous <a href="ai-agentic-solutions.html">AI Agentic Systems</a>.</span></li>
             </ul>
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <p>Our commitment is to deliver measurable, lasting value — not just working software. We measure what matters before we start and track it after we ship, so the ROI is visible and auditable from day one.</p>
+            <p data-i18n="about_p3">Our commitment is to deliver measurable, lasting value — not just working software. We measure what matters before we start and track it after we ship, so the ROI is visible and auditable from day one.</p>
             <video class="img-fluid animated" autoplay loop muted playsinline>
               <source src="assets/img/inception-hero.mp4" type="video/mp4">
               Your browser does not support the video tag.
@@ -364,8 +367,8 @@
           <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
 
             <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
-              <h3><span>If you can't measure it, </span><strong> you can't improve it</strong></h3>
-              <p>
+              <h3 data-i18n="whyus_h3"><span>If you can't measure it, </span><strong> you can't improve it</strong></h3>
+              <p data-i18n="whyus_p">
                 Peter Drucker's principle is at the core of everything we do. We baseline before we build, and we measure after we ship — so the impact of every automation is visible and auditable.
               </p>
             </div>
@@ -373,25 +376,25 @@
             <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
 
               <div class="faq-item faq-active">
-                <h3><span>01</span>We start with your process maturity — not a sales pitch</h3>
+                <h3><span>01</span><span data-i18n="whyus_faq1_q">We start with your process maturity — not a sales pitch</span></h3>
                 <div class="faq-content">
-                  <p>Our <a href="maturity-assessment.html">Maturity Assessment</a> gives you an honest baseline of where your processes stand today: where value is leaking, which steps are candidates for automation, and what it would take to reach the next level. We never recommend a solution without first understanding the problem.</p>
+                  <p data-i18n="whyus_faq1_a">Our <a href="maturity-assessment.html">Maturity Assessment</a> gives you an honest baseline of where your processes stand today: where value is leaking, which steps are candidates for automation, and what it would take to reach the next level. We never recommend a solution without first understanding the problem.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3><span>02</span>We design the right solution before writing a single line of code</h3>
+                <h3><span>02</span><span data-i18n="whyus_faq2_q">We design the right solution before writing a single line of code</span></h3>
                 <div class="faq-content">
-                  <p>The <a href="neuron-method.html">Neuron Method</a> workshop produces a validated TO-BE process blueprint — with every step assigned to a human, an automation, or an AI agent. Then the <a href="playbacks-methodology.html">Playbacks Methodology</a> structures delivery into four business-led checkpoints, so misalignments surface early, not at go-live.</p>
+                  <p data-i18n="whyus_faq2_a">The <a href="neuron-method.html">Neuron Method</a> workshop produces a validated TO-BE process blueprint — with every step assigned to a human, an automation, or an AI agent. Then the <a href="playbacks-methodology.html">Playbacks Methodology</a> structures delivery into four business-led checkpoints, so misalignments surface early, not at go-live.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3><span>03</span>We automate intelligently — and evolve toward AI agents as you're ready</h3>
+                <h3><span>03</span><span data-i18n="whyus_faq3_q">We automate intelligently — and evolve toward AI agents as you're ready</span></h3>
                 <div class="faq-content">
-                  <p>We implement across the full <a href="process-automation.html">automation spectrum</a> — from simple integration flows to complex long-running orchestration — and when your processes are mature enough, we extend them with <a href="ai-agentic-solutions.html">AI Agentic Systems</a> that reason, decide, and act autonomously. One partner for the whole journey.</p>
+                  <p data-i18n="whyus_faq3_a">We implement across the full <a href="process-automation.html">automation spectrum</a> — from simple integration flows to complex long-running orchestration — and when your processes are mature enough, we extend them with <a href="ai-agentic-solutions.html">AI Agentic Systems</a> that reason, decide, and act autonomously. One partner for the whole journey.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
@@ -422,50 +425,50 @@
 
           <div class="col-lg-6 pt-4 pt-lg-0 content">
 
-            <h3>Deep expertise across the full automation stack</h3>
-            <p class="fst-italic">
+            <h3 data-i18n="skills_h3">Deep expertise across the full automation stack</h3>
+            <p class="fst-italic" data-i18n="skills_sub">
               From process modeling and decision management to AI agent orchestration — we bring hands-on experience at every layer.
             </p>
 
             <div class="skills-content skills-animation">
 
               <div class="progress">
-                <span class="skill"><span>Business Process Management (BPMN, BPM engines)</span> <i class="val">100%</i></span>
+                <span class="skill"><span data-i18n="skills_1">Business Process Management (BPMN, BPM engines)</span> <i class="val">100%</i></span>
                 <div class="progress-bar-wrap">
                   <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div><!-- End Skills Item -->
 
               <div class="progress">
-                <span class="skill"><span>Process Automation &amp; iPaaS (Workato, Celigo, n8n, Camunda)</span> <i class="val">95%</i></span>
+                <span class="skill"><span data-i18n="skills_2">Process Automation &amp; iPaaS (Workato, Celigo, n8n, Camunda)</span> <i class="val">95%</i></span>
                 <div class="progress-bar-wrap">
                   <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div><!-- End Skills Item -->
 
               <div class="progress">
-                <span class="skill"><span>System Integration — Sync &amp; Async (APIs, queues, events)</span> <i class="val">95%</i></span>
+                <span class="skill"><span data-i18n="skills_3">System Integration — Sync &amp; Async (APIs, queues, events)</span> <i class="val">95%</i></span>
                 <div class="progress-bar-wrap">
                   <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div><!-- End Skills Item -->
 
               <div class="progress">
-                <span class="skill"><span>Business Rules &amp; Decision Management (DMN)</span> <i class="val">90%</i></span>
+                <span class="skill"><span data-i18n="skills_4">Business Rules &amp; Decision Management (DMN)</span> <i class="val">90%</i></span>
                 <div class="progress-bar-wrap">
                   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div><!-- End Skills Item -->
 
               <div class="progress">
-                <span class="skill"><span>AI Agentic Systems (LangGraph, CrewAI, n8n AI)</span> <i class="val">90%</i></span>
+                <span class="skill"><span data-i18n="skills_5">AI Agentic Systems (LangGraph, CrewAI, n8n AI)</span> <i class="val">90%</i></span>
                 <div class="progress-bar-wrap">
                   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div><!-- End Skills Item -->
 
               <div class="progress">
-                <span class="skill"><span>Digital Document Management &amp; RPA</span> <i class="val">85%</i></span>
+                <span class="skill"><span data-i18n="skills_6">Digital Document Management &amp; RPA</span> <i class="val">85%</i></span>
                 <div class="progress-bar-wrap">
                   <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
@@ -485,8 +488,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Optimize your business with our Process and Workflow Automation services—streamlined operations, reduced effort, and faster results.</p>
+        <h2 data-i18n="services_title">Services</h2>
+        <p data-i18n="services_sub">Optimize your business with our Process and Workflow Automation services—streamlined operations, reduced effort, and faster results.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -496,48 +499,48 @@
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
               <div class="icon"><i class="bi bi-activity icon"></i></div>
-              <h4><a href="maturity-assessment.html" class="stretched-link">Maturity Assessment</a></h4>
-              <p>With our quick assessment, it becomes crystal clear where you are and what you need to move to the next level. Or, if you prefer, you can choose accelerators to make the big leap.</p>
+              <h4><a href="maturity-assessment.html" class="stretched-link" data-i18n="footer_svc_maturity">Maturity Assessment</a></h4>
+              <p data-i18n="svc_maturity_d">With our quick assessment, it becomes crystal clear where you are and what you need to move to the next level. Or, if you prefer, you can choose accelerators to make the big leap.</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
               <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-              <h4><a href="neuron-method.html" class="stretched-link">Neuron Method</a></h4>
-              <p>Our refined ideation method has been proven to accelerate progress and seamlessly align with any initiative or strategy delivering impactful results. </p>
+              <h4><a href="neuron-method.html" class="stretched-link" data-i18n="footer_svc_method">Neuron Method</a></h4>
+              <p data-i18n="svc_method_d">Our refined ideation method has been proven to accelerate progress and seamlessly align with any initiative or strategy delivering impactful results. </p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
               <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
-              <h4><a href="playbacks-methodology.html" class="stretched-link">Playbacks Methodology</a></h4>
-              <p>Leveraging proven patterns and making optimal decisions are integral to our methodology for implementing business processes.</p>
+              <h4><a href="playbacks-methodology.html" class="stretched-link" data-i18n="footer_svc_playbacks">Playbacks Methodology</a></h4>
+              <p data-i18n="svc_playbacks_d">Leveraging proven patterns and making optimal decisions are integral to our methodology for implementing business processes.</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
               <div class="icon"><i class="bi bi-broadcast icon"></i></div>
-              <h4><a href="process-automation.html" class="stretched-link">Process Automation</a></h4>
-              <p>If you're seeking expertise in RPA, BPM, business rules, document management, workflows, KPIs, SLAs, we offer the ideal solution to meet your needs. </p>
+              <h4><a href="process-automation.html" class="stretched-link" data-i18n="footer_svc_automation">Process Automation</a></h4>
+              <p data-i18n="svc_automation_d">If you're seeking expertise in RPA, BPM, business rules, document management, workflows, KPIs, SLAs, we offer the ideal solution to meet your needs. </p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item position-relative">
               <div class="icon"><i class="bi bi-robot icon"></i></div>
-              <h4><a href="ai-agentic-solutions.html" class="stretched-link">AI Agentic Solutions</a></h4>
-              <p>Deploy intelligent autonomous agents that think, plan, and execute complex tasks end-to-end—integrating seamlessly with your systems to deliver smarter, faster outcomes.</p>
+              <h4><a href="ai-agentic-solutions.html" class="stretched-link" data-i18n="footer_svc_agentic">AI Agentic Solutions</a></h4>
+              <p data-i18n="svc_agentic_d">Deploy intelligent autonomous agents that think, plan, and execute complex tasks end-to-end—integrating seamlessly with your systems to deliver smarter, faster outcomes.</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="600">
             <div class="service-item position-relative">
               <div class="icon"><i class="bi bi-server icon"></i></div>
-              <h4><a href="private-ai-platform.html" class="stretched-link">Private AI Platform</a></h4>
-              <p>Self-hosted LLM for your development team — fixed cost, unlimited usage, your code never leaves your infrastructure. Replace fragmented AI subscriptions with one sovereign platform.</p>
+              <h4><a href="private-ai-platform.html" class="stretched-link" data-i18n="footer_svc_private">Private AI Platform</a></h4>
+              <p data-i18n="svc_private_d">Self-hosted LLM for your development team — fixed cost, unlimited usage, your code never leaves your infrastructure. Replace fragmented AI subscriptions with one sovereign platform.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -556,11 +559,11 @@
 
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-9 text-center text-xl-start">
-            <h3>Call To Action</h3>
-            <p>We’re excited to partner with you and help tackle your business challenges. Whether you’re looking to streamline processes, optimize workflows, or explore automation opportunities, we’re here to listen. Let’s discuss your goals, share our success stories, and provide a tailored cost estimation to bring your vision to life. Reach out today—we’d love to hear from you!</p>
+            <h3 data-i18n="home_cta_title">Call To Action</h3>
+            <p data-i18n="home_cta_desc">We’re excited to partner with you and help tackle your business challenges. Whether you’re looking to streamline processes, optimize workflows, or explore automation opportunities, we’re here to listen. Let’s discuss your goals, share our success stories, and provide a tailored cost estimation to bring your vision to life. Reach out today—we’d love to hear from you!</p>
           </div>
           <div class="col-xl-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#contact">Call To Action</a>
+            <a class="cta-btn align-middle" href="#contact" data-i18n="home_cta_btn">Call To Action</a>
           </div>
         </div>
 
@@ -693,8 +696,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <p>We love what we do, that is the only way!</p>
+        <h2 data-i18n="team_title">Team</h2>
+        <p data-i18n="team_sub">We love what we do, that is the only way!</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -706,8 +709,8 @@
               <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt="Uriel Zamora - Automation Specialist at NeuronProcess"></div>
               <div class="member-info">
                 <h4>Uriel Zamora</h4>
-                <span>Automation Specialist</span>
-                <p>"Trust in the process and the process over outcomes"</p>
+                <span data-i18n="team_role1">Automation Specialist</span>
+                <p data-i18n="team_quote1">"Trust in the process and the process over outcomes"</p>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -723,8 +726,8 @@
               <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt="Nadia Aldana - Automation Specialist with AI at NeuronProcess"></div>
               <div class="member-info">
                 <h4>Nadia Aldana</h4>
-                <span>Automation Specialist with AI</span>
-                <p>"Continuous improvement is better than delayed perfection"</p>
+                <span data-i18n="team_role2">Automation Specialist with AI</span>
+                <p data-i18n="team_quote2">"Continuous improvement is better than delayed perfection"</p>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -838,7 +841,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
+        <h2 data-i18n="contact_title">Contact</h2>
         <!--p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p-->
       </div><!-- End Section Title -->
 
@@ -854,7 +857,7 @@
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                 <i class="bi bi-whatsapp flex-shrink-0"></i>
                 <div>
-                  <h3>WhatsApp Us</h3>
+                  <h3 data-i18n="contact_whatsapp">WhatsApp Us</h3>
                   <p><a href="https://wa.me/525522436914" target="_blank" rel="noopener">+52 5522 436914</a></p>
                 </div>
               </div><!-- End Info Item -->
@@ -862,7 +865,7 @@
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
-                  <h3>Email Us</h3>
+                  <h3 data-i18n="contact_email">Email Us</h3>
                   <p>contact@neuronprocess.com</p>
                 </div>
               </div><!-- End Info Item -->
@@ -874,30 +877,30 @@
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <label for="name" class="pb-2">Your Name</label>
+                  <label for="name" class="pb-2" data-i18n="form_name">Your Name</label>
                   <input type="text" name="name" id="name" class="form-control" required="">
                 </div>
 
                 <div class="col-md-6">
-                  <label for="email" class="pb-2">Your Email</label>
+                  <label for="email" class="pb-2" data-i18n="form_email">Your Email</label>
                   <input type="email" class="form-control" name="email" id="email" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <label for="message" class="pb-2">Message</label>
+                  <label for="message" class="pb-2" data-i18n="form_message">Message</label>
                   <textarea class="form-control" name="message" rows="10" id="message" required=""></textarea>
                 </div>
                 <div class="captcha-container">
                   <span class="captcha" id="captchaText"></span>
                   <button type="button" onclick="generateCaptcha()">⟳</button>
                 </div>
-                <input type="text" id="captchaInput" placeholder="Enter CAPTCHA" required="">
+                <input type="text" id="captchaInput" placeholder="Enter CAPTCHA" required="" data-i18n="form_captcha">
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
+                  <div class="loading" data-i18n="form_loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <div class="sent-message" data-i18n="form_sent">Your message has been sent. Thank you!</div>
                   <p id="captchaResult"></p>
-                  <button type="submit">Send Message</button>
+                  <button type="submit" data-i18n="form_send">Send Message</button>
                 </div>
 
               </div>
@@ -924,37 +927,37 @@
             <span class="sitename">Neuron Process</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>Queretaro, Mexico</p>
-            <p><strong>Phone:</strong> <span>+52 5522436914</span></p>
-            <p><strong>Email:</strong> <span>contact@neuronprocess.com</span></p>
+            <p data-i18n="footer_location">Queretaro, Mexico</p>
+            <p><strong data-i18n="footer_phone_label">Phone:</strong> <span>+52 5522436914</span></p>
+            <p><strong data-i18n="footer_email_label">Email:</strong> <span>contact@neuronprocess.com</span></p>
           </div>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
+          <h4 data-i18n="footer_useful">Useful Links</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#" data-i18n="footer_useful_home">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#" data-i18n="footer_useful_about">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#" data-i18n="footer_useful_services">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#" data-i18n="footer_terms">Terms of service</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
+          <h4 data-i18n="footer_services">Our Services</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="maturity-assessment.html">Maturity Assessment</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="neuron-method.html">Neuron Method</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="playbacks-methodology.html">Playbacks Methodology</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="process-automation.html">Process Automation</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="ai-agentic-solutions.html">AI Agentic Solutions</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="private-ai-platform.html">Private AI Platform</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="maturity-assessment.html" data-i18n="footer_svc_maturity">Maturity Assessment</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="neuron-method.html" data-i18n="footer_svc_method">Neuron Method</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="playbacks-methodology.html" data-i18n="footer_svc_playbacks">Playbacks Methodology</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="process-automation.html" data-i18n="footer_svc_automation">Process Automation</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="ai-agentic-solutions.html" data-i18n="footer_svc_agentic">AI Agentic Solutions</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="private-ai-platform.html" data-i18n="footer_svc_private">Private AI Platform</a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-12">
-          <h4>Follow Us</h4>
-          <p>We are in social networks!</p>
+          <h4 data-i18n="footer_follow">Follow Us</h4>
+          <p data-i18n="footer_follow_desc">We are in social networks!</p>
           <div class="social-links d-flex">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -967,7 +970,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Neuron Process</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Neuron Process</strong> <span data-i18n="footer_rights">All Rights Reserved</span></p>
     </div>
 
   </footer>
@@ -991,12 +994,27 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/neuronprocess.js"></script>
+
+  <!-- i18n (EN/ES) -->
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/i18n.js"></script>
+
   <script>
+    // Lang-aware hero typing animation. Reads the word list from the active
+    // translation and restarts when the language changes (np:lang event).
     (function() {
-      const words = ['customer support','document processing','financial reconciliation','supply chain ops','sales intelligence','IT incident response'];
-      let i = 0, c = 0, del = false;
       const el = document.getElementById('typed-text');
       if (!el) return;
+      function currentLang() {
+        try { var m = localStorage.getItem('user_lang'); if (m) return m; } catch (e) {}
+        return (navigator.language || 'en').toLowerCase().indexOf('es') === 0 ? 'es' : 'en';
+      }
+      function wordsFor(L) {
+        var t = window.translations && window.translations[L];
+        if (t && t.hero_typed_words) return t.hero_typed_words.split('|');
+        return ['customer support'];
+      }
+      var words = wordsFor(currentLang()), i = 0, c = 0, del = false;
       function tick() {
         const w = words[i];
         el.textContent = w.slice(0, c);
@@ -1005,6 +1023,10 @@
         setTimeout(tick, del ? 55 : 85);
       }
       tick();
+      window.addEventListener('np:lang', function(e) {
+        words = wordsFor((e && e.detail) || currentLang());
+        i = 0; c = 0; del = false;
+      });
     })();
   </script>
 </body>

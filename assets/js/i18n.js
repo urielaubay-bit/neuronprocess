@@ -77,6 +77,7 @@
 
     document.documentElement.lang = lang;
     syncSwitcher(lang);
+    try { window.dispatchEvent(new CustomEvent("np:lang", { detail: lang })); } catch (e) {}
   }
 
   function syncSwitcher(lang) {
