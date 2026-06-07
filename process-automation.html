@@ -346,14 +346,20 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="/#hero">Home</a></li>
-          <li><a href="/#about">About</a></li>
-          <li><a href="/#services" class="active">Services</a></li>
-          <li><a href="/#team">Team</a></li>
-          <li><a href="/#contact">Contact</a></li>
+          <li><a href="/#hero" data-i18n="nav_home">Home</a></li>
+          <li><a href="/#about" data-i18n="nav_about">About</a></li>
+          <li><a href="/#services" class="active" data-i18n="nav_services">Services</a></li>
+          <li><a href="/#team" data-i18n="nav_team">Team</a></li>
+          <li><a href="/#contact" data-i18n="nav_contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+
+
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang-btn="en" onclick="setLanguage('en')">EN</button>
+        <button type="button" data-lang-btn="es" onclick="setLanguage('es')">ES</button>
+      </div>
 
     </div>
   </header>
@@ -365,12 +371,12 @@
       <div class="container">
         <nav class="breadcrumbs">
           <ol class="d-flex list-unstyled gap-0 mb-2">
-            <li><a href="/">Home</a></li>
-            <li><a href="/#services">Services</a></li>
-            <li class="current">Process Automation</li>
+            <li><a href="/" data-i18n="nav_home">Home</a></li>
+            <li><a href="/#services" data-i18n="nav_services">Services</a></li>
+            <li class="current" data-i18n="pa_bc">Process Automation</li>
           </ol>
         </nav>
-        <h1>Process Automation</h1>
+        <h1 data-i18n="pa_title">Process Automation</h1>
       </div>
     </div><!-- End Page Title -->
 
@@ -380,40 +386,40 @@
         <div class="row gy-5 align-items-center">
 
           <div class="col-lg-6" data-aos="fade-right">
-            <span class="specialist-badge"><i class="bi bi-patch-check me-1"></i> End-to-End Automation Partner</span>
-            <h2 style="font-weight: 700; color: #37517e;">More Than Connecting Apps. Engineering Process Excellence.</h2>
-            <p class="mt-3">
+            <span class="specialist-badge"><i class="bi bi-patch-check me-1"></i> <span data-i18n="pa_badge">End-to-End Automation Partner</span></span>
+            <h2 style="font-weight: 700; color: #37517e;" data-i18n="pa_h2">More Than Connecting Apps. Engineering Process Excellence.</h2>
+            <p class="mt-3" data-i18n="pa_p1">
               Any tool vendor will tell you automation is easy — just drag, drop, connect. And for a simple two-app integration, they're right. But real business processes are not simple. They span multiple systems, carry transactional risk, have SLA obligations, fail in unpredictable ways, and must keep running reliably for years.
             </p>
-            <p>
+            <p data-i18n="pa_p2">
               NeuronProcess has been implementing process automation since before it was called iPaaS. We bring deep platform expertise in tools like <strong>Workato, Celigo, n8n, and Camunda</strong> — but what separates us is the layer underneath: our understanding of <strong>operational excellence</strong>, <strong>transactionability</strong>, and distributed system design that makes automations production-grade rather than fragile demos.
             </p>
             <ul class="mt-3" style="list-style: none; padding: 0;">
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Full lifecycle — from <a href="maturity-assessment.html">assessment</a> and <a href="neuron-method.html">ideation</a> through <a href="playbacks-methodology.html">iterative delivery</a> and ongoing operations</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Platform-certified expertise across iPaaS, BPM, RPA, and AI automation</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Sync and async integration patterns — not just REST webhooks</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Error handling, retry logic, idempotency, and compensating transactions built in by default</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="pa_li1">Full lifecycle — from <a href="maturity-assessment.html">assessment</a> and <a href="neuron-method.html">ideation</a> through <a href="playbacks-methodology.html">iterative delivery</a> and ongoing operations</span></li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="pa_li2">Platform-certified expertise across iPaaS, BPM, RPA, and AI automation</span></li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="pa_li3">Sync and async integration patterns — not just REST webhooks</span></li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="pa_li4">Error handling, retry logic, idempotency, and compensating transactions built in by default</span></li>
             </ul>
           </div>
 
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
             <div style="background: linear-gradient(135deg, #37517e, #47b2e4); border-radius: 12px; padding: 2.5rem; color: #fff;">
               <i class="bi bi-gear-wide-connected" style="font-size: 3rem; opacity: 0.9;"></i>
-              <h4 class="mt-3 mb-3" style="font-weight: 700; color: #fff;">What "Production-Grade" Means</h4>
-              <p style="opacity: 0.9; margin-bottom: 1.25rem;">Most automations work fine on day one. Production-grade automations still work correctly on day 500 — after the third-party API changed, after a network blip mid-transaction, after the payload schema shifted, after someone sent a duplicate event. That reliability requires deliberate engineering, not just configuration.</p>
+              <h4 class="mt-3 mb-3" style="font-weight: 700; color: #fff;" data-i18n="pa_pg_title">What "Production-Grade" Means</h4>
+              <p style="opacity: 0.9; margin-bottom: 1.25rem;" data-i18n="pa_pg_p">Most automations work fine on day one. Production-grade automations still work correctly on day 500 — after the third-party API changed, after a network blip mid-transaction, after the payload schema shifted, after someone sent a duplicate event. That reliability requires deliberate engineering, not just configuration.</p>
               <hr style="border-color: rgba(255,255,255,0.3);">
               <div class="row text-center mt-3 g-3">
                 <div class="col-4">
                   <i class="bi bi-shield-check" style="font-size: 1.5rem;"></i>
-                  <p class="mb-0 mt-1" style="font-size: 0.85rem;">Resilient</p>
+                  <p class="mb-0 mt-1" style="font-size: 0.85rem;" data-i18n="pa_pg_1">Resilient</p>
                 </div>
                 <div class="col-4">
                   <i class="bi bi-arrow-repeat" style="font-size: 1.5rem;"></i>
-                  <p class="mb-0 mt-1" style="font-size: 0.85rem;">Idempotent</p>
+                  <p class="mb-0 mt-1" style="font-size: 0.85rem;" data-i18n="pa_pg_2">Idempotent</p>
                 </div>
                 <div class="col-4">
                   <i class="bi bi-graph-up" style="font-size: 1.5rem;"></i>
-                  <p class="mb-0 mt-1" style="font-size: 0.85rem;">Observable</p>
+                  <p class="mb-0 mt-1" style="font-size: 0.85rem;" data-i18n="pa_pg_3">Observable</p>
                 </div>
               </div>
             </div>
@@ -428,8 +434,8 @@
       <div class="container">
 
         <div class="container section-title" data-aos="fade-up">
-          <h2>The Automation Spectrum</h2>
-          <p>Automation is not one thing. It spans five levels of complexity — and NeuronProcess operates across all of them.</p>
+          <h2 data-i18n="pa_spec_title">The Automation Spectrum</h2>
+          <p data-i18n="pa_spec_sub">Automation is not one thing. It spans five levels of complexity — and NeuronProcess operates across all of them.</p>
         </div>
 
         <div class="mt-4" data-aos="fade-up" data-aos-delay="100">
@@ -438,9 +444,9 @@
 
               <!-- Level 1 -->
               <div class="spectrum-col s1">
-                <div class="s-level">Level 1</div>
-                <h6>Task &amp; Trigger Automation</h6>
-                <p class="s-desc">Single-step event-action pairs. One trigger, one action, minimal logic. No state, no branching, no error recovery needed.</p>
+                <div class="s-level" data-i18n="pa_s1_lvl">Level 1</div>
+                <h6 data-i18n="pa_s1_h">Task &amp; Trigger Automation</h6>
+                <p class="s-desc" data-i18n="pa_s1_d">Single-step event-action pairs. One trigger, one action, minimal logic. No state, no branching, no error recovery needed.</p>
                 <div class="s-tools">
                   <span class="s-tool-tag">Zapier</span>
                   <span class="s-tool-tag">Make</span>
@@ -450,9 +456,9 @@
 
               <!-- Level 2 -->
               <div class="spectrum-col s2">
-                <div class="s-level">Level 2</div>
-                <h6>Integration &amp; Data Flows</h6>
-                <p class="s-desc">Multi-step workflows connecting systems. Data transformation, field mapping, conditional routing, basic error handling.</p>
+                <div class="s-level" data-i18n="pa_s2_lvl">Level 2</div>
+                <h6 data-i18n="pa_s2_h">Integration &amp; Data Flows</h6>
+                <p class="s-desc" data-i18n="pa_s2_d">Multi-step workflows connecting systems. Data transformation, field mapping, conditional routing, basic error handling.</p>
                 <div class="s-tools">
                   <span class="s-tool-tag">Workato</span>
                   <span class="s-tool-tag">Celigo</span>
@@ -462,9 +468,9 @@
 
               <!-- Level 3 -->
               <div class="spectrum-col s3">
-                <div class="s-level">Level 3</div>
-                <h6>Process Orchestration</h6>
-                <p class="s-desc">Long-running processes with human tasks, SLAs, state management, parallel branches, and transactional boundaries.</p>
+                <div class="s-level" data-i18n="pa_s3_lvl">Level 3</div>
+                <h6 data-i18n="pa_s3_h">Process Orchestration</h6>
+                <p class="s-desc" data-i18n="pa_s3_d">Long-running processes with human tasks, SLAs, state management, parallel branches, and transactional boundaries.</p>
                 <div class="s-tools">
                   <span class="s-tool-tag">Camunda</span>
                   <span class="s-tool-tag">IBM BAW</span>
@@ -474,9 +480,9 @@
 
               <!-- Level 4 -->
               <div class="spectrum-col s4">
-                <div class="s-level">Level 4</div>
-                <h6>Intelligent Automation</h6>
-                <p class="s-desc">Decision services, ML-enhanced routing, document intelligence, and RPA for UI-layer interactions with legacy systems.</p>
+                <div class="s-level" data-i18n="pa_s4_lvl">Level 4</div>
+                <h6 data-i18n="pa_s4_h">Intelligent Automation</h6>
+                <p class="s-desc" data-i18n="pa_s4_d">Decision services, ML-enhanced routing, document intelligence, and RPA for UI-layer interactions with legacy systems.</p>
                 <div class="s-tools">
                   <span class="s-tool-tag">UiPath</span>
                   <span class="s-tool-tag">Blue Prism</span>
@@ -486,9 +492,9 @@
 
               <!-- Level 5 -->
               <div class="spectrum-col s5">
-                <div class="s-level">Level 5</div>
-                <h6>Agentic Automation</h6>
-                <p class="s-desc">Autonomous AI agents that reason, plan, call tools, and execute end-to-end — with human oversight at defined checkpoints.</p>
+                <div class="s-level" data-i18n="pa_s5_lvl">Level 5</div>
+                <h6 data-i18n="pa_s5_h">Agentic Automation</h6>
+                <p class="s-desc" data-i18n="pa_s5_d">Autonomous AI agents that reason, plan, call tools, and execute end-to-end — with human oversight at defined checkpoints.</p>
                 <div class="s-tools">
                   <span class="s-tool-tag">LangGraph</span>
                   <span class="s-tool-tag">CrewAI</span>
@@ -499,10 +505,10 @@
             </div>
           </div>
           <div class="spectrum-axis">
-            <span>← Simpler / Faster to implement</span>
-            <span>More complex / Higher leverage →</span>
+            <span data-i18n="pa_axis_l">← Simpler / Faster to implement</span>
+            <span data-i18n="pa_axis_r">More complex / Higher leverage →</span>
           </div>
-          <p class="text-center mt-3 text-muted" style="font-size: 0.88rem;">Most organizations need a mix of levels. We help you pick the right level for each process — and implement it correctly at every level.</p>
+          <p class="text-center mt-3 text-muted" style="font-size: 0.88rem;" data-i18n="pa_spec_note">Most organizations need a mix of levels. We help you pick the right level for each process — and implement it correctly at every level.</p>
         </div>
 
       </div>
@@ -513,8 +519,8 @@
       <div class="container">
 
         <div class="container section-title" data-aos="fade-up">
-          <h2>Four Dimensions Every Automation Must Address</h2>
-          <p>These are the engineering choices that separate automations that work from automations that last. Most platforms abstract them — we make sure they're designed correctly for your context.</p>
+          <h2 data-i18n="pa_dim_title">Four Dimensions Every Automation Must Address</h2>
+          <p data-i18n="pa_dim_sub">These are the engineering choices that separate automations that work from automations that last. Most platforms abstract them — we make sure they're designed correctly for your context.</p>
         </div>
 
         <div class="row gy-4 mt-2">
@@ -523,13 +529,13 @@
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="dimension-card">
               <div class="icon"><i class="bi bi-hourglass-split"></i></div>
-              <h6>Process Duration</h6>
-              <p class="text-muted" style="font-size: 0.9rem;">How long does the automation run? A sync API call completes in milliseconds. An approval workflow may wait days. A procurement cycle may span weeks. The architecture is fundamentally different for each.</p>
-              <p class="text-muted" style="font-size: 0.88rem;">Short-running processes need throughput and speed. Long-running processes need persistent state, durable timers, and graceful suspension.</p>
+              <h6 data-i18n="pa_d1_h">Process Duration</h6>
+              <p class="text-muted" style="font-size: 0.9rem;" data-i18n="pa_d1_p1">How long does the automation run? A sync API call completes in milliseconds. An approval workflow may wait days. A procurement cycle may span weeks. The architecture is fundamentally different for each.</p>
+              <p class="text-muted" style="font-size: 0.88rem;" data-i18n="pa_d1_p2">Short-running processes need throughput and speed. Long-running processes need persistent state, durable timers, and graceful suspension.</p>
               <div class="dim-tags">
-                <span class="dim-tag">Milliseconds</span>
-                <span class="dim-tag">Minutes</span>
-                <span class="dim-tag">Days / Weeks</span>
+                <span class="dim-tag" data-i18n="pa_d1_t1">Milliseconds</span>
+                <span class="dim-tag" data-i18n="pa_d1_t2">Minutes</span>
+                <span class="dim-tag" data-i18n="pa_d1_t3">Days / Weeks</span>
               </div>
             </div>
           </div>
@@ -538,14 +544,14 @@
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="150">
             <div class="dimension-card">
               <div class="icon"><i class="bi bi-lightning-charge"></i></div>
-              <h6>Trigger Model</h6>
-              <p class="text-muted" style="font-size: 0.9rem;">What starts the automation? Events from external systems, scheduled jobs, human actions, or continuous monitoring each require different trigger architectures and failure handling strategies.</p>
-              <p class="text-muted" style="font-size: 0.88rem;">Event-driven triggers must handle duplicate events. Scheduled triggers must handle overlapping runs. Human triggers must handle abandoned cases.</p>
+              <h6 data-i18n="pa_d2_h">Trigger Model</h6>
+              <p class="text-muted" style="font-size: 0.9rem;" data-i18n="pa_d2_p1">What starts the automation? Events from external systems, scheduled jobs, human actions, or continuous monitoring each require different trigger architectures and failure handling strategies.</p>
+              <p class="text-muted" style="font-size: 0.88rem;" data-i18n="pa_d2_p2">Event-driven triggers must handle duplicate events. Scheduled triggers must handle overlapping runs. Human triggers must handle abandoned cases.</p>
               <div class="dim-tags">
-                <span class="dim-tag">Event-driven</span>
-                <span class="dim-tag">Scheduled</span>
-                <span class="dim-tag">Human-initiated</span>
-                <span class="dim-tag">Continuous</span>
+                <span class="dim-tag" data-i18n="pa_d2_t1">Event-driven</span>
+                <span class="dim-tag" data-i18n="pa_d2_t2">Scheduled</span>
+                <span class="dim-tag" data-i18n="pa_d2_t3">Human-initiated</span>
+                <span class="dim-tag" data-i18n="pa_d2_t4">Continuous</span>
               </div>
             </div>
           </div>
@@ -554,14 +560,14 @@
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="dimension-card">
               <div class="icon"><i class="bi bi-arrow-left-right"></i></div>
-              <h6>Integration Style</h6>
-              <p class="text-muted" style="font-size: 0.9rem;"><strong>Synchronous</strong> integrations wait for a response — caller blocks until done. Simple, but brittle under load and when downstream systems are slow or unavailable.</p>
-              <p class="text-muted" style="font-size: 0.88rem;"><strong>Asynchronous</strong> integrations decouple sender and receiver via queues or events — more resilient, but require message ordering, deduplication, and eventual consistency handling.</p>
+              <h6 data-i18n="pa_d3_h">Integration Style</h6>
+              <p class="text-muted" style="font-size: 0.9rem;" data-i18n="pa_d3_p1"><strong>Synchronous</strong> integrations wait for a response — caller blocks until done. Simple, but brittle under load and when downstream systems are slow or unavailable.</p>
+              <p class="text-muted" style="font-size: 0.88rem;" data-i18n="pa_d3_p2"><strong>Asynchronous</strong> integrations decouple sender and receiver via queues or events — more resilient, but require message ordering, deduplication, and eventual consistency handling.</p>
               <div class="dim-tags">
-                <span class="dim-tag">REST / GraphQL (sync)</span>
-                <span class="dim-tag">Webhooks</span>
-                <span class="dim-tag">Message queues (async)</span>
-                <span class="dim-tag">Event streams</span>
+                <span class="dim-tag" data-i18n="pa_d3_t1">REST / GraphQL (sync)</span>
+                <span class="dim-tag" data-i18n="pa_d3_t2">Webhooks</span>
+                <span class="dim-tag" data-i18n="pa_d3_t3">Message queues (async)</span>
+                <span class="dim-tag" data-i18n="pa_d3_t4">Event streams</span>
               </div>
             </div>
           </div>
@@ -570,14 +576,14 @@
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="250">
             <div class="dimension-card" style="border-top-color: #37517e;">
               <div class="icon" style="color: #37517e;"><i class="bi bi-lock-fill"></i></div>
-              <h6 style="color: #2c3e6b;">Transactionability</h6>
-              <p class="text-muted" style="font-size: 0.9rem;">What happens when step 4 of 7 fails? In a database, you rollback. In a distributed automation spanning multiple systems, there is no rollback — you need <strong>compensating transactions</strong>: explicit undo steps that reverse what already happened.</p>
-              <p class="text-muted" style="font-size: 0.88rem;">This is where most automation platforms leave you on your own. Designing compensating flows, idempotency keys, and dead-letter handling is where our experience is most valuable.</p>
+              <h6 style="color: #2c3e6b;" data-i18n="pa_d4_h">Transactionability</h6>
+              <p class="text-muted" style="font-size: 0.9rem;" data-i18n="pa_d4_p1">What happens when step 4 of 7 fails? In a database, you rollback. In a distributed automation spanning multiple systems, there is no rollback — you need <strong>compensating transactions</strong>: explicit undo steps that reverse what already happened.</p>
+              <p class="text-muted" style="font-size: 0.88rem;" data-i18n="pa_d4_p2">This is where most automation platforms leave you on your own. Designing compensating flows, idempotency keys, and dead-letter handling is where our experience is most valuable.</p>
               <div class="dim-tags">
-                <span class="dim-tag">Saga pattern</span>
-                <span class="dim-tag">Compensating transactions</span>
-                <span class="dim-tag">Idempotency</span>
-                <span class="dim-tag">Dead-letter queues</span>
+                <span class="dim-tag" data-i18n="pa_d4_t1">Saga pattern</span>
+                <span class="dim-tag" data-i18n="pa_d4_t2">Compensating transactions</span>
+                <span class="dim-tag" data-i18n="pa_d4_t3">Idempotency</span>
+                <span class="dim-tag" data-i18n="pa_d4_t4">Dead-letter queues</span>
               </div>
             </div>
           </div>
@@ -588,9 +594,9 @@
         <div class="row mt-5" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-10 offset-lg-1">
             <div style="background: #f8f9fa; border-radius: 10px; padding: 2rem; border-left: 4px solid #37517e; box-shadow: 0 4px 20px rgba(0,0,0,0.06);">
-              <h5 style="color: #37517e; font-weight: 700;"><i class="bi bi-lock me-2"></i>Why Transactionability Is Our Core Differentiator</h5>
-              <p class="mb-2">Most automation vendors show demos where every step succeeds. We design for the other scenario — because in production, things fail. A payment gateway times out after the order is created. An ERP record is written but the CRM update fails. A file is processed twice because a webhook fired twice.</p>
-              <p class="mb-0">Handling these cases correctly requires understanding distributed system principles that go far beyond platform configuration: <strong>saga patterns</strong> for multi-system transactions, <strong>idempotency keys</strong> to safely handle retries, <strong>eventual consistency</strong> strategies when systems can't synchronize instantly, and <strong>dead-letter queues</strong> with structured alerting for failures that can't be automatically recovered. This knowledge comes from years of implementing complex BPM solutions — not from reading platform documentation.</p>
+              <h5 style="color: #37517e; font-weight: 700;"><i class="bi bi-lock me-2"></i><span data-i18n="pa_dd_title">Why Transactionability Is Our Core Differentiator</span></h5>
+              <p class="mb-2" data-i18n="pa_dd_p1">Most automation vendors show demos where every step succeeds. We design for the other scenario — because in production, things fail. A payment gateway times out after the order is created. An ERP record is written but the CRM update fails. A file is processed twice because a webhook fired twice.</p>
+              <p class="mb-0" data-i18n="pa_dd_p2">Handling these cases correctly requires understanding distributed system principles that go far beyond platform configuration: <strong>saga patterns</strong> for multi-system transactions, <strong>idempotency keys</strong> to safely handle retries, <strong>eventual consistency</strong> strategies when systems can't synchronize instantly, and <strong>dead-letter queues</strong> with structured alerting for failures that can't be automatically recovered. This knowledge comes from years of implementing complex BPM solutions — not from reading platform documentation.</p>
             </div>
           </div>
         </div>
@@ -603,8 +609,8 @@
       <div class="container">
 
         <div class="container section-title" data-aos="fade-up">
-          <h2>Our Platform Ecosystem</h2>
-          <p>We are tool-agnostic advisors and deep practitioners. We recommend the right platform for your context — and implement it with the rigour it deserves.</p>
+          <h2 data-i18n="pa_plat_title">Our Platform Ecosystem</h2>
+          <p data-i18n="pa_plat_sub">We are tool-agnostic advisors and deep practitioners. We recommend the right platform for your context — and implement it with the rigour it deserves.</p>
         </div>
 
         <div class="row gy-4 mt-2">
@@ -612,8 +618,8 @@
           <!-- iPaaS -->
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="platform-card featured">
-              <div class="cat-label"><i class="bi bi-cloud-arrow-left-right me-1"></i>Integration Platforms (iPaaS)</div>
-              <h6>Connect Systems, Transform Data, Orchestrate Flows</h6>
+              <div class="cat-label"><i class="bi bi-cloud-arrow-left-right me-1"></i><span data-i18n="pa_pl1_cat">Integration Platforms (iPaaS)</span></div>
+              <h6 data-i18n="pa_pl1_h">Connect Systems, Transform Data, Orchestrate Flows</h6>
               <div class="tool-list">
                 <span class="tool-badge">Workato</span>
                 <span class="tool-badge">Celigo</span>
@@ -621,44 +627,44 @@
                 <span class="tool-badge">Make</span>
                 <span class="tool-badge">MuleSoft</span>
               </div>
-              <p class="text-muted mb-0" style="font-size: 0.9rem;">iPaaS platforms are the backbone of most integration work — connecting SaaS apps, ERPs, and APIs with reusable connectors. We go beyond default recipes to build recipes with proper error handling, retry logic, alerting, and audit trails. For high-volume scenarios, we architect the flow to handle bursts without data loss.</p>
+              <p class="text-muted mb-0" style="font-size: 0.9rem;" data-i18n="pa_pl1_p">iPaaS platforms are the backbone of most integration work — connecting SaaS apps, ERPs, and APIs with reusable connectors. We go beyond default recipes to build recipes with proper error handling, retry logic, alerting, and audit trails. For high-volume scenarios, we architect the flow to handle bursts without data loss.</p>
             </div>
           </div>
 
           <!-- BPM -->
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
             <div class="platform-card featured">
-              <div class="cat-label"><i class="bi bi-diagram-3 me-1"></i>Business Process Management (BPM)</div>
-              <h6>Long-Running Processes with Human Tasks and SLAs</h6>
+              <div class="cat-label"><i class="bi bi-diagram-3 me-1"></i><span data-i18n="pa_pl2_cat">Business Process Management (BPM)</span></div>
+              <h6 data-i18n="pa_pl2_h">Long-Running Processes with Human Tasks and SLAs</h6>
               <div class="tool-list">
                 <span class="tool-badge">Camunda</span>
                 <span class="tool-badge">IBM BAW</span>
                 <span class="tool-badge">Appian</span>
                 <span class="tool-badge">Pega</span>
               </div>
-              <p class="text-muted mb-0" style="font-size: 0.9rem;">BPM engines manage processes that span hours, days, or weeks — with human decisions, parallel paths, escalation rules, and formal SLAs. Our team has deep implementation experience with BPMN 2.0, DMN for decision tables, and the operational patterns that keep BPM solutions maintainable as they evolve.</p>
+              <p class="text-muted mb-0" style="font-size: 0.9rem;" data-i18n="pa_pl2_p">BPM engines manage processes that span hours, days, or weeks — with human decisions, parallel paths, escalation rules, and formal SLAs. Our team has deep implementation experience with BPMN 2.0, DMN for decision tables, and the operational patterns that keep BPM solutions maintainable as they evolve.</p>
             </div>
           </div>
 
           <!-- RPA -->
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="platform-card">
-              <div class="cat-label"><i class="bi bi-robot me-1"></i>Robotic Process Automation (RPA)</div>
-              <h6>UI Automation for Systems Without APIs</h6>
+              <div class="cat-label"><i class="bi bi-robot me-1"></i><span data-i18n="pa_pl3_cat">Robotic Process Automation (RPA)</span></div>
+              <h6 data-i18n="pa_pl3_h">UI Automation for Systems Without APIs</h6>
               <div class="tool-list">
                 <span class="tool-badge">UiPath</span>
                 <span class="tool-badge">Automation Anywhere</span>
                 <span class="tool-badge">Blue Prism</span>
               </div>
-              <p class="text-muted mb-0" style="font-size: 0.9rem;">When a system has no API, RPA bridges the gap by automating the user interface directly. We implement RPA as part of a broader automation architecture — not as a standalone band-aid — ensuring robots are monitored, versioned, and ready to be replaced by native integrations when APIs become available.</p>
+              <p class="text-muted mb-0" style="font-size: 0.9rem;" data-i18n="pa_pl3_p">When a system has no API, RPA bridges the gap by automating the user interface directly. We implement RPA as part of a broader automation architecture — not as a standalone band-aid — ensuring robots are monitored, versioned, and ready to be replaced by native integrations when APIs become available.</p>
             </div>
           </div>
 
           <!-- AI / Agentic -->
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
             <div class="platform-card">
-              <div class="cat-label"><i class="bi bi-stars me-1"></i>AI &amp; Agentic Automation</div>
-              <h6>Intelligent Workflows and Autonomous Agents</h6>
+              <div class="cat-label"><i class="bi bi-stars me-1"></i><span data-i18n="pa_pl4_cat">AI &amp; Agentic Automation</span></div>
+              <h6 data-i18n="pa_pl4_h">Intelligent Workflows and Autonomous Agents</h6>
               <div class="tool-list">
                 <span class="tool-badge">LangGraph</span>
                 <span class="tool-badge">CrewAI</span>
@@ -666,7 +672,7 @@
                 <span class="tool-badge">OpenAI</span>
                 <span class="tool-badge">Vertex AI</span>
               </div>
-              <p class="text-muted mb-0" style="font-size: 0.9rem;">The newest layer of the automation stack. AI agents bring reasoning and natural language understanding into workflows — handling unstructured inputs, making contextual decisions, and executing multi-step tasks autonomously. We integrate agentic capabilities into existing automation architectures, not as replacements but as intelligent co-workers alongside structured flows. <a href="ai-agentic-solutions.html">Learn more →</a></p>
+              <p class="text-muted mb-0" style="font-size: 0.9rem;" data-i18n="pa_pl4_p">The newest layer of the automation stack. AI agents bring reasoning and natural language understanding into workflows — handling unstructured inputs, making contextual decisions, and executing multi-step tasks autonomously. We integrate agentic capabilities into existing automation architectures, not as replacements but as intelligent co-workers alongside structured flows. <a href="ai-agentic-solutions.html">Learn more →</a></p>
             </div>
           </div>
 
@@ -680,8 +686,8 @@
       <div class="container">
 
         <div class="container section-title" data-aos="fade-up">
-          <h2>Automation Across the Full Lifecycle</h2>
-          <p>We are not just implementers. We partner with you from the first process conversation to the day your automation is running in production — and beyond.</p>
+          <h2 data-i18n="pa_lc_title">Automation Across the Full Lifecycle</h2>
+          <p data-i18n="pa_lc_sub">We are not just implementers. We partner with you from the first process conversation to the day your automation is running in production — and beyond.</p>
         </div>
 
         <div class="row justify-content-center mt-4" data-aos="fade-up" data-aos-delay="100">
@@ -689,28 +695,28 @@
             <div class="lifecycle-strip">
               <a href="maturity-assessment.html" class="lc-step lc-1">
                 <i class="bi bi-speedometer2"></i>
-                Assess
-                <span>Maturity Assessment</span>
+                <span data-i18n="pa_lc1">Assess</span>
+                <span data-i18n="footer_svc_maturity">Maturity Assessment</span>
               </a>
               <a href="neuron-method.html" class="lc-step lc-2">
                 <i class="bi bi-bounding-box-circles"></i>
-                Design
-                <span>Neuron Method</span>
+                <span data-i18n="pa_lc2">Design</span>
+                <span data-i18n="footer_svc_method">Neuron Method</span>
               </a>
               <a href="playbacks-methodology.html" class="lc-step lc-3">
                 <i class="bi bi-play-btn"></i>
-                Build
-                <span>Playbacks Methodology</span>
+                <span data-i18n="pa_lc3">Build</span>
+                <span data-i18n="footer_svc_playbacks">Playbacks Methodology</span>
               </a>
               <a href="#" class="lc-step lc-4" style="cursor: default;">
                 <i class="bi bi-broadcast"></i>
-                Automate
-                <span>Process Automation</span>
+                <span data-i18n="pa_lc4">Automate</span>
+                <span data-i18n="footer_svc_automation">Process Automation</span>
               </a>
               <a href="ai-agentic-solutions.html" class="lc-step lc-5">
                 <i class="bi bi-robot"></i>
-                Evolve
-                <span>AI Agentic Solutions</span>
+                <span data-i18n="pa_lc5">Evolve</span>
+                <span data-i18n="footer_svc_agentic">AI Agentic Solutions</span>
               </a>
             </div>
           </div>
@@ -721,24 +727,24 @@
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div style="text-align: center; padding: 1.5rem;">
               <i class="bi bi-search" style="font-size: 2.5rem; color: #47b2e4; margin-bottom: 1rem; display: block;"></i>
-              <h6 style="font-weight: 700; color: #37517e;">Start with Understanding</h6>
-              <p class="text-muted" style="font-size: 0.9rem;">A <a href="maturity-assessment.html">Maturity Assessment</a> baseline tells us which processes are ready to automate, which need to be standardized first, and where the highest ROI opportunity lies. We never automate a broken process.</p>
+              <h6 style="font-weight: 700; color: #37517e;" data-i18n="pa_lcc1_h">Start with Understanding</h6>
+              <p class="text-muted" style="font-size: 0.9rem;" data-i18n="pa_lcc1_p">A <a href="maturity-assessment.html">Maturity Assessment</a> baseline tells us which processes are ready to automate, which need to be standardized first, and where the highest ROI opportunity lies. We never automate a broken process.</p>
             </div>
           </div>
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="150">
             <div style="text-align: center; padding: 1.5rem;">
               <i class="bi bi-lightbulb" style="font-size: 2.5rem; color: #47b2e4; margin-bottom: 1rem; display: block;"></i>
-              <h6 style="font-weight: 700; color: #37517e;">Design Before Building</h6>
-              <p class="text-muted" style="font-size: 0.9rem;">The <a href="neuron-method.html">Neuron Method</a> workshop produces a validated TO-BE process blueprint before implementation begins — with human, automation, and AI agent ownership clearly assigned for every step.</p>
+              <h6 style="font-weight: 700; color: #37517e;" data-i18n="pa_lcc2_h">Design Before Building</h6>
+              <p class="text-muted" style="font-size: 0.9rem;" data-i18n="pa_lcc2_p">The <a href="neuron-method.html">Neuron Method</a> workshop produces a validated TO-BE process blueprint before implementation begins — with human, automation, and AI agent ownership clearly assigned for every step.</p>
             </div>
           </div>
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div style="text-align: center; padding: 1.5rem;">
               <i class="bi bi-play-circle" style="font-size: 2.5rem; color: #47b2e4; margin-bottom: 1rem; display: block;"></i>
-              <h6 style="font-weight: 700; color: #37517e;">Deliver Iteratively with Validation</h6>
-              <p class="text-muted" style="font-size: 0.9rem;">The <a href="playbacks-methodology.html">Playbacks Methodology</a> structures implementation into four checkpoints — each validated by the business before the next stage begins. No big-bang go-lives, no surprise discoveries at UAT.</p>
+              <h6 style="font-weight: 700; color: #37517e;" data-i18n="pa_lcc3_h">Deliver Iteratively with Validation</h6>
+              <p class="text-muted" style="font-size: 0.9rem;" data-i18n="pa_lcc3_p">The <a href="playbacks-methodology.html">Playbacks Methodology</a> structures implementation into four checkpoints — each validated by the business before the next stage begins. No big-bang go-lives, no surprise discoveries at UAT.</p>
             </div>
           </div>
 
@@ -752,12 +758,12 @@
       <div class="container" data-aos="zoom-in">
         <div class="wa-cta-box">
           <i class="bi bi-gear-wide-connected" style="font-size: 3rem; opacity: 0.85; margin-bottom: 1rem; display: block;"></i>
-          <h3>Let's Talk About Your Automation Challenge</h3>
-          <p>Send us a message on WhatsApp. We'll set up a short call to understand your current processes, identify the right automation level for each, and outline an approach that fits your team's capacity and timeline.</p>
+          <h3 data-i18n="pa_wa_title">Let's Talk About Your Automation Challenge</h3>
+          <p data-i18n="pa_wa_p">Send us a message on WhatsApp. We'll set up a short call to understand your current processes, identify the right automation level for each, and outline an approach that fits your team's capacity and timeline.</p>
           <a href="https://wa.me/525522436914?text=Hi%2C%20I'd%20like%20to%20discuss%20a%20process%20automation%20challenge%20with%20NeuronProcess." class="btn-whatsapp" target="_blank" rel="noopener">
-            <i class="bi bi-whatsapp"></i> WhatsApp Us
+            <i class="bi bi-whatsapp"></i> <span data-i18n="pa_wa_btn">WhatsApp Us</span>
           </a>
-          <p class="mt-3 mb-0" style="font-size: 0.85rem; opacity: 0.75;">Available in English &amp; Spanish &middot; Typically replies within a few hours</p>
+          <p class="mt-3 mb-0" style="font-size: 0.85rem; opacity: 0.75;" data-i18n="pa_wa_note">Available in English &amp; Spanish &middot; Typically replies within a few hours</p>
         </div>
       </div>
     </section><!-- /WhatsApp CTA Section -->
@@ -768,11 +774,11 @@
       <div class="container">
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-9 text-center text-xl-start">
-            <h3>Ready to move beyond automation into autonomous AI?</h3>
-            <p>Once your core processes are automated, the next frontier is deploying AI agents that can reason, decide, and act — extending your automation investment rather than replacing it.</p>
+            <h3 data-i18n="pa_bcta_title">Ready to move beyond automation into autonomous AI?</h3>
+            <p data-i18n="pa_bcta_desc">Once your core processes are automated, the next frontier is deploying AI agents that can reason, decide, and act — extending your automation investment rather than replacing it.</p>
           </div>
           <div class="col-xl-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="ai-agentic-solutions.html">Explore AI Agents</a>
+            <a class="cta-btn align-middle" href="ai-agentic-solutions.html" data-i18n="pa_bcta_btn">Explore AI Agents</a>
           </div>
         </div>
       </div>
@@ -789,36 +795,36 @@
             <span class="sitename">Neuron Process</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>Queretaro, Mexico</p>
-            <p><strong>Phone:</strong> <span>+52 5522436914</span></p>
-            <p><strong>Email:</strong> <span>contact@neuronprocess.com</span></p>
+            <p data-i18n="footer_location">Queretaro, Mexico</p>
+            <p><strong data-i18n="footer_phone_label">Phone:</strong> <span>+52 5522436914</span></p>
+            <p><strong data-i18n="footer_email_label">Email:</strong> <span>contact@neuronprocess.com</span></p>
           </div>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
+          <h4 data-i18n="footer_useful">Useful Links</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="/">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="/#about">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="/#services">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="/" data-i18n="footer_useful_home">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="/#about" data-i18n="footer_useful_about">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="/#services" data-i18n="footer_useful_services">Services</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
+          <h4 data-i18n="footer_services">Our Services</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="maturity-assessment.html">Maturity Assessment</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="neuron-method.html">Neuron Method</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="playbacks-methodology.html">Playbacks Methodology</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="process-automation.html">Process Automation</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="ai-agentic-solutions.html">AI Agentic Solutions</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="private-ai-platform.html">Private AI Platform</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="maturity-assessment.html" data-i18n="footer_svc_maturity">Maturity Assessment</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="neuron-method.html" data-i18n="footer_svc_method">Neuron Method</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="playbacks-methodology.html" data-i18n="footer_svc_playbacks">Playbacks Methodology</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="process-automation.html" data-i18n="footer_svc_automation">Process Automation</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="ai-agentic-solutions.html" data-i18n="footer_svc_agentic">AI Agentic Solutions</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="private-ai-platform.html" data-i18n="footer_svc_private">Private AI Platform</a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-12">
-          <h4>Follow Us</h4>
-          <p>We are in social networks!</p>
+          <h4 data-i18n="footer_follow">Follow Us</h4>
+          <p data-i18n="footer_follow_desc">We are in social networks!</p>
           <div class="social-links d-flex">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -831,7 +837,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Neuron Process</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Neuron Process</strong> <span data-i18n="footer_rights">All Rights Reserved</span></p>
     </div>
 
   </footer>
@@ -851,6 +857,10 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- i18n (EN/ES) -->
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/i18n.js"></script>
 
 </body>
 
