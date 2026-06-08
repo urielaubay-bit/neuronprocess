@@ -291,14 +291,19 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="/#hero">Home</a></li>
-          <li><a href="/#about">About</a></li>
-          <li><a href="/#services" class="active">Services</a></li>
-          <li><a href="/#team">Team</a></li>
-          <li><a href="/#contact">Contact</a></li>
+          <li><a href="/#hero" data-i18n="nav_home">Home</a></li>
+          <li><a href="/#about" data-i18n="nav_about">About</a></li>
+          <li><a href="/#services" class="active" data-i18n="nav_services">Services</a></li>
+          <li><a href="/#team" data-i18n="nav_team">Team</a></li>
+          <li><a href="/#contact" data-i18n="nav_contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang-btn="en" onclick="setLanguage('en')">EN</button>
+        <button type="button" data-lang-btn="es" onclick="setLanguage('es')">ES</button>
+      </div>
 
     </div>
   </header>
@@ -310,12 +315,12 @@
       <div class="container">
         <nav class="breadcrumbs">
           <ol class="d-flex list-unstyled gap-0 mb-2">
-            <li><a href="/">Home</a></li>
-            <li><a href="/#services">Services</a></li>
-            <li class="current">Playbacks Methodology</li>
+            <li><a href="/" data-i18n="nav_home">Home</a></li>
+            <li><a href="/#services" data-i18n="nav_services">Services</a></li>
+            <li class="current" data-i18n="pb_bc">Playbacks Methodology</li>
           </ol>
         </nav>
-        <h1>Playbacks Methodology</h1>
+        <h1 data-i18n="pb_title">Playbacks Methodology</h1>
       </div>
     </div><!-- End Page Title -->
 
@@ -325,40 +330,40 @@
         <div class="row gy-5 align-items-center">
 
           <div class="col-lg-6" data-aos="fade-right">
-            <span class="specialist-badge"><i class="bi bi-patch-check me-1"></i> Purpose-Built for Business Process Automation</span>
-            <h2 style="font-weight: 700; color: #37517e;">Show Progress at Every Step — Not Just at the End</h2>
-            <p class="mt-3">
+            <span class="specialist-badge"><i class="bi bi-patch-check me-1"></i> <span data-i18n="pb_badge">Purpose-Built for Business Process Automation</span></span>
+            <h2 style="font-weight: 700; color: #37517e;" data-i18n="pb_h2">Show Progress at Every Step — Not Just at the End</h2>
+            <p class="mt-3" data-i18n="pb_p1">
               Business Process Automation is not general software development. You are not building a new product from scratch — you are modeling, automating, and integrating a real process that already exists, with real owners, real systems, and real organizational expectations. That requires a delivery approach designed specifically for this context.
             </p>
-            <p>
+            <p data-i18n="pb_p2">
               The Playbacks Methodology is that approach. A <strong>Playback</strong> is a focused, structured demonstration of a process solution at a specific stage of development — shown to the right stakeholders at the right moment — followed by a real discussion. Each Playback surfaces misalignments early, when course corrections are cheap, and builds stakeholder confidence before the next stage begins.
             </p>
             <ul class="mt-3" style="list-style: none; padding: 0;">
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Four structured checkpoints from discovery to production-ready</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Business sponsors lead the review — not the development team</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Each Playback has a defined scope, participants, and deliverables</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>AI agents are demonstrated and validated at each stage, not deployed blindly</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="pb_li1">Four structured checkpoints from discovery to production-ready</span></li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="pb_li2">Business sponsors lead the review — not the development team</span></li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="pb_li3">Each Playback has a defined scope, participants, and deliverables</span></li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="pb_li4">AI agents are demonstrated and validated at each stage, not deployed blindly</span></li>
             </ul>
           </div>
 
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
             <div style="background: linear-gradient(135deg, #37517e, #47b2e4); border-radius: 12px; padding: 2.5rem; color: #fff;">
               <i class="bi bi-play-btn" style="font-size: 3rem; opacity: 0.9;"></i>
-              <h4 class="mt-3 mb-2" style="font-weight: 700; color: #fff;">Why "Playback"?</h4>
-              <p style="opacity: 0.9; margin-bottom: 1.25rem;">The term comes from the idea of <em>playing back</em> what the team has built — not just reporting on it, but actually running the process in front of the people who own it. It's a live, interactive checkpoint, not a status update.</p>
+              <h4 class="mt-3 mb-2" style="font-weight: 700; color: #fff;" data-i18n="pb_why_h">Why "Playback"?</h4>
+              <p style="opacity: 0.9; margin-bottom: 1.25rem;" data-i18n="pb_why_p">The term comes from the idea of <em>playing back</em> what the team has built — not just reporting on it, but actually running the process in front of the people who own it. It's a live, interactive checkpoint, not a status update.</p>
               <hr style="border-color: rgba(255,255,255,0.3);">
               <div class="row text-center mt-3 g-3">
                 <div class="col-4">
                   <i class="bi bi-shield-check" style="font-size: 1.5rem;"></i>
-                  <p class="mb-0 mt-1" style="font-size: 0.85rem;">Risk Reduction</p>
+                  <p class="mb-0 mt-1" style="font-size: 0.85rem;" data-i18n="pb_c1">Risk Reduction</p>
                 </div>
                 <div class="col-4">
                   <i class="bi bi-arrow-repeat" style="font-size: 1.5rem;"></i>
-                  <p class="mb-0 mt-1" style="font-size: 0.85rem;">Iterative</p>
+                  <p class="mb-0 mt-1" style="font-size: 0.85rem;" data-i18n="pb_c2">Iterative</p>
                 </div>
                 <div class="col-4">
                   <i class="bi bi-people" style="font-size: 1.5rem;"></i>
-                  <p class="mb-0 mt-1" style="font-size: 0.85rem;">Business-Led</p>
+                  <p class="mb-0 mt-1" style="font-size: 0.85rem;" data-i18n="pb_c3">Business-Led</p>
                 </div>
               </div>
             </div>
@@ -374,22 +379,22 @@
         <div class="method-banner">
           <div class="row align-items-center gy-3">
             <div class="col-lg-8">
-              <h5><i class="bi bi-bounding-box-circles me-2 text-primary"></i>How Playbacks Fit Into the Neuron Method</h5>
-              <p class="mb-2">In the <a href="neuron-method.html">Neuron Method</a>, Playbacks are the engine behind <strong>Phase 5 — Validate</strong>. After a solution blueprint is agreed in the workshop, each implementation sprint closes with a Playback session: stakeholders see the working process, give structured feedback, and formally sign off before the next phase begins.</p>
-              <p class="mb-0">But Playbacks aren't only for validation. They begin at Playback 0 — before a single line of code is written — anchoring the entire project in a shared understanding of what the process should do and for whom.</p>
+              <h5><i class="bi bi-bounding-box-circles me-2 text-primary"></i><span data-i18n="pb_fit_h">How Playbacks Fit Into the Neuron Method</span></h5>
+              <p class="mb-2" data-i18n="pb_fit_p1">In the <a href="neuron-method.html">Neuron Method</a>, Playbacks are the engine behind <strong>Phase 5 — Validate</strong>. After a solution blueprint is agreed in the workshop, each implementation sprint closes with a Playback session: stakeholders see the working process, give structured feedback, and formally sign off before the next phase begins.</p>
+              <p class="mb-0" data-i18n="pb_fit_p2">But Playbacks aren't only for validation. They begin at Playback 0 — before a single line of code is written — anchoring the entire project in a shared understanding of what the process should do and for whom.</p>
             </div>
             <div class="col-lg-4">
               <!-- Mini phase strip -->
-              <p class="text-muted mb-2" style="font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">Neuron Method phases</p>
+              <p class="text-muted mb-2" style="font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;" data-i18n="pb_phases_label">Neuron Method phases</p>
               <div class="step-strip">
-                <div class="step-item dim" style="background: #6ea8d8;">Discover</div>
-                <div class="step-item dim" style="background: #3a9bd5;">Define</div>
-                <div class="step-item dim" style="background: #2b87c5;">Ideate</div>
-                <div class="step-item dim" style="background: #2175b0;">Blueprint</div>
-                <div class="step-item active" style="background: #37517e;">Validate ←</div>
-                <div class="step-item dim" style="background: #47b2e4;">Accelerate</div>
+                <div class="step-item dim" style="background: #6ea8d8;" data-i18n="pb_ph1">Discover</div>
+                <div class="step-item dim" style="background: #3a9bd5;" data-i18n="pb_ph2">Define</div>
+                <div class="step-item dim" style="background: #2b87c5;" data-i18n="pb_ph3">Ideate</div>
+                <div class="step-item dim" style="background: #2175b0;" data-i18n="pb_ph4">Blueprint</div>
+                <div class="step-item active" style="background: #37517e;" data-i18n="pb_ph5">Validate ←</div>
+                <div class="step-item dim" style="background: #47b2e4;" data-i18n="pb_ph6">Accelerate</div>
               </div>
-              <p class="mt-2 mb-0" style="font-size: 0.8rem; color: #47b2e4; font-weight: 600;">Playbacks run here — and through implementation</p>
+              <p class="mt-2 mb-0" style="font-size: 0.8rem; color: #47b2e4; font-weight: 600;" data-i18n="pb_phases_note">Playbacks run here — and through implementation</p>
             </div>
           </div>
         </div>
@@ -401,8 +406,8 @@
       <div class="container">
 
         <div class="container section-title" data-aos="fade-up">
-          <h2>The Four Playbacks</h2>
-          <p>Each Playback is a structured checkpoint with a defined focus, set of activities, and concrete deliverables that must be approved before proceeding.</p>
+          <h2 data-i18n="pb_4_title">The Four Playbacks</h2>
+          <p data-i18n="pb_4_sub">Each Playback is a structured checkpoint with a defined focus, set of activities, and concrete deliverables that must be approved before proceeding.</p>
         </div>
 
         <div class="row gy-4 mt-2">
@@ -413,25 +418,25 @@
               <div class="d-flex align-items-center gap-3 mb-3">
                 <div class="playback-badge">PB0</div>
                 <div>
-                  <div class="playback-focus">Playback 0 — Discovery &amp; Foundation</div>
-                  <h5 class="mb-0">Define the Process Before Building Anything</h5>
+                  <div class="playback-focus" data-i18n="pb0_focus">Playback 0 — Discovery &amp; Foundation</div>
+                  <h5 class="mb-0" data-i18n="pb0_h">Define the Process Before Building Anything</h5>
                 </div>
               </div>
-              <p>The starting point of every project. Playback 0 establishes a shared, executable definition of the process: its scope, participants, decision points, data requirements, and KPIs. Nothing is implemented yet — the goal is alignment, not code.</p>
-              <p>Business sponsors and process owners walk through the proposed process diagram together and confirm that it accurately represents how work should flow. Disagreements here cost hours to resolve; the same disagreements discovered in Playback 2 cost weeks.</p>
+              <p data-i18n="pb0_p1">The starting point of every project. Playback 0 establishes a shared, executable definition of the process: its scope, participants, decision points, data requirements, and KPIs. Nothing is implemented yet — the goal is alignment, not code.</p>
+              <p data-i18n="pb0_p2">Business sponsors and process owners walk through the proposed process diagram together and confirm that it accurately represents how work should flow. Disagreements here cost hours to resolve; the same disagreements discovered in Playback 2 cost weeks.</p>
               <div class="ai-role">
-                <i class="bi bi-robot me-1"></i><strong>AI assist:</strong> Analyzes existing documentation, transcripts, and system logs to generate a draft process model — giving the team a concrete starting point rather than a blank canvas.
+                <i class="bi bi-robot me-1"></i><span data-i18n="pb0_ai"><strong>AI assist:</strong> Analyzes existing documentation, transcripts, and system logs to generate a draft process model — giving the team a concrete starting point rather than a blank canvas.</span>
               </div>
-              <p class="mt-3 mb-2" style="font-weight: 600; font-size: 0.9rem; color: #37517e;">Deliverables</p>
+              <p class="mt-3 mb-2" style="font-weight: 600; font-size: 0.9rem; color: #37517e;" data-i18n="pb_deliv">Deliverables</p>
               <ul class="deliverable-list">
-                <li><i class="bi bi-check2"></i>Validated process diagram with swim-lanes and decision gateways</li>
-                <li><i class="bi bi-check2"></i>Participant model: roles, groups, and escalation rules</li>
-                <li><i class="bi bi-check2"></i>Initial data model (key variables and business objects)</li>
-                <li><i class="bi bi-check2"></i>KPIs and SLA definitions agreed with the business</li>
-                <li><i class="bi bi-check2"></i>Mocked-up reports showing what visibility will look like</li>
+                <li><i class="bi bi-check2"></i><span data-i18n="pb0_d1">Validated process diagram with swim-lanes and decision gateways</span></li>
+                <li><i class="bi bi-check2"></i><span data-i18n="pb0_d2">Participant model: roles, groups, and escalation rules</span></li>
+                <li><i class="bi bi-check2"></i><span data-i18n="pb0_d3">Initial data model (key variables and business objects)</span></li>
+                <li><i class="bi bi-check2"></i><span data-i18n="pb0_d4">KPIs and SLA definitions agreed with the business</span></li>
+                <li><i class="bi bi-check2"></i><span data-i18n="pb0_d5">Mocked-up reports showing what visibility will look like</span></li>
               </ul>
               <div class="oos-note">
-                <i class="bi bi-exclamation-triangle me-1"></i><strong>Out of scope at PB0:</strong> User interface implementation, external system integrations, business rule logic.
+                <i class="bi bi-exclamation-triangle me-1"></i><span data-i18n="pb0_oos"><strong>Out of scope at PB0:</strong> User interface implementation, external system integrations, business rule logic.</span>
               </div>
             </div>
           </div>
@@ -442,25 +447,25 @@
               <div class="d-flex align-items-center gap-3 mb-3">
                 <div class="playback-badge">PB1</div>
                 <div>
-                  <div class="playback-focus">Playback 1 — Process &amp; Interface</div>
-                  <h5 class="mb-0">Make the Process Executable and Visible</h5>
+                  <div class="playback-focus" data-i18n="pb1_focus">Playback 1 — Process &amp; Interface</div>
+                  <h5 class="mb-0" data-i18n="pb1_h">Make the Process Executable and Visible</h5>
                 </div>
               </div>
-              <p>Playback 1 converts the agreed process diagram into a running, navigable application. Tasks are implemented, forms appear, users can interact with the system, and data flows through the process. External integrations are simulated — not live — so the focus stays on whether the process logic and user experience are right.</p>
-              <p>This is the first time end users can actually <em>touch</em> the solution. Their feedback at this stage shapes the final experience before integration work begins.</p>
+              <p data-i18n="pb1_p1">Playback 1 converts the agreed process diagram into a running, navigable application. Tasks are implemented, forms appear, users can interact with the system, and data flows through the process. External integrations are simulated — not live — so the focus stays on whether the process logic and user experience are right.</p>
+              <p data-i18n="pb1_p2">This is the first time end users can actually <em>touch</em> the solution. Their feedback at this stage shapes the final experience before integration work begins.</p>
               <div class="ai-role">
-                <i class="bi bi-robot me-1"></i><strong>AI assist:</strong> AI agent behavior is demonstrated in simulation: stakeholders see how an agent would handle a task, what it would read and write, and when it would escalate to a human — before it's wired to live systems.
+                <i class="bi bi-robot me-1"></i><span data-i18n="pb1_ai"><strong>AI assist:</strong> AI agent behavior is demonstrated in simulation: stakeholders see how an agent would handle a task, what it would read and write, and when it would escalate to a human — before it's wired to live systems.</span>
               </div>
-              <p class="mt-3 mb-2" style="font-weight: 600; font-size: 0.9rem; color: #37517e;">Deliverables</p>
+              <p class="mt-3 mb-2" style="font-weight: 600; font-size: 0.9rem; color: #37517e;" data-i18n="pb_deliv">Deliverables</p>
               <ul class="deliverable-list">
-                <li><i class="bi bi-check2"></i>Fully navigable process with working task assignments and routing</li>
-                <li><i class="bi bi-check2"></i>User interfaces with field validation and business rules applied</li>
-                <li><i class="bi bi-check2"></i>Extended data model supporting all human task data capture</li>
-                <li><i class="bi bi-check2"></i>Unit-tested services and process flows</li>
-                <li><i class="bi bi-check2"></i>Report wireframes reflecting real process data structure</li>
+                <li><i class="bi bi-check2"></i><span data-i18n="pb1_d1">Fully navigable process with working task assignments and routing</span></li>
+                <li><i class="bi bi-check2"></i><span data-i18n="pb1_d2">User interfaces with field validation and business rules applied</span></li>
+                <li><i class="bi bi-check2"></i><span data-i18n="pb1_d3">Extended data model supporting all human task data capture</span></li>
+                <li><i class="bi bi-check2"></i><span data-i18n="pb1_d4">Unit-tested services and process flows</span></li>
+                <li><i class="bi bi-check2"></i><span data-i18n="pb1_d5">Report wireframes reflecting real process data structure</span></li>
               </ul>
               <div class="oos-note">
-                <i class="bi bi-exclamation-triangle me-1"></i><strong>Out of scope at PB1:</strong> Live external system calls — integrations run against simulations or stubs at this stage.
+                <i class="bi bi-exclamation-triangle me-1"></i><span data-i18n="pb1_oos"><strong>Out of scope at PB1:</strong> Live external system calls — integrations run against simulations or stubs at this stage.</span>
               </div>
             </div>
           </div>
@@ -471,25 +476,25 @@
               <div class="d-flex align-items-center gap-3 mb-3">
                 <div class="playback-badge">PB2</div>
                 <div>
-                  <div class="playback-focus">Playback 2 — Integration &amp; Business Rules</div>
-                  <h5 class="mb-0">Connect to the Real World</h5>
+                  <div class="playback-focus" data-i18n="pb2_focus">Playback 2 — Integration &amp; Business Rules</div>
+                  <h5 class="mb-0" data-i18n="pb2_h">Connect to the Real World</h5>
                 </div>
               </div>
-              <p>Playback 2 replaces simulations with live connections. ERPs, CRMs, document repositories, and external APIs are wired in. Business rules run against real data. Exception paths — what happens when a system is unavailable, a rule fires unexpectedly, or a record doesn't match — are implemented and tested.</p>
-              <p>This Playback is the most technically intensive. The evaluation focuses on data accuracy, SLA compliance, and correct exception handling across all integration points.</p>
+              <p data-i18n="pb2_p1">Playback 2 replaces simulations with live connections. ERPs, CRMs, document repositories, and external APIs are wired in. Business rules run against real data. Exception paths — what happens when a system is unavailable, a rule fires unexpectedly, or a record doesn't match — are implemented and tested.</p>
+              <p data-i18n="pb2_p2">This Playback is the most technically intensive. The evaluation focuses on data accuracy, SLA compliance, and correct exception handling across all integration points.</p>
               <div class="ai-role">
-                <i class="bi bi-robot me-1"></i><strong>AI assist:</strong> AI agents now operate against live system connections — demonstrating real decisions, real tool calls, and real outputs. The Playback shows the business exactly how the agent reasons and acts with production data.
+                <i class="bi bi-robot me-1"></i><span data-i18n="pb2_ai"><strong>AI assist:</strong> AI agents now operate against live system connections — demonstrating real decisions, real tool calls, and real outputs. The Playback shows the business exactly how the agent reasons and acts with production data.</span>
               </div>
-              <p class="mt-3 mb-2" style="font-weight: 600; font-size: 0.9rem; color: #37517e;">Deliverables</p>
+              <p class="mt-3 mb-2" style="font-weight: 600; font-size: 0.9rem; color: #37517e;" data-i18n="pb_deliv">Deliverables</p>
               <ul class="deliverable-list">
-                <li><i class="bi bi-check2"></i>Live integrations with all external systems and APIs</li>
-                <li><i class="bi bi-check2"></i>Business rule engine configured and validated with real data</li>
-                <li><i class="bi bi-check2"></i>Exception handling and fault code definitions implemented</li>
-                <li><i class="bi bi-check2"></i>SLA monitoring and alerting active</li>
-                <li><i class="bi bi-check2"></i>Data transformation specs and integration layer unit-tested</li>
+                <li><i class="bi bi-check2"></i><span data-i18n="pb2_d1">Live integrations with all external systems and APIs</span></li>
+                <li><i class="bi bi-check2"></i><span data-i18n="pb2_d2">Business rule engine configured and validated with real data</span></li>
+                <li><i class="bi bi-check2"></i><span data-i18n="pb2_d3">Exception handling and fault code definitions implemented</span></li>
+                <li><i class="bi bi-check2"></i><span data-i18n="pb2_d4">SLA monitoring and alerting active</span></li>
+                <li><i class="bi bi-check2"></i><span data-i18n="pb2_d5">Data transformation specs and integration layer unit-tested</span></li>
               </ul>
               <div class="oos-note">
-                <i class="bi bi-exclamation-triangle me-1"></i><strong>Note:</strong> At PB2, the solution is functional but not yet ready for full User Acceptance Testing — that is the goal of Playback 3.
+                <i class="bi bi-exclamation-triangle me-1"></i><span data-i18n="pb2_oos"><strong>Note:</strong> At PB2, the solution is functional but not yet ready for full User Acceptance Testing — that is the goal of Playback 3.</span>
               </div>
             </div>
           </div>
@@ -500,25 +505,25 @@
               <div class="d-flex align-items-center gap-3 mb-3">
                 <div class="playback-badge">PB3</div>
                 <div>
-                  <div class="playback-focus">Playback 3 — Consolidation &amp; UAT Readiness</div>
-                  <h5 class="mb-0">End-to-End, Complete, and Ready to Deploy</h5>
+                  <div class="playback-focus" data-i18n="pb3_focus">Playback 3 — Consolidation &amp; UAT Readiness</div>
+                  <h5 class="mb-0" data-i18n="pb3_h">End-to-End, Complete, and Ready to Deploy</h5>
                 </div>
               </div>
-              <p>Playback 3 is the final checkpoint before User Acceptance Testing. The entire solution runs end-to-end: every process path, every integration, every exception, every report. The focus is completeness and stability — no new features are introduced at this stage.</p>
-              <p>The business owner formally reviews the solution against the original requirements agreed at Playback 0 and signs off for UAT entry. Any features not included are captured in a prioritized "parking lot" for a future release.</p>
+              <p data-i18n="pb3_p1">Playback 3 is the final checkpoint before User Acceptance Testing. The entire solution runs end-to-end: every process path, every integration, every exception, every report. The focus is completeness and stability — no new features are introduced at this stage.</p>
+              <p data-i18n="pb3_p2">The business owner formally reviews the solution against the original requirements agreed at Playback 0 and signs off for UAT entry. Any features not included are captured in a prioritized "parking lot" for a future release.</p>
               <div class="ai-role">
-                <i class="bi bi-robot me-1"></i><strong>AI assist:</strong> The full agent workflow runs end-to-end in a production-like environment. Observability dashboards are shown live — stakeholders see task counts, escalation rates, processing times, and agent decision logs.
+                <i class="bi bi-robot me-1"></i><span data-i18n="pb3_ai"><strong>AI assist:</strong> The full agent workflow runs end-to-end in a production-like environment. Observability dashboards are shown live — stakeholders see task counts, escalation rates, processing times, and agent decision logs.</span>
               </div>
-              <p class="mt-3 mb-2" style="font-weight: 600; font-size: 0.9rem; color: #37517e;">Deliverables</p>
+              <p class="mt-3 mb-2" style="font-weight: 600; font-size: 0.9rem; color: #37517e;" data-i18n="pb_deliv">Deliverables</p>
               <ul class="deliverable-list">
-                <li><i class="bi bi-check2"></i>Complete, end-to-end solution ready for User Acceptance Testing</li>
-                <li><i class="bi bi-check2"></i>End-user, administrator, and developer documentation</li>
-                <li><i class="bi bi-check2"></i>Monitoring dashboards and operational runbooks</li>
-                <li><i class="bi bi-check2"></i>Formal sign-off from business sponsor</li>
-                <li><i class="bi bi-check2"></i>Prioritized parking lot of deferred features for next release</li>
+                <li><i class="bi bi-check2"></i><span data-i18n="pb3_d1">Complete, end-to-end solution ready for User Acceptance Testing</span></li>
+                <li><i class="bi bi-check2"></i><span data-i18n="pb3_d2">End-user, administrator, and developer documentation</span></li>
+                <li><i class="bi bi-check2"></i><span data-i18n="pb3_d3">Monitoring dashboards and operational runbooks</span></li>
+                <li><i class="bi bi-check2"></i><span data-i18n="pb3_d4">Formal sign-off from business sponsor</span></li>
+                <li><i class="bi bi-check2"></i><span data-i18n="pb3_d5">Prioritized parking lot of deferred features for next release</span></li>
               </ul>
               <div class="oos-note">
-                <i class="bi bi-exclamation-triangle me-1"></i><strong>Critical rule:</strong> PB3 introduces zero new functionality. It exists to complete, refine, and stabilize — not to add scope.
+                <i class="bi bi-exclamation-triangle me-1"></i><span data-i18n="pb3_oos"><strong>Critical rule:</strong> PB3 introduces zero new functionality. It exists to complete, refine, and stabilize — not to add scope.</span>
               </div>
             </div>
           </div>
@@ -532,8 +537,8 @@
       <div class="container">
 
         <div class="container section-title" data-aos="fade-up">
-          <h2>Why It Works</h2>
-          <p>Three core principles make the Playbacks Methodology effective where traditional delivery approaches fall short.</p>
+          <h2 data-i18n="pb_wiw_h2">Why It Works</h2>
+          <p data-i18n="pb_wiw_sub">Three core principles make the Playbacks Methodology effective where traditional delivery approaches fall short.</p>
         </div>
 
         <div class="row gy-4 mt-2 justify-content-center">
@@ -541,24 +546,24 @@
           <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
             <div class="principle-card">
               <div class="icon"><i class="bi bi-shield-check"></i></div>
-              <h6>Early Risk Reduction</h6>
-              <p class="text-muted mb-0">Changes found at Playback 0 cost a fraction of changes found after integration. Each checkpoint acts as a gate that prevents misalignment from compounding into expensive rework.</p>
+              <h6 data-i18n="pb_pr1_h">Early Risk Reduction</h6>
+              <p class="text-muted mb-0" data-i18n="pb_pr1_p">Changes found at Playback 0 cost a fraction of changes found after integration. Each checkpoint acts as a gate that prevents misalignment from compounding into expensive rework.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="principle-card">
               <div class="icon"><i class="bi bi-people-fill"></i></div>
-              <h6>Business-Owned Validation</h6>
-              <p class="text-muted mb-0">Playbacks are led by business sponsors and process owners — not developers. This shifts accountability to the people who know what the process should do, and builds genuine buy-in before go-live.</p>
+              <h6 data-i18n="pb_pr2_h">Business-Owned Validation</h6>
+              <p class="text-muted mb-0" data-i18n="pb_pr2_p">Playbacks are led by business sponsors and process owners — not developers. This shifts accountability to the people who know what the process should do, and builds genuine buy-in before go-live.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="principle-card">
               <div class="icon"><i class="bi bi-graph-up-arrow"></i></div>
-              <h6>Progressive Precision</h6>
-              <p class="text-muted mb-0">Early estimates have wide uncertainty (±4× is normal at PB0). Each Playback adds data, resolves ambiguity, and tightens forecasts — so teams commit to detailed plans only when they have enough information to do it reliably.</p>
+              <h6 data-i18n="pb_pr3_h">Progressive Precision</h6>
+              <p class="text-muted mb-0" data-i18n="pb_pr3_p">Early estimates have wide uncertainty (±4× is normal at PB0). Each Playback adds data, resolves ambiguity, and tightens forecasts — so teams commit to detailed plans only when they have enough information to do it reliably.</p>
             </div>
           </div>
 
@@ -567,9 +572,9 @@
         <div class="row mt-5" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-10 offset-lg-1">
             <div style="background: #fff; border-radius: 8px; padding: 2rem; border-left: 4px solid #47b2e4; box-shadow: 0 4px 20px rgba(0,0,0,0.07);">
-              <h5 style="color: #37517e; font-weight: 700;"><i class="bi bi-info-circle me-2 text-primary"></i>What Happens at Each Playback Session</h5>
-              <p class="mb-2">Every Playback follows the same structure regardless of stage: the development team runs a live demonstration of the current solution — no slides, no mockups — while the business sponsor leads the review. Feedback is captured in real time against a predefined evaluation checklist. The session closes with a formal decision: <strong>pass</strong> (proceed to the next stage), <strong>conditional pass</strong> (proceed with documented change items), or <strong>repeat</strong> (specific issues must be resolved before proceeding).</p>
-              <p class="mb-0">Internal testing always precedes the business Playback — the team validates their own work before putting it in front of stakeholders. This discipline keeps Playback sessions focused on business decisions, not bug discovery.</p>
+              <h5 style="color: #37517e; font-weight: 700;"><i class="bi bi-info-circle me-2 text-primary"></i><span data-i18n="pb_box_h">What Happens at Each Playback Session</span></h5>
+              <p class="mb-2" data-i18n="pb_box_p1">Every Playback follows the same structure regardless of stage: the development team runs a live demonstration of the current solution — no slides, no mockups — while the business sponsor leads the review. Feedback is captured in real time against a predefined evaluation checklist. The session closes with a formal decision: <strong>pass</strong> (proceed to the next stage), <strong>conditional pass</strong> (proceed with documented change items), or <strong>repeat</strong> (specific issues must be resolved before proceeding).</p>
+              <p class="mb-0" data-i18n="pb_box_p2">Internal testing always precedes the business Playback — the team validates their own work before putting it in front of stakeholders. This discipline keeps Playback sessions focused on business decisions, not bug discovery.</p>
             </div>
           </div>
         </div>
@@ -582,8 +587,8 @@
       <div class="container">
 
         <div class="container section-title" data-aos="fade-up">
-          <h2>Playbacks vs. Scrum</h2>
-          <p>Both are iterative. But they solve different problems — and confusing them is one of the most common reasons BPA projects struggle.</p>
+          <h2 data-i18n="pb_vs_h2">Playbacks vs. Scrum</h2>
+          <p data-i18n="pb_vs_sub">Both are iterative. But they solve different problems — and confusing them is one of the most common reasons BPA projects struggle.</p>
         </div>
 
         <!-- Context cards -->
@@ -591,15 +596,15 @@
           <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
             <div class="context-card good">
               <div class="icon"><i class="bi bi-gear-wide-connected"></i></div>
-              <h6>Scrum is designed for product development</h6>
-              <p class="text-muted mb-0">Scrum was built for building <em>new</em> products where requirements are unknown and discovered through rapid iteration. The backlog evolves continuously, scope is flexible, and any sprint can change direction based on what the team learned. This works well when you don't yet know what you're building.</p>
+              <h6 data-i18n="pb_cc1_h">Scrum is designed for product development</h6>
+              <p class="text-muted mb-0" data-i18n="pb_cc1_p">Scrum was built for building <em>new</em> products where requirements are unknown and discovered through rapid iteration. The backlog evolves continuously, scope is flexible, and any sprint can change direction based on what the team learned. This works well when you don't yet know what you're building.</p>
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
             <div class="context-card bad" style="border-top-color: #47b2e4;">
               <div class="icon" style="color: #47b2e4;"><i class="bi bi-diagram-3"></i></div>
-              <h6>Playbacks is designed for process automation</h6>
-              <p class="text-muted mb-0">In BPA, there <em>is</em> a real process to model. There are real owners, real systems to integrate with, and real organizational expectations to meet. The work is not discovering what to build — it is implementing, integrating, and validating something that already exists in the business. That demands a stage-gate approach, not an open backlog.</p>
+              <h6 data-i18n="pb_cc2_h">Playbacks is designed for process automation</h6>
+              <p class="text-muted mb-0" data-i18n="pb_cc2_p">In BPA, there <em>is</em> a real process to model. There are real owners, real systems to integrate with, and real organizational expectations to meet. The work is not discovering what to build — it is implementing, integrating, and validating something that already exists in the business. That demands a stage-gate approach, not an open backlog.</p>
             </div>
           </div>
         </div>
@@ -611,66 +616,66 @@
               <table class="table compare-table rounded overflow-hidden">
                 <thead>
                   <tr>
-                    <th style="width: 36%;">Dimension</th>
-                    <th class="text-center" style="width: 32%;">Scrum</th>
-                    <th class="text-center" style="width: 32%; background: #2175b0;">Playbacks (BPA)</th>
+                    <th style="width: 36%;" data-i18n="pb_t_dim">Dimension</th>
+                    <th class="text-center" style="width: 32%;" data-i18n="pb_t_scrum">Scrum</th>
+                    <th class="text-center" style="width: 32%; background: #2175b0;" data-i18n="pb_t_pb">Playbacks (BPA)</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Designed for</td>
-                    <td class="text-center" style="font-size: 0.9rem;">New product development</td>
-                    <td class="text-center" style="font-size: 0.9rem;">Business process automation &amp; integration</td>
+                    <td data-i18n="pb_t_r1">Designed for</td>
+                    <td class="text-center" style="font-size: 0.9rem;" data-i18n="pb_t_r1a">New product development</td>
+                    <td class="text-center" style="font-size: 0.9rem;" data-i18n="pb_t_r1b">Business process automation &amp; integration</td>
                   </tr>
                   <tr>
-                    <td>Iteration unit</td>
-                    <td class="text-center" style="font-size: 0.9rem;">Sprint (1–4 weeks, repeating)</td>
-                    <td class="text-center" style="font-size: 0.9rem;">Playback (stage-gate, sequential)</td>
+                    <td data-i18n="pb_t_r2">Iteration unit</td>
+                    <td class="text-center" style="font-size: 0.9rem;" data-i18n="pb_t_r2a">Sprint (1–4 weeks, repeating)</td>
+                    <td class="text-center" style="font-size: 0.9rem;" data-i18n="pb_t_r2b">Playback (stage-gate, sequential)</td>
                   </tr>
                   <tr>
-                    <td>Scope flexibility</td>
-                    <td class="text-center" style="font-size: 0.9rem;">Backlog evolves each sprint</td>
-                    <td class="text-center" style="font-size: 0.9rem;">Scope defined per stage; changes are costed and scheduled</td>
+                    <td data-i18n="pb_t_r3">Scope flexibility</td>
+                    <td class="text-center" style="font-size: 0.9rem;" data-i18n="pb_t_r3a">Backlog evolves each sprint</td>
+                    <td class="text-center" style="font-size: 0.9rem;" data-i18n="pb_t_r3b">Scope defined per stage; changes are costed and scheduled</td>
                   </tr>
                   <tr class="highlight">
-                    <td>Who leads the review</td>
-                    <td class="text-center" style="font-size: 0.9rem;">Product Owner (often internal proxy)</td>
-                    <td class="text-center" style="font-size: 0.9rem;">Business sponsor and process owners directly</td>
+                    <td data-i18n="pb_t_r4">Who leads the review</td>
+                    <td class="text-center" style="font-size: 0.9rem;" data-i18n="pb_t_r4a">Product Owner (often internal proxy)</td>
+                    <td class="text-center" style="font-size: 0.9rem;" data-i18n="pb_t_r4b">Business sponsor and process owners directly</td>
                   </tr>
                   <tr>
-                    <td>Definition of done</td>
-                    <td class="text-center" style="font-size: 0.9rem;">Working software per sprint goal</td>
-                    <td class="text-center" style="font-size: 0.9rem;">Working process accepted by the process owner</td>
+                    <td data-i18n="pb_t_r5">Definition of done</td>
+                    <td class="text-center" style="font-size: 0.9rem;" data-i18n="pb_t_r5a">Working software per sprint goal</td>
+                    <td class="text-center" style="font-size: 0.9rem;" data-i18n="pb_t_r5b">Working process accepted by the process owner</td>
                   </tr>
                   <tr>
-                    <td>Integration handling</td>
-                    <td class="text-center" style="font-size: 0.9rem;">Incremental, may defer to end</td>
-                    <td class="text-center" style="font-size: 0.9rem;">Dedicated integration Playback (PB2) with explicit sign-off</td>
+                    <td data-i18n="pb_t_r6">Integration handling</td>
+                    <td class="text-center" style="font-size: 0.9rem;" data-i18n="pb_t_r6a">Incremental, may defer to end</td>
+                    <td class="text-center" style="font-size: 0.9rem;" data-i18n="pb_t_r6b">Dedicated integration Playback (PB2) with explicit sign-off</td>
                   </tr>
                   <tr class="highlight">
-                    <td>Handles process complexity</td>
+                    <td data-i18n="pb_t_r7">Handles process complexity</td>
                     <td class="text-center"><i class="bi bi-dash-circle check-partial" title="Partially"></i></td>
                     <td class="text-center"><i class="bi bi-check-circle-fill check-yes"></i></td>
                   </tr>
                   <tr>
-                    <td>Swim-lanes, roles &amp; SLAs as first-class concerns</td>
+                    <td data-i18n="pb_t_r8">Swim-lanes, roles &amp; SLAs as first-class concerns</td>
                     <td class="text-center"><i class="bi bi-dash-circle check-no"></i></td>
                     <td class="text-center"><i class="bi bi-check-circle-fill check-yes"></i></td>
                   </tr>
                   <tr>
-                    <td>AI agent simulation before live wiring</td>
+                    <td data-i18n="pb_t_r9">AI agent simulation before live wiring</td>
                     <td class="text-center"><i class="bi bi-dash-circle check-no"></i></td>
                     <td class="text-center"><i class="bi bi-check-circle-fill check-yes"></i></td>
                   </tr>
                   <tr>
-                    <td>Formal UAT entry gate</td>
+                    <td data-i18n="pb_t_r10">Formal UAT entry gate</td>
                     <td class="text-center"><i class="bi bi-dash-circle check-no"></i></td>
                     <td class="text-center"><i class="bi bi-check-circle-fill check-yes"></i></td>
                   </tr>
                   <tr>
-                    <td>Uncertainty management</td>
-                    <td class="text-center" style="font-size: 0.9rem;">Velocity-based sprint forecasting</td>
-                    <td class="text-center" style="font-size: 0.9rem;">Progressive precision (±4× at PB0 → tight at PB3)</td>
+                    <td data-i18n="pb_t_r11">Uncertainty management</td>
+                    <td class="text-center" style="font-size: 0.9rem;" data-i18n="pb_t_r11a">Velocity-based sprint forecasting</td>
+                    <td class="text-center" style="font-size: 0.9rem;" data-i18n="pb_t_r11b">Progressive precision (±4× at PB0 → tight at PB3)</td>
                   </tr>
                 </tbody>
               </table>
@@ -681,8 +686,8 @@
         <div class="row mt-4" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-10 offset-lg-1">
             <div style="background: #fff; border-radius: 8px; padding: 1.75rem 2rem; border-left: 4px solid #47b2e4; box-shadow: 0 4px 20px rgba(0,0,0,0.07);">
-              <h5 style="color: #37517e; font-weight: 700;"><i class="bi bi-lightbulb me-2 text-primary"></i>Can they coexist?</h5>
-              <p class="mb-0">Yes — and many organizations use both. Scrum works well for building the <em>surrounding</em> product (web portals, mobile apps, reporting layers). Playbacks govern the <em>process core</em>: the BPM layer, integrations, business rules, and AI agent workflows. The two can run in parallel as separate tracks, coordinating at defined integration points — a model NeuronProcess applies regularly in hybrid delivery programs.</p>
+              <h5 style="color: #37517e; font-weight: 700;"><i class="bi bi-lightbulb me-2 text-primary"></i><span data-i18n="pb_coexist_h">Can they coexist?</span></h5>
+              <p class="mb-0" data-i18n="pb_coexist_p">Yes — and many organizations use both. Scrum works well for building the <em>surrounding</em> product (web portals, mobile apps, reporting layers). Playbacks govern the <em>process core</em>: the BPM layer, integrations, business rules, and AI agent workflows. The two can run in parallel as separate tracks, coordinating at defined integration points — a model NeuronProcess applies regularly in hybrid delivery programs.</p>
             </div>
           </div>
         </div>
@@ -695,12 +700,12 @@
       <div class="container" data-aos="zoom-in">
         <div class="wa-cta-box">
           <i class="bi bi-calendar2-check" style="font-size: 3rem; opacity: 0.85; margin-bottom: 1rem; display: block;"></i>
-          <h3>Want to Apply Playbacks to Your Next Project?</h3>
-          <p>Send us a message on WhatsApp. We'll discuss your current delivery approach and show you how the Playbacks Methodology can reduce risk and accelerate your next process automation initiative.</p>
+          <h3 data-i18n="pb_wa_h3">Want to Apply Playbacks to Your Next Project?</h3>
+          <p data-i18n="pb_wa_p">Send us a message on WhatsApp. We'll discuss your current delivery approach and show you how the Playbacks Methodology can reduce risk and accelerate your next process automation initiative.</p>
           <a href="https://wa.me/525522436914?text=Hi%2C%20I'd%20like%20to%20learn%20more%20about%20the%20Playbacks%20Methodology%20for%20my%20next%20BPM%20project." class="btn-whatsapp" target="_blank" rel="noopener">
-            <i class="bi bi-whatsapp"></i> WhatsApp Us
+            <i class="bi bi-whatsapp"></i> <span data-i18n="pb_wa_btn">WhatsApp Us</span>
           </a>
-          <p class="mt-3 mb-0" style="font-size: 0.85rem; opacity: 0.75;">Available in English &amp; Spanish &middot; On-site or remote delivery</p>
+          <p class="mt-3 mb-0" style="font-size: 0.85rem; opacity: 0.75;" data-i18n="pb_wa_note">Available in English &amp; Spanish &middot; On-site or remote delivery</p>
         </div>
       </div>
     </section><!-- /WhatsApp CTA Section -->
@@ -711,11 +716,11 @@
       <div class="container">
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-9 text-center text-xl-start">
-            <h3>Playbacks work best when the solution is designed well from the start.</h3>
-            <p>The <a href="neuron-method.html" style="color: #47b2e4;">Neuron Method</a> ensures your team enters Playback 0 with a validated blueprint — so every subsequent checkpoint confirms progress, not direction.</p>
+            <h3 data-i18n="pb_cta_h3">Playbacks work best when the solution is designed well from the start.</h3>
+            <p data-i18n="pb_cta_p">The <a href="neuron-method.html" style="color: #47b2e4;">Neuron Method</a> ensures your team enters Playback 0 with a validated blueprint — so every subsequent checkpoint confirms progress, not direction.</p>
           </div>
           <div class="col-xl-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="neuron-method.html">Explore the Method</a>
+            <a class="cta-btn align-middle" href="neuron-method.html" data-i18n="pb_cta_btn">Explore the Method</a>
           </div>
         </div>
       </div>
@@ -732,36 +737,36 @@
             <span class="sitename">Neuron Process</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>Queretaro, Mexico</p>
-            <p><strong>Phone:</strong> <span>+52 5522436914</span></p>
-            <p><strong>Email:</strong> <span>contact@neuronprocess.com</span></p>
+            <p data-i18n="footer_location">Queretaro, Mexico</p>
+            <p><strong data-i18n="footer_phone_label">Phone:</strong> <span>+52 5522436914</span></p>
+            <p><strong data-i18n="footer_email_label">Email:</strong> <span>contact@neuronprocess.com</span></p>
           </div>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
+          <h4 data-i18n="footer_useful">Useful Links</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="/">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="/#about">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="/#services">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="/" data-i18n="footer_useful_home">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="/#about" data-i18n="footer_useful_about">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="/#services" data-i18n="footer_useful_services">Services</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
+          <h4 data-i18n="footer_services">Our Services</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="maturity-assessment.html">Maturity Assessment</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="neuron-method.html">Neuron Method</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="playbacks-methodology.html">Playbacks Methodology</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="process-automation.html">Process Automation</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="ai-agentic-solutions.html">AI Agentic Solutions</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="private-ai-platform.html">Private AI Platform</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="maturity-assessment.html" data-i18n="footer_svc_maturity">Maturity Assessment</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="neuron-method.html" data-i18n="footer_svc_method">Neuron Method</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="playbacks-methodology.html" data-i18n="footer_svc_playbacks">Playbacks Methodology</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="process-automation.html" data-i18n="footer_svc_automation">Process Automation</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="ai-agentic-solutions.html" data-i18n="footer_svc_agentic">AI Agentic Solutions</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="private-ai-platform.html" data-i18n="footer_svc_private">Private AI Platform</a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-12">
-          <h4>Follow Us</h4>
-          <p>We are in social networks!</p>
+          <h4 data-i18n="footer_follow">Follow Us</h4>
+          <p data-i18n="footer_follow_desc">We are in social networks!</p>
           <div class="social-links d-flex">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -774,7 +779,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Neuron Process</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Neuron Process</strong> <span data-i18n="footer_rights">All Rights Reserved</span></p>
     </div>
 
   </footer>
@@ -794,6 +799,10 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- i18n -->
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/i18n.js"></script>
 
 </body>
 
