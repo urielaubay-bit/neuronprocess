@@ -326,14 +326,19 @@
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="/#hero">Home</a></li>
-          <li><a href="/#about">About</a></li>
-          <li><a href="/#services" class="active">Services</a></li>
-          <li><a href="/#team">Team</a></li>
-          <li><a href="/#contact">Contact</a></li>
+          <li><a href="/#hero" data-i18n="nav_home">Home</a></li>
+          <li><a href="/#about" data-i18n="nav_about">About</a></li>
+          <li><a href="/#services" class="active" data-i18n="nav_services">Services</a></li>
+          <li><a href="/#team" data-i18n="nav_team">Team</a></li>
+          <li><a href="/#contact" data-i18n="nav_contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang-btn="en" onclick="setLanguage('en')">EN</button>
+        <button type="button" data-lang-btn="es" onclick="setLanguage('es')">ES</button>
+      </div>
+
     </div>
   </header>
 
@@ -344,12 +349,12 @@
       <div class="container">
         <nav class="breadcrumbs">
           <ol class="d-flex list-unstyled gap-0 mb-2">
-            <li><a href="/">Home</a></li>
-            <li><a href="/#services">Services</a></li>
-            <li class="current">Private AI Platform</li>
+            <li><a href="/" data-i18n="nav_home">Home</a></li>
+            <li><a href="/#services" data-i18n="nav_services">Services</a></li>
+            <li class="current" data-i18n="pai_bc">Private AI Platform</li>
           </ol>
         </nav>
-        <h1>Private AI Platform</h1>
+        <h1 data-i18n="pai_title">Private AI Platform</h1>
       </div>
     </div><!-- End Page Title -->
 
@@ -359,39 +364,39 @@
         <div class="row gy-5 align-items-center">
 
           <div class="col-lg-6" data-aos="fade-right">
-            <span class="specialist-badge"><i class="bi bi-shield-lock me-1"></i> Self-Hosted · Sovereign · Scalable</span>
-            <h2 style="font-weight: 700; color: #37517e;">Your Private AI Platform. Your Rules. Your Code Stays Inside.</h2>
-            <p class="mt-3">
+            <span class="specialist-badge"><i class="bi bi-shield-lock me-1"></i> <span data-i18n="pai_badge">Self-Hosted · Sovereign · Scalable</span></span>
+            <h2 style="font-weight: 700; color: #37517e;" data-i18n="pai_h2">Your Private AI Platform. Your Rules. Your Code Stays Inside.</h2>
+            <p class="mt-3" data-i18n="pai_p1">
               Your engineering team is already paying $60–80 per developer per month across GitHub Copilot, Cursor, ChatGPT, and other AI tools — while your source code flows through third-party APIs you don't control.
             </p>
-            <p>
+            <p data-i18n="pai_p2">
               We deploy a <strong>self-hosted large language model</strong> tuned for software development, inside your own infrastructure. One platform, unlimited usage, zero data exposure, and a fixed cost that scales with your team — not with your token consumption.
             </p>
             <ul class="mt-3" style="list-style: none; padding: 0;">
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>OpenAI-compatible API — works with VS Code, Cursor, Slack bots, CI/CD</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Codebase-indexed RAG — the model knows <em>your</em> architecture</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Pre-built AI agents for code review, onboarding, testing, incident response</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Departmental usage allocation — IT visibility and internal chargeback</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="pai_li1">OpenAI-compatible API — works with VS Code, Cursor, Slack bots, CI/CD</span></li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="pai_li2">Codebase-indexed RAG — the model knows <em>your</em> architecture</span></li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="pai_li3">Pre-built AI agents for code review, onboarding, testing, incident response</span></li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="pai_li4">Departmental usage allocation — IT visibility and internal chargeback</span></li>
             </ul>
-            <a href="/#contact" class="btn-get-started mt-4 d-inline-block">Request a Pilot</a>
+            <a href="/#contact" class="btn-get-started mt-4 d-inline-block" data-i18n="pai_req">Request a Pilot</a>
           </div>
 
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
             <div style="background: linear-gradient(135deg, #37517e, #47b2e4); border-radius: 12px; padding: 2.5rem; color: #fff;">
               <i class="bi bi-server" style="font-size: 3rem; opacity: 0.9;"></i>
-              <h4 class="mt-3 mb-3" style="font-weight: 700; color: #fff;">The Sovereignty Stack</h4>
+              <h4 class="mt-3 mb-3" style="font-weight: 700; color: #fff;" data-i18n="pai_ss_h">The Sovereignty Stack</h4>
               <div class="d-flex flex-column gap-3">
                 <div style="background: rgba(255,255,255,0.12); border-radius: 8px; padding: 0.85rem 1rem;">
-                  <strong><i class="bi bi-lock me-2"></i>Data Sovereignty</strong>
-                  <p class="mb-0 mt-1" style="font-size: 0.88rem; opacity: 0.9;">Source code, prompts, and responses never leave your infrastructure. Zero third-party API calls.</p>
+                  <strong><i class="bi bi-lock me-2"></i><span data-i18n="pai_ss1_h">Data Sovereignty</span></strong>
+                  <p class="mb-0 mt-1" style="font-size: 0.88rem; opacity: 0.9;" data-i18n="pai_ss1_p">Source code, prompts, and responses never leave your infrastructure. Zero third-party API calls.</p>
                 </div>
                 <div style="background: rgba(255,255,255,0.12); border-radius: 8px; padding: 0.85rem 1rem;">
-                  <strong><i class="bi bi-currency-dollar me-2"></i>Predictable Cost</strong>
-                  <p class="mb-0 mt-1" style="font-size: 0.88rem; opacity: 0.9;">Fixed monthly or annual fee. Usage grows with your team, not with token consumption.</p>
+                  <strong><i class="bi bi-currency-dollar me-2"></i><span data-i18n="pai_ss2_h">Predictable Cost</span></strong>
+                  <p class="mb-0 mt-1" style="font-size: 0.88rem; opacity: 0.9;" data-i18n="pai_ss2_p">Fixed monthly or annual fee. Usage grows with your team, not with token consumption.</p>
                 </div>
                 <div style="background: rgba(255,255,255,0.12); border-radius: 8px; padding: 0.85rem 1rem;">
-                  <strong><i class="bi bi-code-square me-2"></i>Codebase Context</strong>
-                  <p class="mb-0 mt-1" style="font-size: 0.88rem; opacity: 0.9;">Your repos, architecture docs, and runbooks are indexed. The model knows your system.</p>
+                  <strong><i class="bi bi-code-square me-2"></i><span data-i18n="pai_ss3_h">Codebase Context</span></strong>
+                  <p class="mb-0 mt-1" style="font-size: 0.88rem; opacity: 0.9;" data-i18n="pai_ss3_p">Your repos, architecture docs, and runbooks are indexed. The model knows your system.</p>
                 </div>
               </div>
             </div>
@@ -406,20 +411,20 @@
       <div class="container">
 
         <div class="container section-title" data-aos="fade-up">
-          <h2>The Real Cost of Fragmented AI Tools</h2>
-          <p>Most dev teams underestimate what they're spending — and what they're giving away.</p>
+          <h2 data-i18n="pai_cost_h">The Real Cost of Fragmented AI Tools</h2>
+          <p data-i18n="pai_cost_sub">Most dev teams underestimate what they're spending — and what they're giving away.</p>
         </div>
 
         <div class="row gy-5 align-items-start">
 
           <div class="col-lg-6" data-aos="fade-right">
-            <h5 style="color: #37517e; font-weight: 700; margin-bottom: 1rem;">Current spend — 50-developer team</h5>
+            <h5 style="color: #37517e; font-weight: 700; margin-bottom: 1rem;" data-i18n="pai_cost_t1">Current spend — 50-developer team</h5>
             <table class="cost-table">
               <thead>
                 <tr>
-                  <th>Tool</th>
-                  <th>Cost / dev / mo</th>
-                  <th>Team total</th>
+                  <th data-i18n="pai_th_tool">Tool</th>
+                  <th data-i18n="pai_th_cost">Cost / dev / mo</th>
+                  <th data-i18n="pai_th_team">Team total</th>
                 </tr>
               </thead>
               <tbody>
@@ -444,34 +449,34 @@
                   <td>$500</td>
                 </tr>
                 <tr class="total-row">
-                  <td><strong>Current total</strong></td>
+                  <td><strong data-i18n="pai_ct_cur">Current total</strong></td>
                   <td><strong>~$69/dev</strong></td>
                   <td><strong>$3,450/mo</strong></td>
                 </tr>
                 <tr class="platform-row">
-                  <td><strong>Private AI Platform</strong></td>
+                  <td data-i18n="pai_ct_pf"><strong>Private AI Platform</strong></td>
                   <td><strong>~$40/dev</strong></td>
                   <td><strong>$2,000/mo</strong></td>
                 </tr>
               </tbody>
             </table>
-            <p class="mt-3" style="font-size: 0.85rem; color: #666;">Plus: code stays inside. Plus: the model knows your codebase. Plus: one bill, not four.</p>
+            <p class="mt-3" style="font-size: 0.85rem; color: #666;" data-i18n="pai_cost_note">Plus: code stays inside. Plus: the model knows your codebase. Plus: one bill, not four.</p>
           </div>
 
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-            <h5 style="color: #37517e; font-weight: 700; margin-bottom: 1rem;">What current tools don't give you</h5>
+            <h5 style="color: #37517e; font-weight: 700; margin-bottom: 1rem;" data-i18n="pai_cost_t2">What current tools don't give you</h5>
             <div class="d-flex flex-column gap-3">
               <div style="background: #fff; border-radius: 10px; padding: 1.1rem 1.25rem; border-left: 4px solid #ef4444;">
-                <strong style="color: #b91c1c;"><i class="bi bi-x-circle me-2"></i>No IP protection</strong>
-                <p class="mb-0 mt-1" style="font-size: 0.87rem; color: #555;">Your source code is sent to third-party APIs on every completion request. Legal and compliance teams often don't know this is happening.</p>
+                <strong style="color: #b91c1c;"><i class="bi bi-x-circle me-2"></i><span data-i18n="pai_nc1_h">No IP protection</span></strong>
+                <p class="mb-0 mt-1" style="font-size: 0.87rem; color: #555;" data-i18n="pai_nc1_p">Your source code is sent to third-party APIs on every completion request. Legal and compliance teams often don't know this is happening.</p>
               </div>
               <div style="background: #fff; border-radius: 10px; padding: 1.1rem 1.25rem; border-left: 4px solid #f59e0b;">
-                <strong style="color: #b45309;"><i class="bi bi-x-circle me-2"></i>No codebase awareness</strong>
-                <p class="mb-0 mt-1" style="font-size: 0.87rem; color: #555;">Public models know nothing about your architecture, naming conventions, internal libraries, or business domain. Every context window starts from zero.</p>
+                <strong style="color: #b45309;"><i class="bi bi-x-circle me-2"></i><span data-i18n="pai_nc2_h">No codebase awareness</span></strong>
+                <p class="mb-0 mt-1" style="font-size: 0.87rem; color: #555;" data-i18n="pai_nc2_p">Public models know nothing about your architecture, naming conventions, internal libraries, or business domain. Every context window starts from zero.</p>
               </div>
               <div style="background: #fff; border-radius: 10px; padding: 1.1rem 1.25rem; border-left: 4px solid #8b5cf6;">
-                <strong style="color: #6d28d9;"><i class="bi bi-x-circle me-2"></i>No organizational control</strong>
-                <p class="mb-0 mt-1" style="font-size: 0.87rem; color: #555;">Multiple subscriptions, multiple policies, no usage visibility per team or project. Finance sees a dozen separate SaaS line items.</p>
+                <strong style="color: #6d28d9;"><i class="bi bi-x-circle me-2"></i><span data-i18n="pai_nc3_h">No organizational control</span></strong>
+                <p class="mb-0 mt-1" style="font-size: 0.87rem; color: #555;" data-i18n="pai_nc3_p">Multiple subscriptions, multiple policies, no usage visibility per team or project. Finance sees a dozen separate SaaS line items.</p>
               </div>
             </div>
           </div>
@@ -485,8 +490,8 @@
       <div class="container">
 
         <div class="container section-title" data-aos="fade-up">
-          <h2>Platform Architecture</h2>
-          <p>Six layers — from your developer's IDE to the GPU — all inside your perimeter.</p>
+          <h2 data-i18n="pai_arch_h">Platform Architecture</h2>
+          <p data-i18n="pai_arch_sub">Six layers — from your developer's IDE to the GPU — all inside your perimeter.</p>
         </div>
 
         <div data-aos="fade-up" data-aos-delay="100">
@@ -494,7 +499,7 @@
 
             <!-- Layer 1 -->
             <div class="arch-layer arch-l1">
-              <div class="arch-layer-label"><i class="bi bi-display"></i> Layer 1 · Developer Experience</div>
+              <div class="arch-layer-label"><i class="bi bi-display"></i> <span data-i18n="pai_l1">Layer 1 · Developer Experience</span></div>
               <div class="arch-chips">
                 <span class="arch-chip"><i class="bi bi-code-slash me-1"></i>VS Code / Cursor (OpenAI endpoint)</span>
                 <span class="arch-chip"><i class="bi bi-chat me-1"></i>Web Chat (Open WebUI)</span>
@@ -506,12 +511,12 @@
 
             <div class="arch-arrow my-2">
               <i class="bi bi-arrow-down-circle-fill"></i>
-              <span>OpenAI-compatible REST API · Zero tool switching for your dev team</span>
+              <span data-i18n="pai_ar1">OpenAI-compatible REST API · Zero tool switching for your dev team</span>
             </div>
 
             <!-- Layer 2 -->
             <div class="arch-layer arch-l2">
-              <div class="arch-layer-label"><i class="bi bi-shield-lock"></i> Layer 2 · API Gateway & Auth</div>
+              <div class="arch-layer-label"><i class="bi bi-shield-lock"></i> <span data-i18n="pai_l2">Layer 2 · API Gateway & Auth</span></div>
               <div class="arch-chips">
                 <span class="arch-chip"><i class="bi bi-key me-1"></i>Department API Keys</span>
                 <span class="arch-chip"><i class="bi bi-speedometer2 me-1"></i>Rate Limiting per Team</span>
@@ -523,12 +528,12 @@
 
             <div class="arch-arrow my-2">
               <i class="bi bi-arrow-down-circle-fill"></i>
-              <span>Authenticated requests routed to the right agent</span>
+              <span data-i18n="pai_ar2">Authenticated requests routed to the right agent</span>
             </div>
 
             <!-- Layer 3 -->
             <div class="arch-layer arch-l3">
-              <div class="arch-layer-label"><i class="bi bi-robot"></i> Layer 3 · Agent Orchestration (LangGraph)</div>
+              <div class="arch-layer-label"><i class="bi bi-robot"></i> <span data-i18n="pai_l3">Layer 3 · Agent Orchestration (LangGraph)</span></div>
               <div class="arch-chips">
                 <span class="arch-chip"><i class="bi bi-eye me-1"></i>Code Review Agent</span>
                 <span class="arch-chip"><i class="bi bi-person-workspace me-1"></i>Onboarding Agent</span>
@@ -542,13 +547,13 @@
 
             <div class="arch-arrow my-2">
               <i class="bi bi-arrow-down-circle-fill"></i>
-              <span>Agent queries model + retrieves relevant code context in parallel</span>
+              <span data-i18n="pai_ar3">Agent queries model + retrieves relevant code context in parallel</span>
             </div>
 
             <!-- Layer 4: Split -->
             <div class="arch-split gap-3 mb-0">
               <div class="arch-layer arch-l4a">
-                <div class="arch-layer-label"><i class="bi bi-cpu"></i> Layer 4a · Model Serving (vLLM)</div>
+                <div class="arch-layer-label"><i class="bi bi-cpu"></i> <span data-i18n="pai_l4a">Layer 4a · Model Serving (vLLM)</span></div>
                 <div class="arch-chips">
                   <span class="arch-chip">Qwen 2.5 Coder 72B</span>
                   <span class="arch-chip">DeepSeek-V3</span>
@@ -558,7 +563,7 @@
                 </div>
               </div>
               <div class="arch-layer arch-l4b">
-                <div class="arch-layer-label"><i class="bi bi-database"></i> Layer 4b · Knowledge Layer (RAG)</div>
+                <div class="arch-layer-label"><i class="bi bi-database"></i> <span data-i18n="pai_l4b">Layer 4b · Knowledge Layer (RAG)</span></div>
                 <div class="arch-chips">
                   <span class="arch-chip">Qdrant Vector DB</span>
                   <span class="arch-chip">Code Embeddings</span>
@@ -572,7 +577,7 @@
             <!-- Infra bar -->
             <div class="arch-infra">
               <i class="bi bi-lock-fill"></i>
-              YOUR INFRASTRUCTURE &nbsp;—&nbsp; AWS VPC / Azure Private / On-Premise &nbsp;·&nbsp; No data exits &nbsp;·&nbsp; You own the model &nbsp;·&nbsp; You own the data
+              <span data-i18n="pai_infra">YOUR INFRASTRUCTURE &nbsp;—&nbsp; AWS VPC / Azure Private / On-Premise &nbsp;·&nbsp; No data exits &nbsp;·&nbsp; You own the model &nbsp;·&nbsp; You own the data</span>
             </div>
 
           </div>
@@ -586,8 +591,8 @@
       <div class="container">
 
         <div class="container section-title" data-aos="fade-up">
-          <h2>Every Layer, Explained</h2>
-          <p>Production-grade components chosen for reliability, openness, and best-in-class coding performance.</p>
+          <h2 data-i18n="pai_sc_h">Every Layer, Explained</h2>
+          <p data-i18n="pai_sc_sub">Production-grade components chosen for reliability, openness, and best-in-class coding performance.</p>
         </div>
 
         <div class="row gy-4">
@@ -595,8 +600,8 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
             <div class="stack-card">
               <div class="stack-icon"><i class="bi bi-display"></i></div>
-              <h5>Developer Experience</h5>
-              <p>Because we expose an OpenAI-compatible endpoint, your developers keep using the tools they already know. VS Code + Continue, Cursor, or any custom Slack bot — zero learning curve, immediate productivity.</p>
+              <h5 data-i18n="pai_sc1_h">Developer Experience</h5>
+              <p data-i18n="pai_sc1_p">Because we expose an OpenAI-compatible endpoint, your developers keep using the tools they already know. VS Code + Continue, Cursor, or any custom Slack bot — zero learning curve, immediate productivity.</p>
               <div class="stack-tags">
                 <span class="stack-tag">VS Code</span>
                 <span class="stack-tag">Cursor</span>
@@ -609,8 +614,8 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
             <div class="stack-card">
               <div class="stack-icon"><i class="bi bi-shield-lock"></i></div>
-              <h5>API Gateway & Auth</h5>
-              <p>Each department gets its own API key with configurable rate limits and a usage dashboard. IT gets full visibility. Finance gets a single consolidated bill. Audit logs record every query for compliance.</p>
+              <h5 data-i18n="pai_sc2_h">API Gateway & Auth</h5>
+              <p data-i18n="pai_sc2_p">Each department gets its own API key with configurable rate limits and a usage dashboard. IT gets full visibility. Finance gets a single consolidated bill. Audit logs record every query for compliance.</p>
               <div class="stack-tags">
                 <span class="stack-tag">Traefik / Kong</span>
                 <span class="stack-tag">OAuth2 / SSO</span>
@@ -622,8 +627,8 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="stack-card">
               <div class="stack-icon"><i class="bi bi-robot"></i></div>
-              <h5>Agent Orchestration</h5>
-              <p>Built on LangGraph, each agent has a defined role, a set of tools it can call (git, file system, search, APIs), and persistent memory across sessions. Agents chain reasoning steps, not just completions.</p>
+              <h5 data-i18n="pai_sc3_h">Agent Orchestration</h5>
+              <p data-i18n="pai_sc3_p">Built on LangGraph, each agent has a defined role, a set of tools it can call (git, file system, search, APIs), and persistent memory across sessions. Agents chain reasoning steps, not just completions.</p>
               <div class="stack-tags">
                 <span class="stack-tag">LangGraph</span>
                 <span class="stack-tag">Tool use</span>
@@ -636,8 +641,8 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
             <div class="stack-card">
               <div class="stack-icon"><i class="bi bi-cpu"></i></div>
-              <h5>Model Serving (vLLM)</h5>
-              <p>vLLM is the production standard for serving large language models at scale. It supports continuous batching, PagedAttention for memory efficiency, and delivers OpenAI-compatible streaming responses. We deploy Qwen 2.5 Coder 72B or DeepSeek-V3 — both outperform GPT-4o on most coding benchmarks.</p>
+              <h5 data-i18n="pai_sc4_h">Model Serving (vLLM)</h5>
+              <p data-i18n="pai_sc4_p">vLLM is the production standard for serving large language models at scale. It supports continuous batching, PagedAttention for memory efficiency, and delivers OpenAI-compatible streaming responses. We deploy Qwen 2.5 Coder 72B or DeepSeek-V3 — both outperform GPT-4o on most coding benchmarks.</p>
               <div class="stack-tags">
                 <span class="stack-tag">vLLM</span>
                 <span class="stack-tag">Qwen 2.5 Coder 72B</span>
@@ -650,8 +655,8 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="stack-card">
               <div class="stack-icon"><i class="bi bi-database"></i></div>
-              <h5>Knowledge Layer (RAG)</h5>
-              <p>We index your repositories, architecture decision records, API docs, and runbooks into Qdrant — a self-hostable vector database. Before every agent response, relevant context is retrieved and injected, so the model answers about <em>your system</em>, not a generic codebase.</p>
+              <h5 data-i18n="pai_sc5_h">Knowledge Layer (RAG)</h5>
+              <p data-i18n="pai_sc5_p">We index your repositories, architecture decision records, API docs, and runbooks into Qdrant — a self-hostable vector database. Before every agent response, relevant context is retrieved and injected, so the model answers about <em>your system</em>, not a generic codebase.</p>
               <div class="stack-tags">
                 <span class="stack-tag">Qdrant</span>
                 <span class="stack-tag">nomic-embed-text</span>
@@ -664,8 +669,8 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
             <div class="stack-card">
               <div class="stack-icon"><i class="bi bi-lock-fill"></i></div>
-              <h5>Your Infrastructure</h5>
-              <p>The entire stack runs in your AWS VPC, Azure private network, or on-premise servers. Network policies prevent outbound calls. No telemetry, no model training on your data, no shared tenancy. An air-gapped option is available for the highest security requirements.</p>
+              <h5 data-i18n="pai_sc6_h">Your Infrastructure</h5>
+              <p data-i18n="pai_sc6_p">The entire stack runs in your AWS VPC, Azure private network, or on-premise servers. Network policies prevent outbound calls. No telemetry, no model training on your data, no shared tenancy. An air-gapped option is available for the highest security requirements.</p>
               <div class="stack-tags">
                 <span class="stack-tag">AWS / Azure VPC</span>
                 <span class="stack-tag">Docker / K8s</span>
@@ -683,63 +688,63 @@
       <div class="container">
 
         <div class="container section-title" data-aos="fade-up">
-          <h2>Pre-Built Agent Library</h2>
-          <p>Ready-to-deploy agents for the most impactful developer workflows. Each one is customized to your stack, tools, and conventions during onboarding.</p>
+          <h2 data-i18n="pai_al_h">Pre-Built Agent Library</h2>
+          <p data-i18n="pai_al_sub">Ready-to-deploy agents for the most impactful developer workflows. Each one is customized to your stack, tools, and conventions during onboarding.</p>
         </div>
 
         <div class="row gy-4">
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
             <div class="agent-card">
-              <h5><i class="bi bi-eye me-2"></i>Code Review Agent</h5>
-              <span class="agent-trigger"><i class="bi bi-git me-1"></i>Triggered by PR webhook</span>
-              <p>Reviews pull requests against your team's patterns, flags anti-patterns, checks for security issues, and adds inline comments directly in GitHub or GitLab. Understands your existing codebase — not generic best practices.</p>
-              <span class="agent-saves"><i class="bi bi-clock me-1"></i>Saves 30–60 min per PR</span>
+              <h5><i class="bi bi-eye me-2"></i><span data-i18n="pai_ag1_h">Code Review Agent</span></h5>
+              <span class="agent-trigger"><i class="bi bi-git me-1"></i><span data-i18n="pai_ag1_t">Triggered by PR webhook</span></span>
+              <p data-i18n="pai_ag1_p">Reviews pull requests against your team's patterns, flags anti-patterns, checks for security issues, and adds inline comments directly in GitHub or GitLab. Understands your existing codebase — not generic best practices.</p>
+              <span class="agent-saves"><i class="bi bi-clock me-1"></i><span data-i18n="pai_ag1_s">Saves 30–60 min per PR</span></span>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
             <div class="agent-card">
-              <h5><i class="bi bi-person-workspace me-2"></i>Onboarding Agent</h5>
-              <span class="agent-trigger"><i class="bi bi-chat me-1"></i>Triggered by Slack / Web Chat</span>
-              <p>Answers "how does this service work?", "where is X configured?", "why was this decision made?" using your indexed repos, ADRs, and docs. New engineers get accurate answers in seconds instead of waiting for a colleague.</p>
-              <span class="agent-saves"><i class="bi bi-clock me-1"></i>Reduces ramp time 2–4 weeks</span>
+              <h5><i class="bi bi-person-workspace me-2"></i><span data-i18n="pai_ag2_h">Onboarding Agent</span></h5>
+              <span class="agent-trigger"><i class="bi bi-chat me-1"></i><span data-i18n="pai_trg_slack">Triggered by Slack / Web Chat</span></span>
+              <p data-i18n="pai_ag2_p">Answers "how does this service work?", "where is X configured?", "why was this decision made?" using your indexed repos, ADRs, and docs. New engineers get accurate answers in seconds instead of waiting for a colleague.</p>
+              <span class="agent-saves"><i class="bi bi-clock me-1"></i><span data-i18n="pai_ag2_s">Reduces ramp time 2–4 weeks</span></span>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="agent-card">
-              <h5><i class="bi bi-check2-square me-2"></i>Test Writer Agent</h5>
-              <span class="agent-trigger"><i class="bi bi-file-code me-1"></i>Triggered on file or diff</span>
-              <p>Generates unit tests, integration tests, and edge-case scenarios from existing code. Understands your test framework, mocking patterns, and fixture conventions. Runs per-file or across an entire diff at once.</p>
-              <span class="agent-saves"><i class="bi bi-clock me-1"></i>Saves 2–4 hrs per feature</span>
+              <h5><i class="bi bi-check2-square me-2"></i><span data-i18n="pai_ag3_h">Test Writer Agent</span></h5>
+              <span class="agent-trigger"><i class="bi bi-file-code me-1"></i><span data-i18n="pai_ag3_t">Triggered on file or diff</span></span>
+              <p data-i18n="pai_ag3_p">Generates unit tests, integration tests, and edge-case scenarios from existing code. Understands your test framework, mocking patterns, and fixture conventions. Runs per-file or across an entire diff at once.</p>
+              <span class="agent-saves"><i class="bi bi-clock me-1"></i><span data-i18n="pai_ag3_s">Saves 2–4 hrs per feature</span></span>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
             <div class="agent-card">
-              <h5><i class="bi bi-exclamation-triangle me-2"></i>Incident Response Agent</h5>
-              <span class="agent-trigger"><i class="bi bi-bell me-1"></i>Triggered by alert / log query</span>
-              <p>Reads error logs, correlates stack traces with your source code, identifies the most likely root cause, and suggests a targeted fix. Connects to your observability stack (Datadog, Grafana, CloudWatch) to fetch relevant context automatically.</p>
-              <span class="agent-saves"><i class="bi bi-clock me-1"></i>Cuts MTTR significantly</span>
+              <h5><i class="bi bi-exclamation-triangle me-2"></i><span data-i18n="pai_ag4_h">Incident Response Agent</span></h5>
+              <span class="agent-trigger"><i class="bi bi-bell me-1"></i><span data-i18n="pai_ag4_t">Triggered by alert / log query</span></span>
+              <p data-i18n="pai_ag4_p">Reads error logs, correlates stack traces with your source code, identifies the most likely root cause, and suggests a targeted fix. Connects to your observability stack (Datadog, Grafana, CloudWatch) to fetch relevant context automatically.</p>
+              <span class="agent-saves"><i class="bi bi-clock me-1"></i><span data-i18n="pai_ag4_s">Cuts MTTR significantly</span></span>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="agent-card">
-              <h5><i class="bi bi-file-text me-2"></i>Documentation Agent</h5>
-              <span class="agent-trigger"><i class="bi bi-calendar-check me-1"></i>Scheduled or on merge</span>
-              <p>Detects drift between code and documentation. Generates summaries for new services, updates README files after structural changes, and keeps API docs aligned with actual endpoints — eliminating the documentation backlog.</p>
-              <span class="agent-saves"><i class="bi bi-clock me-1"></i>Eliminates doc drift</span>
+              <h5><i class="bi bi-file-text me-2"></i><span data-i18n="pai_ag5_h">Documentation Agent</span></h5>
+              <span class="agent-trigger"><i class="bi bi-calendar-check me-1"></i><span data-i18n="pai_ag5_t">Scheduled or on merge</span></span>
+              <p data-i18n="pai_ag5_p">Detects drift between code and documentation. Generates summaries for new services, updates README files after structural changes, and keeps API docs aligned with actual endpoints — eliminating the documentation backlog.</p>
+              <span class="agent-saves"><i class="bi bi-clock me-1"></i><span data-i18n="pai_ag5_s">Eliminates doc drift</span></span>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
             <div class="agent-card">
-              <h5><i class="bi bi-diagram-3 me-2"></i>Architecture Q&amp;A Agent</h5>
-              <span class="agent-trigger"><i class="bi bi-chat me-1"></i>Triggered by Slack / Web Chat</span>
-              <p>"Can I add a new service here without breaking X?" The agent queries your dependency graph, evaluates the change against existing patterns, and gives a reasoned recommendation — before a line of code is written.</p>
-              <span class="agent-saves"><i class="bi bi-clock me-1"></i>Faster architectural decisions</span>
+              <h5><i class="bi bi-diagram-3 me-2"></i><span data-i18n="pai_ag6_h">Architecture Q&amp;A Agent</span></h5>
+              <span class="agent-trigger"><i class="bi bi-chat me-1"></i><span data-i18n="pai_trg_slack">Triggered by Slack / Web Chat</span></span>
+              <p data-i18n="pai_ag6_p">"Can I add a new service here without breaking X?" The agent queries your dependency graph, evaluates the change against existing patterns, and gives a reasoned recommendation — before a line of code is written.</p>
+              <span class="agent-saves"><i class="bi bi-clock me-1"></i><span data-i18n="pai_ag6_s">Faster architectural decisions</span></span>
             </div>
           </div>
 
@@ -752,41 +757,41 @@
       <div class="container">
 
         <div class="container section-title" data-aos="fade-up">
-          <h2>Deployment Options</h2>
-          <p>Choose the model that fits your infrastructure maturity, compliance requirements, and IT capacity.</p>
+          <h2 data-i18n="pai_dep_h">Deployment Options</h2>
+          <p data-i18n="pai_dep_sub">Choose the model that fits your infrastructure maturity, compliance requirements, and IT capacity.</p>
         </div>
 
         <div class="row gy-4 justify-content-center">
 
           <div class="col-lg-5" data-aos="fade-right">
             <div class="deploy-card deploy-cloud">
-              <h4><i class="bi bi-cloud me-2"></i>Cloud Private Instance</h4>
-              <p class="deploy-subtitle">Hosted by NeuronProcess on dedicated GPU infrastructure — isolated per client, fully managed by us.</p>
+              <h4><i class="bi bi-cloud me-2"></i><span data-i18n="pai_dc_h">Cloud Private Instance</span></h4>
+              <p class="deploy-subtitle" data-i18n="pai_dc_sub">Hosted by NeuronProcess on dedicated GPU infrastructure — isolated per client, fully managed by us.</p>
               <ul>
-                <li>Dedicated GPU instance — no shared tenancy</li>
-                <li>Private HTTPS endpoint, custom domain</li>
-                <li>Model updates and security patches managed by us</li>
-                <li>99.5% uptime SLA</li>
-                <li>Monthly subscription — zero CAPEX</li>
-                <li>Up and running in days, not weeks</li>
+                <li data-i18n="pai_dc_l1">Dedicated GPU instance — no shared tenancy</li>
+                <li data-i18n="pai_dc_l2">Private HTTPS endpoint, custom domain</li>
+                <li data-i18n="pai_dc_l3">Model updates and security patches managed by us</li>
+                <li data-i18n="pai_dc_l4">99.5% uptime SLA</li>
+                <li data-i18n="pai_dc_l5">Monthly subscription — zero CAPEX</li>
+                <li data-i18n="pai_dc_l6">Up and running in days, not weeks</li>
               </ul>
-              <span class="deploy-best"><i class="bi bi-building me-1"></i>Best for mid-market teams without internal GPU infrastructure</span>
+              <span class="deploy-best"><i class="bi bi-building me-1"></i><span data-i18n="pai_dc_best">Best for mid-market teams without internal GPU infrastructure</span></span>
             </div>
           </div>
 
           <div class="col-lg-5" data-aos="fade-left" data-aos-delay="100">
             <div class="deploy-card deploy-onprem">
-              <h4><i class="bi bi-hdd-rack me-2"></i>On-Premise / Private Cloud</h4>
-              <p class="deploy-subtitle">We deploy the entire stack inside your AWS VPC, Azure private network, or your own data center servers.</p>
+              <h4><i class="bi bi-hdd-rack me-2"></i><span data-i18n="pai_do_h">On-Premise / Private Cloud</span></h4>
+              <p class="deploy-subtitle" data-i18n="pai_do_sub">We deploy the entire stack inside your AWS VPC, Azure private network, or your own data center servers.</p>
               <ul>
-                <li>You own the GPU, the model weights, the data</li>
-                <li>Air-gapped option — no internet required</li>
-                <li>Your IT team has full administrative control</li>
-                <li>One-time setup fee + annual license</li>
-                <li>Annual model upgrade service available</li>
-                <li>Meets the strictest compliance requirements</li>
+                <li data-i18n="pai_do_l1">You own the GPU, the model weights, the data</li>
+                <li data-i18n="pai_do_l2">Air-gapped option — no internet required</li>
+                <li data-i18n="pai_do_l3">Your IT team has full administrative control</li>
+                <li data-i18n="pai_do_l4">One-time setup fee + annual license</li>
+                <li data-i18n="pai_do_l5">Annual model upgrade service available</li>
+                <li data-i18n="pai_do_l6">Meets the strictest compliance requirements</li>
               </ul>
-              <span class="deploy-best"><i class="bi bi-shield-check me-1"></i>Best for enterprise, regulated industries, and high-security environments</span>
+              <span class="deploy-best"><i class="bi bi-shield-check me-1"></i><span data-i18n="pai_do_best">Best for enterprise, regulated industries, and high-security environments</span></span>
             </div>
           </div>
 
@@ -798,41 +803,41 @@
             <table class="cost-table">
               <thead>
                 <tr>
-                  <th style="width: 40%;">Dimension</th>
-                  <th style="text-align: center;">Cloud Private</th>
-                  <th style="text-align: center;">On-Premise</th>
+                  <th style="width: 40%;" data-i18n="pai_ct2_dim">Dimension</th>
+                  <th style="text-align: center;" data-i18n="pai_ct2_cloud">Cloud Private</th>
+                  <th style="text-align: center;" data-i18n="pai_ct2_onp">On-Premise</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Setup time</td>
-                  <td style="text-align:center;">2–5 days</td>
-                  <td style="text-align:center;">2–4 weeks</td>
+                  <td data-i18n="pai_ct2_r1">Setup time</td>
+                  <td style="text-align:center;" data-i18n="pai_ct2_r1a">2–5 days</td>
+                  <td style="text-align:center;" data-i18n="pai_ct2_r1b">2–4 weeks</td>
                 </tr>
                 <tr>
-                  <td>CAPEX required</td>
-                  <td style="text-align:center;">None</td>
-                  <td style="text-align:center;">GPU hardware or cloud reserved instances</td>
+                  <td data-i18n="pai_ct2_r2">CAPEX required</td>
+                  <td style="text-align:center;" data-i18n="pai_ct2_r2a">None</td>
+                  <td style="text-align:center;" data-i18n="pai_ct2_r2b">GPU hardware or cloud reserved instances</td>
                 </tr>
                 <tr>
-                  <td>Data location</td>
-                  <td style="text-align:center;">Your dedicated cloud region</td>
-                  <td style="text-align:center;">Your data center / your cloud account</td>
+                  <td data-i18n="pai_ct2_r3">Data location</td>
+                  <td style="text-align:center;" data-i18n="pai_ct2_r3a">Your dedicated cloud region</td>
+                  <td style="text-align:center;" data-i18n="pai_ct2_r3b">Your data center / your cloud account</td>
                 </tr>
                 <tr>
-                  <td>Air-gap possible</td>
+                  <td data-i18n="pai_ct2_r4">Air-gap possible</td>
                   <td style="text-align:center;">—</td>
-                  <td style="text-align:center;">Yes</td>
+                  <td style="text-align:center;" data-i18n="pai_ct2_r4b">Yes</td>
                 </tr>
                 <tr>
-                  <td>Model updates</td>
-                  <td style="text-align:center;">Managed by NeuronProcess</td>
-                  <td style="text-align:center;">Annual upgrade service</td>
+                  <td data-i18n="pai_ct2_r5">Model updates</td>
+                  <td style="text-align:center;" data-i18n="pai_ct2_r5a">Managed by NeuronProcess</td>
+                  <td style="text-align:center;" data-i18n="pai_ct2_r5b">Annual upgrade service</td>
                 </tr>
                 <tr>
-                  <td>IT overhead</td>
-                  <td style="text-align:center;">Minimal</td>
-                  <td style="text-align:center;">Your team manages infra</td>
+                  <td data-i18n="pai_ct2_r6">IT overhead</td>
+                  <td style="text-align:center;" data-i18n="pai_ct2_r6a">Minimal</td>
+                  <td style="text-align:center;" data-i18n="pai_ct2_r6b">Your team manages infra</td>
                 </tr>
               </tbody>
             </table>
@@ -847,8 +852,8 @@
       <div class="container">
 
         <div class="container section-title" data-aos="fade-up">
-          <h2>Pricing</h2>
-          <p>Fixed cost. Unlimited usage. No per-token billing.</p>
+          <h2 data-i18n="pai_pr_h">Pricing</h2>
+          <p data-i18n="pai_pr_sub">Fixed cost. Unlimited usage. No per-token billing.</p>
         </div>
 
         <div class="row gy-4 justify-content-center">
@@ -856,38 +861,38 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
             <div class="pricing-card">
               <h5>Starter</h5>
-              <p class="pricing-target">Up to 25 developers</p>
-              <div class="pricing-price">$2,500 <span>/ month</span></div>
-              <p class="pricing-alt">Cloud Private · Billed annually</p>
+              <p class="pricing-target" data-i18n="pai_ps_t">Up to 25 developers</p>
+              <div class="pricing-price">$2,500 <span data-i18n="pai_permonth">/ month</span></div>
+              <p class="pricing-alt" data-i18n="pai_alt_cloud">Cloud Private · Billed annually</p>
               <hr>
               <ul>
-                <li>Private cloud-hosted instance</li>
-                <li>Qwen 2.5 Coder 32B model</li>
-                <li>Up to 3 pre-built agents</li>
-                <li>Codebase indexing (up to 5 repos)</li>
-                <li>Department API keys &amp; dashboard</li>
-                <li>Email support</li>
+                <li data-i18n="pai_li_pchost">Private cloud-hosted instance</li>
+                <li data-i18n="pai_ps_l2">Qwen 2.5 Coder 32B model</li>
+                <li data-i18n="pai_ps_l3">Up to 3 pre-built agents</li>
+                <li data-i18n="pai_ps_l4">Codebase indexing (up to 5 repos)</li>
+                <li data-i18n="pai_li_deptkeys">Department API keys &amp; dashboard</li>
+                <li data-i18n="pai_ps_l6">Email support</li>
               </ul>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="pricing-card featured">
-              <div class="pricing-badge">Most Popular</div>
+              <div class="pricing-badge" data-i18n="pai_pg_badge">Most Popular</div>
               <h5>Growth</h5>
-              <p class="pricing-target">Up to 100 developers</p>
-              <div class="pricing-price">$5,000 <span>/ month</span></div>
-              <p class="pricing-alt">Cloud Private · Billed annually</p>
+              <p class="pricing-target" data-i18n="pai_pg_t">Up to 100 developers</p>
+              <div class="pricing-price">$5,000 <span data-i18n="pai_permonth">/ month</span></div>
+              <p class="pricing-alt" data-i18n="pai_alt_cloud">Cloud Private · Billed annually</p>
               <hr>
               <ul>
-                <li>Private cloud-hosted instance</li>
-                <li>Qwen 2.5 Coder 72B model</li>
-                <li>Full Agent Library (6 agents)</li>
-                <li>Codebase indexing (unlimited repos)</li>
-                <li>Department API keys &amp; dashboard</li>
-                <li>Slack / Teams bot integration</li>
-                <li>CI/CD webhook setup</li>
-                <li>Priority support + monthly review</li>
+                <li data-i18n="pai_li_pchost">Private cloud-hosted instance</li>
+                <li data-i18n="pai_pg_l2">Qwen 2.5 Coder 72B model</li>
+                <li data-i18n="pai_pg_l3">Full Agent Library (6 agents)</li>
+                <li data-i18n="pai_pg_l4">Codebase indexing (unlimited repos)</li>
+                <li data-i18n="pai_li_deptkeys">Department API keys &amp; dashboard</li>
+                <li data-i18n="pai_pg_l6">Slack / Teams bot integration</li>
+                <li data-i18n="pai_pg_l7">CI/CD webhook setup</li>
+                <li data-i18n="pai_pg_l8">Priority support + monthly review</li>
               </ul>
             </div>
           </div>
@@ -895,19 +900,19 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="pricing-card">
               <h5>Enterprise</h5>
-              <p class="pricing-target">100+ developers</p>
-              <div class="pricing-price" style="font-size: 1.5rem;">Custom</div>
-              <p class="pricing-alt">On-Premise / Private Cloud</p>
+              <p class="pricing-target" data-i18n="pai_pe_t">100+ developers</p>
+              <div class="pricing-price" style="font-size: 1.5rem;" data-i18n="pai_pe_price">Custom</div>
+              <p class="pricing-alt" data-i18n="pai_pe_alt">On-Premise / Private Cloud</p>
               <hr>
               <ul>
-                <li>On-premise or your cloud VPC</li>
-                <li>DeepSeek-V3 or Qwen 72B</li>
-                <li>Custom agent development</li>
-                <li>Air-gapped deployment available</li>
-                <li>Fine-tuning on your codebase</li>
-                <li>SLA + dedicated support</li>
-                <li>Annual model upgrade service</li>
-                <li>Compliance &amp; security documentation</li>
+                <li data-i18n="pai_pe_l1">On-premise or your cloud VPC</li>
+                <li data-i18n="pai_pe_l2">DeepSeek-V3 or Qwen 72B</li>
+                <li data-i18n="pai_pe_l3">Custom agent development</li>
+                <li data-i18n="pai_pe_l4">Air-gapped deployment available</li>
+                <li data-i18n="pai_pe_l5">Fine-tuning on your codebase</li>
+                <li data-i18n="pai_pe_l6">SLA + dedicated support</li>
+                <li data-i18n="pai_pe_l7">Annual model upgrade service</li>
+                <li data-i18n="pai_pe_l8">Compliance &amp; security documentation</li>
               </ul>
             </div>
           </div>
@@ -915,7 +920,7 @@
         </div>
 
         <div class="text-center mt-4" data-aos="fade-up">
-          <p style="color: #666; font-size: 0.9rem;">All plans include a <strong>30-day pilot</strong> starting with one agent so your team can validate ROI before committing. Setup fee applies for on-premise deployments.</p>
+          <p style="color: #666; font-size: 0.9rem;" data-i18n="pai_pilot">All plans include a <strong>30-day pilot</strong> starting with one agent so your team can validate ROI before committing. Setup fee applies for on-premise deployments.</p>
         </div>
 
       </div>
@@ -926,12 +931,12 @@
       <div class="container" data-aos="zoom-in">
         <div class="wa-cta-box">
           <i class="bi bi-server" style="font-size: 3rem; opacity: 0.85; margin-bottom: 1rem; display: block;"></i>
-          <h3>Start With a 30-Day Pilot</h3>
-          <p>Send us a message on WhatsApp. We'll understand your team's current AI spend, identify the highest-value agent to deploy first, and set up a pilot so you can measure the ROI before making a full commitment.</p>
+          <h3 data-i18n="pai_wa_h3">Start With a 30-Day Pilot</h3>
+          <p data-i18n="pai_wa_p">Send us a message on WhatsApp. We'll understand your team's current AI spend, identify the highest-value agent to deploy first, and set up a pilot so you can measure the ROI before making a full commitment.</p>
           <a href="https://wa.me/525522436914?text=Hi%2C%20I'd%20like%20to%20learn%20about%20the%20Private%20AI%20Platform%20for%20my%20development%20team." class="btn-whatsapp" target="_blank" rel="noopener">
-            <i class="bi bi-whatsapp"></i> WhatsApp Us
+            <i class="bi bi-whatsapp"></i> <span data-i18n="pai_wa_btn">WhatsApp Us</span>
           </a>
-          <p class="mt-3 mb-0" style="font-size: 0.85rem; opacity: 0.75;">Available in English &amp; Spanish &middot; Typically replies within a few hours</p>
+          <p class="mt-3 mb-0" style="font-size: 0.85rem; opacity: 0.75;" data-i18n="pai_wa_note">Available in English &amp; Spanish &middot; Typically replies within a few hours</p>
         </div>
       </div>
     </section><!-- /WhatsApp CTA Section -->
@@ -942,11 +947,11 @@
       <div class="container">
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-9 text-center text-xl-start">
-            <h3>Already automating? Now make it autonomous.</h3>
-            <p>A Private AI Platform handles developer workflows. Our broader AI Agentic Solutions extend that intelligence to any business process — from customer service to back-office operations — using the same sovereign, self-hosted approach.</p>
+            <h3 data-i18n="pai_bcta_h">Already automating? Now make it autonomous.</h3>
+            <p data-i18n="pai_bcta_p">A Private AI Platform handles developer workflows. Our broader AI Agentic Solutions extend that intelligence to any business process — from customer service to back-office operations — using the same sovereign, self-hosted approach.</p>
           </div>
           <div class="col-xl-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="ai-agentic-solutions.html">Explore AI Agents</a>
+            <a class="cta-btn align-middle" href="ai-agentic-solutions.html" data-i18n="pai_bcta_btn">Explore AI Agents</a>
           </div>
         </div>
       </div>
@@ -963,36 +968,36 @@
             <span class="sitename">Neuron Process</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>Queretaro, Mexico</p>
-            <p><strong>Phone:</strong> <span>+52 5522436914</span></p>
-            <p><strong>Email:</strong> <span>contact@neuronprocess.com</span></p>
+            <p data-i18n="footer_location">Queretaro, Mexico</p>
+            <p><strong data-i18n="footer_phone_label">Phone:</strong> <span>+52 5522436914</span></p>
+            <p><strong data-i18n="footer_email_label">Email:</strong> <span>contact@neuronprocess.com</span></p>
           </div>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
+          <h4 data-i18n="footer_useful">Useful Links</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="/">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="/#about">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="/#services">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="/" data-i18n="footer_useful_home">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="/#about" data-i18n="footer_useful_about">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="/#services" data-i18n="footer_useful_services">Services</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
+          <h4 data-i18n="footer_services">Our Services</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="maturity-assessment.html">Maturity Assessment</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="neuron-method.html">Neuron Method</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="playbacks-methodology.html">Playbacks Methodology</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="process-automation.html">Process Automation</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="ai-agentic-solutions.html">AI Agentic Solutions</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="private-ai-platform.html">Private AI Platform</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="maturity-assessment.html" data-i18n="footer_svc_maturity">Maturity Assessment</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="neuron-method.html" data-i18n="footer_svc_method">Neuron Method</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="playbacks-methodology.html" data-i18n="footer_svc_playbacks">Playbacks Methodology</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="process-automation.html" data-i18n="footer_svc_automation">Process Automation</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="ai-agentic-solutions.html" data-i18n="footer_svc_agentic">AI Agentic Solutions</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="private-ai-platform.html" data-i18n="footer_svc_private">Private AI Platform</a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-12">
-          <h4>Follow Us</h4>
-          <p>We are in social networks!</p>
+          <h4 data-i18n="footer_follow">Follow Us</h4>
+          <p data-i18n="footer_follow_desc">We are in social networks!</p>
           <div class="social-links d-flex">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -1005,7 +1010,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Neuron Process</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Neuron Process</strong> <span data-i18n="footer_rights">All Rights Reserved</span></p>
     </div>
 
   </footer>
@@ -1025,6 +1030,10 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- i18n -->
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/i18n.js"></script>
 
 </body>
 
