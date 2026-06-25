@@ -76,8 +76,8 @@
     const CONFIG_ID = "4346771552239213";
     const GRAPH_VER = "v23.0";
     // Backend that exchanges the returned code for a token + stores creds.
-    // (Wired in a follow-up step; until then the captured values are shown below.)
-    const ONBOARD_CALLBACK = "";
+    const ONBOARD_CALLBACK = "https://g0d4buiw8e.execute-api.us-east-1.amazonaws.com/onboard";
+    const TENANT = "duques";
 
     const statusEl = document.getElementById("status");
     const resultEl = document.getElementById("result");
@@ -122,7 +122,7 @@
           setStatus("No se completó la conexión. Inténtalo de nuevo.", "err");
           return;
         }
-        const payload = Object.assign({ code: code }, sessionInfo);
+        const payload = Object.assign({ code: code, tenant: TENANT }, sessionInfo);
         if (ONBOARD_CALLBACK) {
           setStatus("Finalizando la conexión…");
           fetch(ONBOARD_CALLBACK, {
