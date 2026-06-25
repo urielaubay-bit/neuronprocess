@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Conectar WhatsApp - Neuron Process</title>
+  <meta name="description" content="Conecta tu cuenta de WhatsApp Business con el asistente conversacional de Neuron Process.">
+  <meta name="robots" content="noindex, nofollow">
+
+  <link href="assets/img/favicon.png" rel="icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root { --teal:#19e2d4; --indigo:#5470e7; --ink:#1f2937; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: "Open Sans", system-ui, sans-serif; color: var(--ink);
+      background: linear-gradient(160deg, #f7fbff 0%, #eef2fb 100%);
+      min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px;
+    }
+    .card {
+      background: #fff; max-width: 520px; width: 100%; border-radius: 16px;
+      box-shadow: 0 20px 50px rgba(31,41,55,.12); padding: 40px 36px; text-align: center;
+    }
+    .logo { width: 64px; height: 64px; border-radius: 14px; margin-bottom: 18px; }
+    h1 { font-family: "Poppins", sans-serif; font-size: 24px; margin: 0 0 8px; }
+    p.lead { color: #5b6472; line-height: 1.6; margin: 0 0 26px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 10px; border: 0; cursor: pointer;
+      background: linear-gradient(135deg, var(--teal), var(--indigo)); color: #fff;
+      font-family: "Poppins", sans-serif; font-weight: 600; font-size: 16px;
+      padding: 14px 26px; border-radius: 10px; transition: transform .1s ease, box-shadow .2s ease;
+      box-shadow: 0 8px 20px rgba(84,112,231,.35);
+    }
+    .btn:hover { transform: translateY(-1px); box-shadow: 0 10px 26px rgba(84,112,231,.45); }
+    .btn:disabled { opacity: .6; cursor: default; transform: none; }
+    .wa { width: 22px; height: 22px; fill: #fff; }
+    .status { margin-top: 24px; font-size: 14px; line-height: 1.6; }
+    .status.ok { color: #15803d; }
+    .status.err { color: #b91c1c; }
+    .result { margin-top: 18px; text-align: left; background: #f6f9fe; border: 1px solid #e3ebf6;
+      border-radius: 10px; padding: 14px 16px; font-size: 13px; display: none; }
+    .result code { word-break: break-all; }
+    .foot { margin-top: 28px; font-size: 12px; color: #9aa3b2; }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <img class="logo" src="assets/img/neuronlogo.png" alt="Neuron Process">
+    <h1>Conecta tu WhatsApp Business</h1>
+    <p class="lead">
+      Vincula tu cuenta de WhatsApp Business con tu asistente conversacional. Tu equipo
+      sigue usando la app de WhatsApp Business como siempre — el asistente trabaja junto a ustedes.
+    </p>
+
+    <button id="connect" class="btn">
+      <svg class="wa" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.738-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+      Conectar con WhatsApp
+    </button>
+
+    <div id="status" class="status"></div>
+    <div id="result" class="result"></div>
+
+    <div class="foot">Neuron Process · Conexión segura vía Meta</div>
+  </div>
+
+  <!-- ── Meta Embedded Signup ──────────────────────────────────────────── -->
+  <script>
+    // Public client-side identifiers (App Secret is NEVER exposed here).
+    const APP_ID    = "2286033938836045";
+    const CONFIG_ID = "4346771552239213";
+    const GRAPH_VER = "v23.0";
+    // Backend that exchanges the returned code for a token + stores creds.
+    // (Wired in a follow-up step; until then the captured values are shown below.)
+    const ONBOARD_CALLBACK = "";
+
+    const statusEl = document.getElementById("status");
+    const resultEl = document.getElementById("result");
+    const btn = document.getElementById("connect");
+    let sessionInfo = {};
+
+    function setStatus(msg, kind) {
+      statusEl.textContent = msg;
+      statusEl.className = "status" + (kind ? " " + kind : "");
+    }
+
+    window.fbAsyncInit = function () {
+      FB.init({ appId: APP_ID, autoLogAppEvents: true, xfbml: true, version: GRAPH_VER });
+    };
+
+    // Embedded Signup posts session info (waba_id, phone_number_id) via postMessage.
+    window.addEventListener("message", function (event) {
+      if (!event.origin.endsWith("facebook.com")) return;
+      try {
+        const data = JSON.parse(event.data);
+        if (data.type === "WA_EMBEDDED_SIGNUP") {
+          if (data.event === "FINISH" || data.event === "FINISH_ONLY_WABA") {
+            sessionInfo = data.data || {};
+          } else if (data.event === "CANCEL") {
+            setStatus("Conexión cancelada. Puedes intentarlo de nuevo.", "err");
+          }
+        }
+      } catch (e) { /* non-JSON messages from the SDK — ignore */ }
+    });
+
+    function launchSignup() {
+      if (typeof FB === "undefined") {
+        setStatus("Cargando… vuelve a intentar en un momento.", "err");
+        return;
+      }
+      btn.disabled = true;
+      setStatus("Abriendo la conexión segura de Meta…");
+      FB.login(function (response) {
+        btn.disabled = false;
+        const code = response && response.authResponse && response.authResponse.code;
+        if (!code) {
+          setStatus("No se completó la conexión. Inténtalo de nuevo.", "err");
+          return;
+        }
+        const payload = Object.assign({ code: code }, sessionInfo);
+        if (ONBOARD_CALLBACK) {
+          setStatus("Finalizando la conexión…");
+          fetch(ONBOARD_CALLBACK, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload)
+          }).then(function (r) {
+            if (r.ok) setStatus("✅ ¡WhatsApp conectado! Ya puedes cerrar esta ventana.", "ok");
+            else setStatus("Recibimos tu autorización; estamos terminando la configuración.", "ok");
+          }).catch(function () {
+            setStatus("Recibimos tu autorización; estamos terminando la configuración.", "ok");
+          });
+        } else {
+          setStatus("✅ Autorización recibida.", "ok");
+        }
+        // Show captured values (useful during setup/testing).
+        resultEl.style.display = "block";
+        resultEl.innerHTML =
+          "<strong>Datos de la conexión</strong><br>" +
+          "code: <code>" + code + "</code><br>" +
+          "phone_number_id: <code>" + (sessionInfo.phone_number_id || "—") + "</code><br>" +
+          "waba_id: <code>" + (sessionInfo.waba_id || "—") + "</code>";
+      }, {
+        config_id: CONFIG_ID,
+        response_type: "code",
+        override_default_response_type: true,
+        extras: {
+          setup: {},
+          featureType: "whatsapp_business_app_onboarding", // coexistence: keep the Business app
+          sessionInfoVersion: "3"
+        }
+      });
+    }
+
+    btn.addEventListener("click", launchSignup);
+  </script>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+
+</body>
+
+</html>
