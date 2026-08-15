@@ -55,7 +55,7 @@
     <h1>Conecta tu WhatsApp Business</h1>
     <p class="lead">
       Vincula tu cuenta de WhatsApp Business con tu asistente conversacional. Tu equipo
-      sigue usando la app de WhatsApp Business como siempre — el asistente trabaja junto a ustedes.
+      sigue usando la app de WhatsApp Business como siempre, el asistente trabaja junto a ustedes.
     </p>
 
     <button id="connect" class="btn">
@@ -105,7 +105,7 @@
             setStatus("Conexión cancelada. Puedes intentarlo de nuevo.", "err");
           }
         }
-      } catch (e) { /* non-JSON messages from the SDK — ignore */ }
+      } catch (e) { /* non-JSON messages from the SDK, ignore */ }
     });
 
     function launchSignup() {
@@ -143,8 +143,8 @@
         resultEl.innerHTML =
           "<strong>Datos de la conexión</strong><br>" +
           "code: <code>" + code + "</code><br>" +
-          "phone_number_id: <code>" + (sessionInfo.phone_number_id || "—") + "</code><br>" +
-          "waba_id: <code>" + (sessionInfo.waba_id || "—") + "</code>";
+          "phone_number_id: <code>" + (sessionInfo.phone_number_id || "-") + "</code><br>" +
+          "waba_id: <code>" + (sessionInfo.waba_id || "-") + "</code>";
       }, {
         config_id: CONFIG_ID,
         response_type: "code",
