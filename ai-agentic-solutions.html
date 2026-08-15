@@ -127,22 +127,26 @@
     .page-title .breadcrumbs a { color: #47b2e4; }
     .page-title .breadcrumbs .current { color: rgba(255,255,255,0.7); }
     .page-title .breadcrumbs li + li::before { content: "/"; padding: 0 0.5rem; color: rgba(255,255,255,0.4); }
-    /* The theme only styles .btn-get-started inside .hero; make the in-page CTAs real buttons too */
-    .service-details-page .btn-get-started {
-      color: var(--contrast-color);
-      background: var(--accent-color);
-      font-family: var(--heading-font);
-      font-weight: 500;
-      font-size: 15px;
-      letter-spacing: 1px;
-      padding: 10px 28px 12px 28px;
-      border-radius: 50px;
-      transition: 0.3s;
+    /* WhatsApp CTA button, matching the other service pages */
+    .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: #25d366;
+      color: #fff;
+      border-radius: 30px;
+      padding: 0.75rem 2rem;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
     }
-    .service-details-page .btn-get-started:hover {
-      color: var(--contrast-color);
-      background: color-mix(in srgb, var(--accent-color), transparent 15%);
+    .btn-whatsapp:hover {
+      background: #1ebe5d;
+      color: #fff;
+      transform: translateY(-2px);
     }
+    .btn-whatsapp i { font-size: 1.3rem; }
   </style>
 </head>
 
@@ -211,7 +215,7 @@
               <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="aas_intro_b3">Tenant isolation and a compliance-ready posture, access control, private resources, per-client boundaries</span></li>
               <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="aas_intro_b4">A named team that owns the outcome end to end, not a self-serve tool you're left to operate</span></li>
             </ul>
-            <a href="/#contact" class="btn-get-started mt-4 d-inline-block" data-i18n="aas_lets_talk">Let's Talk</a>
+            <a href="https://wa.me/525522436914?text=Hi%2C%20I'd%20like%20to%20talk%20about%20AI%20agentic%20solutions%20for%20my%20business." class="btn-whatsapp mt-4 d-inline-flex" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> <span data-i18n="aas_lets_talk">Let's Talk</span></a>
           </div>
 
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
@@ -267,7 +271,7 @@
               <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="caas_b6"><strong>Deploy per command:</strong> a new business goes live as a configured tenant, not a rebuild</span></li>
             </ul>
             <div class="mt-4 d-flex align-items-center flex-wrap gap-3">
-              <a href="/#contact" class="btn-get-started d-inline-block" data-i18n="caas_demo_btn">Request a Demo</a>
+              <a href="https://wa.me/525522436914?text=Hi%2C%20I'd%20like%20to%20request%20a%20demo%20of%20your%20CAaaS%20conversational%20agent." class="btn-whatsapp d-inline-flex" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> <span data-i18n="caas_demo_btn">Request a Demo</span></a>
               <span style="color: #37517e; font-weight: 600;"><i class="bi bi-graph-up-arrow me-1 text-primary"></i><span data-i18n="caas_price">Scoped to your outcome, we baseline first-response time, close speed, and error rate, then quote to that</span></span>
             </div>
           </div>
@@ -536,7 +540,7 @@
             <p data-i18n="cta_agentic_desc">Let's start with a free 30-minute discovery call. We'll identify the highest-ROI process in your organization and sketch the agent that can automate it.</p>
           </div>
           <div class="col-xl-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="/#contact" data-i18n="cta_contact_btn">Contact Us</a>
+            <a class="btn-whatsapp align-middle" href="https://wa.me/525522436914?text=Hi%2C%20I'd%20like%20a%20free%20discovery%20call%20about%20deploying%20an%20AI%20agent." target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> <span data-i18n="cta_contact_btn">Contact Us</span></a>
           </div>
         </div>
       </div>
