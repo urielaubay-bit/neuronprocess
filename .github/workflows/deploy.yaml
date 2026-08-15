@@ -23,3 +23,9 @@ jobs:
 
       - name: Deploy to S3
         run: aws s3 sync . s3://www.neuronprocess.com
+
+      - name: Invalidate CloudFront
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id ERHSE7H6W6CY3 \
+            --paths "/*"
