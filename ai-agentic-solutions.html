@@ -127,6 +127,22 @@
     .page-title .breadcrumbs a { color: #47b2e4; }
     .page-title .breadcrumbs .current { color: rgba(255,255,255,0.7); }
     .page-title .breadcrumbs li + li::before { content: "/"; padding: 0 0.5rem; color: rgba(255,255,255,0.4); }
+    /* The theme only styles .btn-get-started inside .hero; make the in-page CTAs real buttons too */
+    .service-details-page .btn-get-started {
+      color: var(--contrast-color);
+      background: var(--accent-color);
+      font-family: var(--heading-font);
+      font-weight: 500;
+      font-size: 15px;
+      letter-spacing: 1px;
+      padding: 10px 28px 12px 28px;
+      border-radius: 50px;
+      transition: 0.3s;
+    }
+    .service-details-page .btn-get-started:hover {
+      color: var(--contrast-color);
+      background: color-mix(in srgb, var(--accent-color), transparent 15%);
+    }
   </style>
 </head>
 
