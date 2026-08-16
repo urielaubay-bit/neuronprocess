@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RK9X7RE793"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RK9X7RE793');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso Inteligencia Artificial Aplicada | Agentes de IA · NeuronProcess</title>
+  <meta name="description" content="Curso práctico de agentes de IA: en 5 semanas construyes 5 agentes reales y tu propio LLM privado. 20 horas, grupos reducidos, 100% práctico. Empezamos en Septiembre.">
+  <meta name="keywords" content="curso inteligencia artificial, curso agentes de IA, curso IA Mexico, agentes generativos, LLM privado, RAG, MCP, Claude, NeuronProcess, Queretaro">
+  <link rel="canonical" href="https://www.neuronprocess.com/curso-inteligencia-artificial-aplicada.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.neuronprocess.com/curso-inteligencia-artificial-aplicada.html">
+  <meta property="og:site_name" content="NeuronProcess">
+  <meta property="og:title" content="Curso Inteligencia Artificial Aplicada · Agentes de IA">
+  <meta property="og:description" content="En 5 semanas construyes 5 agentes de IA reales y tu propio LLM privado. 20 horas, grupos reducidos. Empezamos en Septiembre.">
+  <meta property="og:image" content="https://www.neuronprocess.com/assets/img/neuronlogo.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Curso Inteligencia Artificial Aplicada · Agentes de IA">
+  <meta name="twitter:description" content="En 5 semanas construyes 5 agentes de IA reales y tu propio LLM privado. Empezamos en Septiembre.">
+  <meta name="twitter:image" content="https://www.neuronprocess.com/assets/img/neuronlogo.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Inteligencia Artificial Aplicada",
+    "description": "Curso práctico para construir agentes generativos reales, desde tu primer agente hasta sistemas listos para producción y venta. 20 horas, 5 semanas, 5 labs.",
+    "provider": {"@type": "Organization", "name": "NeuronProcess", "url": "https://www.neuronprocess.com"},
+    "inLanguage": "es",
+    "offers": {"@type": "Offer", "price": "5000", "priceCurrency": "MXN"}
+  }
+  </script>
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Icons (WhatsApp icon on CTAs) -->
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#081426; --panel:#0f2540; --panel2:#12345c; --ink:#eaf2fb;
+    --muted:#9db4d0; --accent:#3fb6e6; --accent2:#5ee0c0; --line:rgba(255,255,255,.10);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--ink);
+    font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:960px;margin:0 auto;padding:0 22px}
+  a{color:inherit;text-decoration:none}
+  .eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:.72rem;
+    font-weight:700;color:var(--accent)}
+  /* TOP BAR */
+  .topbar{border-bottom:1px solid var(--line);background:rgba(8,20,38,.85);
+    backdrop-filter:blur(6px);position:sticky;top:0;z-index:10}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.05rem}
+  .brand img{height:30px;width:auto}
+  .topbar .mini-cta{background:var(--accent);color:#02121f;font-weight:700;
+    padding:8px 18px;border-radius:30px;font-size:.85rem}
+  .topbar .mini-cta:hover{background:#63c8f2}
+  /* HERO */
+  .hero{background:radial-gradient(1200px 500px at 80% -10%,rgba(63,182,230,.22),transparent 60%),
+    linear-gradient(160deg,#0a1b33,#081426);border-bottom:1px solid var(--line);
+    padding:60px 0 52px}
+  .hero h1{font-size:2.9rem;line-height:1.08;font-weight:800;margin:14px 0 12px}
+  .hero h1 span{color:var(--accent)}
+  .hero p.lead{color:var(--muted);font-size:1.12rem;max-width:640px}
+  .startpill{margin-top:20px;display:inline-flex;align-items:center;gap:9px;
+    background:rgba(94,224,192,.12);border:1px solid rgba(94,224,192,.4);color:var(--accent2);
+    padding:9px 18px;border-radius:30px;font-weight:700;font-size:.92rem}
+  .hero-cta{margin-top:24px}
+  .stats{display:flex;flex-wrap:wrap;gap:34px;margin-top:34px}
+  .stat b{display:block;font-size:2.1rem;font-weight:800;line-height:1;color:#fff}
+  .stat small{color:var(--muted);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase}
+  /* SECTIONS */
+  section{padding:52px 0;border-bottom:1px solid var(--line)}
+  h2{font-size:1.5rem;font-weight:800;margin:8px 0 22px}
+  .grid{display:grid;gap:16px}
+  .cols-2{grid-template-columns:repeat(2,1fr)}
+  .cols-3{grid-template-columns:repeat(3,1fr)}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .card h3{font-size:1.05rem;margin-bottom:6px}
+  .card p{color:var(--muted);font-size:.95rem}
+  .take{background:linear-gradient(180deg,var(--panel2),var(--panel));border-left:4px solid var(--accent);
+    border-radius:12px;padding:22px 24px}
+  .take li{list-style:none;margin:9px 0;padding-left:26px;position:relative;color:var(--ink)}
+  .take li::before{content:"\2713";position:absolute;left:0;color:var(--accent2);font-weight:800}
+  .week{display:flex;gap:16px;align-items:flex-start;background:var(--panel);
+    border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:12px}
+  .wk{flex:0 0 auto;width:52px;height:52px;border-radius:12px;
+    background:linear-gradient(150deg,var(--accent),#2c74b8);display:flex;flex-direction:column;
+    align-items:center;justify-content:center;font-weight:800;color:#02121f}
+  .wk small{font-size:.5rem;letter-spacing:.1em}
+  .wk b{font-size:1.3rem;line-height:1}
+  .week h3{font-size:1.08rem;margin-bottom:4px}
+  .week p{color:var(--muted);font-size:.93rem;margin-bottom:8px}
+  .lab{display:inline-block;font-size:.78rem;color:var(--accent2);
+    border:1px solid rgba(94,224,192,.35);border-radius:20px;padding:3px 12px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .chip{font-size:.72rem;color:var(--muted);border:1px solid var(--line);border-radius:20px;padding:3px 10px}
+  .out{display:flex;gap:12px;align-items:flex-start;margin:14px 0}
+  .out .dot{flex:0 0 auto;width:34px;height:34px;border-radius:9px;background:rgba(63,182,230,.15);
+    display:flex;align-items:center;justify-content:center;color:var(--accent);font-weight:800}
+  .out b{display:block}
+  .out span{color:var(--muted);font-size:.93rem}
+  .btn{display:inline-flex;align-items:center;gap:9px;background:var(--accent);color:#02121f;font-weight:800;
+    padding:14px 34px;border-radius:40px;font-size:1.02rem;transition:background .2s}
+  .btn:hover{background:#63c8f2}
+  .cta{background:linear-gradient(160deg,#0d2b4d,#0a1b33);text-align:center;padding:60px 0}
+  .cta h2{font-size:2rem}
+  .price{font-size:2.4rem;font-weight:800;color:#fff;margin:8px 0 2px}
+  .price small{font-size:.9rem;color:var(--muted);font-weight:500}
+  .fineprint{color:var(--muted);font-size:.85rem;margin-top:16px}
+  footer{padding:30px 0;text-align:center;color:var(--muted);font-size:.85rem}
+  footer b{color:var(--ink)}
+  footer a{color:var(--accent)}
+  @media(max-width:720px){
+    .cols-2,.cols-3{grid-template-columns:1fr}
+    .hero h1{font-size:2.1rem}
+    .topbar .brand span{display:none}
+  }
+</style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="wrap">
+      <a href="/" class="brand"><img src="assets/img/neuronlogo.png" alt="NeuronProcess"><span>NeuronProcess</span></a>
+      <a class="mini-cta" href="https://wa.me/525522436914?text=Hola%2C%20quiero%20reservar%20mi%20lugar%20en%20el%20curso%20Inteligencia%20Artificial%20Aplicada%20(cohorte%20de%20Septiembre)." target="_blank" rel="noopener">Reserva tu lugar</a>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Programa · Cohorte 2026</div>
+      <h1>Inteligencia<br>Artificial <span>Aplicada</span></h1>
+      <p class="lead">Un curso práctico para construir agentes generativos reales, desde tu primer agente hasta sistemas listos para producción y venta.</p>
+      <div class="startpill">📅 Empezamos en Septiembre</div>
+      <div class="hero-cta">
+        <a class="btn" href="https://wa.me/525522436914?text=Hola%2C%20quiero%20reservar%20mi%20lugar%20en%20el%20curso%20Inteligencia%20Artificial%20Aplicada%20(cohorte%20de%20Septiembre)." target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> Reserva tu lugar →</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>20</b><small>Horas</small></div>
+        <div class="stat"><b>5</b><small>Semanas</small></div>
+        <div class="stat"><b>5</b><small>Labs prácticos</small></div>
+        <div class="stat"><b>4h</b><small>Por semana</small></div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="wrap">
+      <div class="eyebrow">De qué se trata</div>
+      <h2>No es un curso de teoría</h2>
+      <p style="color:var(--muted);max-width:680px">En cinco semanas construyes agentes de IA que funcionan, con streaming, herramientas, MCP, RAG y modelos privados, y sales con proyectos reales que puedes mostrar o vender. Cada sesión termina con algo corriendo en tu máquina.</p>
+      <div class="take" style="margin-top:24px">
+        <div class="eyebrow" style="color:var(--accent2)">Lo que te llevas al terminar</div>
+        <ul style="margin-top:10px">
+          <li>Cinco agentes funcionales construidos por ti, semana a semana.</li>
+          <li>Tu propio agente LLM privado desplegado, sin depender de la nube.</li>
+          <li>Un proyecto final que resuelve un problema real de tu trabajo.</li>
+          <li>Plantillas de arquitectura y repos reutilizables.</li>
+          <li>Acceso a una comunidad activa de práctica.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="eyebrow">Plan de estudios</div>
+      <h2>Cinco semanas, cinco agentes</h2>
+
+      <div class="week">
+        <div class="wk"><small>SEM</small><b>1</b></div>
+        <div>
+          <h3>Fundamentos y el nuevo paradigma</h3>
+          <p>Qué es (y qué no es) un agente. El loop agéntico y la anatomía de un sistema agéntico.</p>
+          <span class="lab">Lab: Tu primer agente con la API de Claude</span>
+          <div class="chips"><span class="chip">LLM vs Agente</span><span class="chip">Loop agéntico</span><span class="chip">System prompts</span><span class="chip">Structured output</span></div>
+        </div>
+      </div>
+
+      <div class="week">
+        <div class="wk"><small>SEM</small><b>2</b></div>
+        <div>
+          <h3>Generative UI y experiencias conversacionales</h3>
+          <p>Por qué la UI generativa cambia el producto. Streaming, tool calling y salidas estructuradas.</p>
+          <span class="lab">Lab: Asistente conversacional con streaming</span>
+          <div class="chips"><span class="chip">Streaming</span><span class="chip">Tool calling</span><span class="chip">Caso Rakuten</span><span class="chip">UI generativa</span></div>
+        </div>
+      </div>
+
+      <div class="week">
+        <div class="wk"><small>SEM</small><b>3</b></div>
+        <div>
+          <h3>Tools, MCP y agentes que actúan</h3>
+          <p>El Model Context Protocol, el estándar para conectar agentes con herramientas. Construye las tuyas.</p>
+          <span class="lab">Lab: Construye tu propio MCP server</span>
+          <div class="chips"><span class="chip">MCP</span><span class="chip">Tool design</span><span class="chip">Text-to-SQL</span><span class="chip">Claude Cowork</span></div>
+        </div>
+      </div>
+
+      <div class="week">
+        <div class="wk"><small>SEM</small><b>4</b></div>
+        <div>
+          <h3>Tu propio LLM privado y agentes on-premise</h3>
+          <p>Despliega un modelo que corre sin tokens ni nube, la base del producto para clientes con datos sensibles. Incluye RAG.</p>
+          <span class="lab">Lab: Despliega tu agente LLM privado</span>
+          <div class="chips"><span class="chip">Ollama</span><span class="chip">vLLM</span><span class="chip">RAG</span><span class="chip">Vector stores</span><span class="chip">Guardrails</span></div>
+        </div>
+      </div>
+
+      <div class="week">
+        <div class="wk"><small>SEM</small><b>5</b></div>
+        <div>
+          <h3>Arquitectura de producción y proyecto final</h3>
+          <p>Sistemas multi-agente y el patrón "agents fabric". Evals, observabilidad, costo y dónde se rompen los agentes. Construyes y presentas tu proyecto.</p>
+          <span class="lab">Lab: Proyecto final + presentaciones</span>
+          <div class="chips"><span class="chip">Multi-agente</span><span class="chip">Evals</span><span class="chip">Observabilidad</span><span class="chip">Del POC al producto</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="eyebrow">Al terminar serás capaz de</div>
+      <h2>De estudiante a arquitecto</h2>
+      <div class="grid cols-2">
+        <div class="out"><div class="dot">◆</div><div><b>Diseñar sistemas agénticos</b><span>Orquestación, memoria, herramientas y guardrails como un arquitecto.</span></div></div>
+        <div class="out"><div class="dot">⚡</div><div><b>Construir de punta a punta</b><span>Desde el prompt hasta el despliegue, con streaming y tool calling reales.</span></div></div>
+        <div class="out"><div class="dot">🔒</div><div><b>Desplegar en privado</b><span>Correr modelos on-premise sin tokens para clientes con datos sensibles.</span></div></div>
+        <div class="out"><div class="dot">📈</div><div><b>Llevar a producción</b><span>Aplicar evals, observabilidad y control de costo, del demo al producto.</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="eyebrow">Para quién es</div>
+      <h2>Hecho para quien construye</h2>
+      <div class="grid cols-2">
+        <div class="card"><h3>Desarrolladores</h3><p>Con experiencia intermedia que quieren dominar la construcción de agentes de IA de forma práctica.</p></div>
+        <div class="card"><h3>Arquitectos y líderes técnicos</h3><p>Que necesitan entender cómo diseñar y llevar sistemas agénticos a producción.</p></div>
+        <div class="card"><h3>Consultores y freelancers</h3><p>Que quieren ofrecer soluciones de automatización con IA a sus clientes.</p></div>
+        <div class="card"><h3>Fundadores y makers</h3><p>Construyendo productos con IA que quieren bases técnicas sólidas y vendibles.</p></div>
+      </div>
+      <p style="color:var(--muted);margin-top:18px"><b style="color:var(--accent)">Requisito:</b> experiencia intermedia con Python. No necesitas experiencia previa en IA.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="eyebrow">Formato</div>
+      <h2>Grupos reducidos, 100% práctico</h2>
+      <div class="grid cols-3">
+        <div class="card"><h3>Atención en vivo</h3><p>Grupos reducidos con atención personalizada. Martes conceptos, jueves laboratorio.</p></div>
+        <div class="card"><h3>Cada sesión entrega</h3><p>Cada clase termina con algo funcionando en tu máquina, no con una diapositiva más.</p></div>
+        <div class="card"><h3>Comunidad</h3><p>Canal de Discord y soporte continuo durante y después del curso.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap">
+      <h2>Construye el futuro, no solo lo estudies</h2>
+      <p style="color:var(--muted);margin-top:8px">Cinco semanas. Cinco agentes reales. Un proyecto que puedes mostrar.</p>
+      <div class="price">$5,000 MXN <small>· 20 horas · pago único</small></div>
+      <p style="color:var(--accent2);font-weight:700;margin-top:6px">📅 Empezamos en Septiembre</p>
+      <div style="margin-top:22px">
+        <a class="btn" href="https://wa.me/525522436914?text=Hola%2C%20quiero%20reservar%20mi%20lugar%20en%20el%20curso%20Inteligencia%20Artificial%20Aplicada%20(cohorte%20de%20Septiembre)." target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> Reserva tu lugar →</a>
+      </div>
+      <p class="fineprint">Cupo limitado por cohorte para mantener grupos reducidos.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      Impartido por <b>Uriel Zamora</b> · Engineering Manager · AI Application Engineer · Process Architect<br>
+      <a href="/"><b>NeuronProcess</b></a> · neuronprocess.com
+    </div>
+  </footer>
+
+</body>
+</html>
