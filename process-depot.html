@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RK9X7RE793"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RK9X7RE793');
+  </script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Process Depot - NeuronProcess</title>
+  <meta name="description" content="Process Depot is a platform to model, simulate, deploy, and share business processes. Describe a workflow in plain language, simulate its ROI as a digital twin, run it on an open engine anywhere, and buy a managed production setup. Share, reuse, or sell executable process apps in the marketplace.">
+  <meta name="keywords" content="Process Depot, AI process automation platform, BPMN modeling, process simulation, digital twin, process marketplace, deterministic AI, Operaton, MCP integrations, NeuronProcess">
+  <link rel="canonical" href="https://www.neuronprocess.com/process-depot.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.neuronprocess.com/process-depot.html">
+  <meta property="og:site_name" content="NeuronProcess">
+  <meta property="og:title" content="Process Depot - NeuronProcess">
+  <meta property="og:description" content="Model a process in plain language, simulate its ROI, deploy it anywhere, and share or sell it in the marketplace. A platform built on a deterministic engine plus probabilistic AI judgment.">
+  <meta property="og:image" content="https://www.neuronprocess.com/assets/img/neuronlogo.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Process Depot - NeuronProcess">
+  <meta name="twitter:description" content="Model a process in plain language, simulate its ROI, deploy it anywhere, and share or sell it in the marketplace.">
+  <meta name="twitter:image" content="https://www.neuronprocess.com/assets/img/neuronlogo.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Process Depot",
+    "brand": {"@type": "Brand", "name": "NeuronProcess"},
+    "description": "Process Depot is a platform to model, simulate, deploy, and share business processes. Describe a workflow in plain language, simulate its ROI as a digital twin, run it on an open engine anywhere, buy a managed production setup, and share, reuse, or sell executable process apps in the marketplace.",
+    "url": "https://www.neuronprocess.com/process-depot.html",
+    "category": "Business Process Automation Platform"
+  }
+  </script>
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .page-title {
+      padding: 60px 0 30px;
+      background: linear-gradient(135deg, #37517e 0%, #2c3e6b 100%);
+      color: #fff;
+    }
+    .page-title h1 { color: #fff; }
+    .page-title .breadcrumbs ol { background: transparent; padding: 0; }
+    .page-title .breadcrumbs a { color: #47b2e4; }
+    .page-title .breadcrumbs .current { color: rgba(255,255,255,0.7); }
+    .page-title .breadcrumbs li + li::before { content: "/"; padding: 0 0.5rem; color: rgba(255,255,255,0.4); }
+
+    .specialist-badge {
+      display: inline-block;
+      background: #47b2e4;
+      color: #fff;
+      padding: 0.3rem 1rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+    }
+
+    /* Feature cards */
+    .stack-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      border: 1px solid #e0e9f5;
+      height: 100%;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .stack-card:hover { box-shadow: 0 6px 24px rgba(55,81,126,0.1); transform: translateY(-3px); }
+    .stack-icon {
+      width: 48px; height: 48px;
+      background: linear-gradient(135deg, #37517e, #47b2e4);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .stack-icon i { font-size: 1.4rem; color: #fff; }
+    .stack-card h5 { color: #37517e; font-weight: 700; font-size: 1rem; margin-bottom: 0.4rem; }
+    .stack-card p { font-size: 0.9rem; color: #666; margin-bottom: 0; }
+    .stack-card .tag {
+      display: inline-block; margin-top: 0.75rem;
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.03em;
+      text-transform: uppercase; color: #1a6fa0;
+      background: #eaf4fb; border-radius: 12px; padding: 0.15rem 0.6rem;
+    }
+
+    /* How it works steps */
+    .hw-step { background: rgba(255,255,255,0.12); border-radius: 8px; padding: 0.85rem 1rem; }
+    .hw-step strong { display: block; }
+    .hw-step p { font-size: 0.88rem; opacity: 0.9; margin: 0.25rem 0 0; }
+
+    /* Highlight (digital twin) */
+    .twin-box {
+      background: linear-gradient(135deg, #eef4fb 0%, #f0f8ff 100%);
+      border: 2px solid #47b2e4;
+      border-radius: 16px;
+      padding: 2rem;
+    }
+    .twin-box h4 { color: #1a6fa0; font-weight: 700; }
+    .twin-metric { text-align: center; padding: 0.75rem 0.5rem; }
+    .twin-metric .n { display: block; font-size: 1.5rem; font-weight: 800; color: #37517e; }
+    .twin-metric .l { font-size: 0.82rem; color: #4a5568; }
+
+    /* Audience chips */
+    .aud-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      border: 1px solid #e0e9f5;
+      border-left: 4px solid #47b2e4;
+      height: 100%;
+    }
+    .aud-card h5 { color: #37517e; font-weight: 700; font-size: 0.97rem; margin-bottom: 0.35rem; }
+    .aud-card p { font-size: 0.88rem; color: #555; margin-bottom: 0; }
+  </style>
+</head>
+
+<body class="service-details-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="/" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/neuronlogo.png" alt="NeuronProcess">
+        <h1 class="sitename">NeuronProcess</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="/#hero" data-i18n="nav_home">Home</a></li>
+          <li><a href="/#about" data-i18n="nav_about">About</a></li>
+          <li><a href="/#services" class="active" data-i18n="nav_services">Services</a></li>
+          <li><a href="/#contact" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang-btn="en" onclick="setLanguage('en')">EN</button>
+        <button type="button" data-lang-btn="es" onclick="setLanguage('es')">ES</button>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ol class="d-flex list-unstyled gap-0 mb-2">
+            <li><a href="/" data-i18n="nav_home">Home</a></li>
+            <li><a href="/#services" data-i18n="nav_services">Services</a></li>
+            <li class="current">Process Depot</li>
+          </ol>
+        </nav>
+        <h1>Process Depot</h1>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Intro Section -->
+    <section class="section" style="padding-top: 60px;">
+      <div class="container">
+        <div class="row gy-5 align-items-center">
+
+          <div class="col-lg-6" data-aos="fade-right">
+            <span class="specialist-badge"><i class="bi bi-box-seam me-1"></i> Model · Simulate · Deploy · Share</span>
+            <h2 style="font-weight: 700; color: #37517e;">A described process, turned into a running, simulated, shareable product.</h2>
+            <p class="mt-3">
+              Process Depot takes a workflow you describe in plain language and turns it into a validated BPMN model you can simulate, run on an open engine, and deploy anywhere. When you are ready for production, you buy a managed setup.
+            </p>
+            <p>
+              It is built on the same formula as our Process Copilot studio, a <strong>deterministic engine plus probabilistic AI judgment</strong>, so what you ship is reliable, not just impressive. And every process you build can be shared, reused, or sold in the Process Depot marketplace.
+            </p>
+            <ul class="mt-3" style="list-style: none; padding: 0;">
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Describe a process, get a valid BPMN 2.0 model on the canvas</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Simulate it as a digital twin to see cycle time, cost, and bottlenecks before you build</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Deploy to a portable open engine and run it wherever you want</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Buy a managed, production-grade setup when you go live</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Share, reuse, or sell executable process apps in the marketplace</li>
+            </ul>
+            <a href="/#contact" class="btn-get-started mt-4 d-inline-block">Request a Demo</a>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+            <div style="background: linear-gradient(135deg, #37517e, #47b2e4); border-radius: 12px; padding: 2.5rem; color: #fff;">
+              <i class="bi bi-box-seam" style="font-size: 3rem; opacity: 0.9;"></i>
+              <h4 class="mt-3 mb-3" style="font-weight: 700; color: #fff;">How it works</h4>
+              <div class="d-flex flex-column gap-3">
+                <div class="hw-step">
+                  <strong><i class="bi bi-chat-square-text me-2"></i>1. Model</strong>
+                  <p>Describe the process. The platform draws it in BPMN, names the tasks, and designs the forms.</p>
+                </div>
+                <div class="hw-step">
+                  <strong><i class="bi bi-graph-up-arrow me-2"></i>2. Simulate</strong>
+                  <p>Run it as a digital twin to see cycle time, cost, and bottlenecks, and the ROI, before you build.</p>
+                </div>
+                <div class="hw-step">
+                  <strong><i class="bi bi-play-circle me-2"></i>3. Deploy</strong>
+                  <p>Run on a portable open engine anywhere, or buy a managed production setup.</p>
+                </div>
+                <div class="hw-step">
+                  <strong><i class="bi bi-shop me-2"></i>4. Share</strong>
+                  <p>Publish the process app to the marketplace to reuse across teams, or sell it.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /Intro Section -->
+
+    <!-- Capabilities Section -->
+    <section class="section light-background" style="padding: 60px 0;">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>What Process Depot does</h2>
+          <p>One platform that carries a process from an idea to running operations, and to a shareable, sellable product.</p>
+        </div>
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="stack-card">
+              <div class="stack-icon"><i class="bi bi-chat-square-text"></i></div>
+              <h5>Model in plain language</h5>
+              <p>Describe steps in your own words and get a valid, standard BPMN 2.0 model you can edit on the canvas or upload from an existing file.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="stack-card">
+              <div class="stack-icon"><i class="bi bi-graph-up-arrow"></i></div>
+              <h5>Simulate before you build</h5>
+              <p>Run a process as a digital twin to see its ROI, cycle time, cost, and bottlenecks, before you commit engineering to it.</p>
+              <span class="tag">Digital twin</span>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="stack-card">
+              <div class="stack-icon"><i class="bi bi-globe2"></i></div>
+              <h5>Deploy anywhere, no lock-in</h5>
+              <p>Models are standard, portable BPMN and run on an open engine. Deploy where you want, and keep ownership of your process.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="stack-card">
+              <div class="stack-icon"><i class="bi bi-hdd-network"></i></div>
+              <h5>Managed production setup</h5>
+              <p>When you are ready to go live, buy a managed, production-grade deployment with monitoring and support, instead of running it yourself.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="stack-card">
+              <div class="stack-icon"><i class="bi bi-shop"></i></div>
+              <h5>Process marketplace</h5>
+              <p>Publish executable, simulation-proven process apps to share across teams, reuse a proven template, or sell your own.</p>
+              <span class="tag">Share · reuse · sell</span>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+            <div class="stack-card">
+              <div class="stack-icon"><i class="bi bi-plugin"></i></div>
+              <h5>Secure integrations</h5>
+              <p>Service tasks connect to your systems through a typed, allow-listed tool layer, so a process does real work, safely.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /Capabilities Section -->
+
+    <!-- Digital Twin Highlight -->
+    <section class="section" style="padding: 60px 0;">
+      <div class="container">
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="twin-box">
+              <h4><i class="bi bi-graph-up-arrow me-2"></i>Simulate before you deploy</h4>
+              <p class="mt-2" style="color:#4a5568;">A digital twin of your process runs thousands of instances under different loads and resource levels, so you see the outcome before you spend a single engineering hour.</p>
+              <div class="row mt-3">
+                <div class="col-4 twin-metric"><span class="n">Cycle time</span><span class="l">predicted, not guessed</span></div>
+                <div class="col-4 twin-metric"><span class="n">Cost</span><span class="l">per instance and per month</span></div>
+                <div class="col-4 twin-metric"><span class="n">Bottlenecks</span><span class="l">found before go-live</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <h2 style="font-weight: 700; color: #37517e;">Know the ROI before you build it</h2>
+            <p class="mt-3">Most automation projects commit budget on a hunch. Process Depot flips that order: you model the process, simulate it as a digital twin, and read the numbers first. Only the processes that pay off get built and deployed.</p>
+            <p>Because the model is standard BPMN on a deterministic engine, the same process you simulated is the one that runs in production. What you tested is what you ship.</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Digital Twin Highlight -->
+
+    <!-- Who it's for Section -->
+    <section class="section light-background" style="padding: 60px 0;">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Who it is for</h2>
+          <p>Teams that need process work to end in running operations, and builders who want to reuse or sell what they make.</p>
+        </div>
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="aud-card">
+              <h5>Operations and transformation teams</h5>
+              <p>Turn documented processes into live, measured workflows, with the ROI visible before and after go-live.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="aud-card">
+              <h5>Startups and business owners</h5>
+              <p>Simulate a process, get the numbers, and run only what pays off, without a big team or a big upfront bet.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="aud-card">
+              <h5>Consultants and integrators</h5>
+              <p>Build reusable, executable process apps once, then deliver them to many clients, or sell them in the marketplace.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="aud-card">
+              <h5>BPM and automation practices</h5>
+              <p>Move from static documentation to modeling, simulation, execution, and continuous improvement in one platform.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Who it's for Section -->
+
+    <!-- Bottom CTA -->
+    <section class="call-to-action section dark-background">
+      <img src="assets/img/cta-bg.jpg" alt="">
+      <div class="container">
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-9 text-center text-xl-start">
+            <h3>Build, simulate, and deploy your first process.</h3>
+            <p>Bring a process you already know. In a short session we model it, simulate its ROI, and show you how it deploys, so you can judge Process Depot on your own operations.</p>
+          </div>
+          <div class="col-xl-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="/#contact">Request a Demo</a>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Bottom CTA -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="/" class="d-flex align-items-center">
+            <span class="sitename">Neuron Process</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p data-i18n="footer_location">Queretaro, Mexico</p>
+            <p><strong data-i18n="footer_phone_label">Phone:</strong> <span>+52 5522436914</span></p>
+            <p><strong data-i18n="footer_email_label">Email:</strong> <span>contact@neuronprocess.com</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4 data-i18n="footer_useful">Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="/" data-i18n="footer_useful_home">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="/#about" data-i18n="footer_useful_about">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="/#services" data-i18n="footer_useful_services">Services</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4 data-i18n="footer_services">Our Services</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="maturity-assessment.html" data-i18n="footer_svc_maturity">Maturity Assessment</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="neuron-method.html" data-i18n="footer_svc_method">Neuron Method</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="playbacks-methodology.html" data-i18n="footer_svc_playbacks">Playbacks Methodology</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="process-automation.html" data-i18n="footer_svc_automation">Process Automation</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="process-depot.html">Process Depot</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="process-copilot.html" data-i18n="footer_svc_copilot">Process Copilot</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="ai-agentic-solutions.html" data-i18n="footer_svc_agentic">AI Agentic Solutions</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="private-ai-platform.html" data-i18n="footer_svc_private">Private AI Platform</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h4 data-i18n="footer_follow">Follow Us</h4>
+          <p data-i18n="footer_follow_desc">We are in social networks!</p>
+          <div class="social-links d-flex">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/neuron-process-mx/"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Neuron Process</strong> <span data-i18n="footer_rights">All Rights Reserved</span></p>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- i18n -->
+  <script src="assets/js/translations.js?v=20260901"></script>
+  <script src="assets/js/i18n.js"></script>
+
+</body>
+
+</html>
