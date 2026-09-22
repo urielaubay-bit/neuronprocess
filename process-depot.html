@@ -142,6 +142,27 @@
     }
     .aud-card h5 { color: #37517e; font-weight: 700; font-size: 0.97rem; margin-bottom: 0.35rem; }
     .aud-card p { font-size: 0.88rem; color: #555; margin-bottom: 0; }
+
+    /* WhatsApp CTA button, matching the other service pages */
+    .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: #25d366;
+      color: #fff;
+      border-radius: 30px;
+      padding: 0.75rem 2rem;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-whatsapp:hover {
+      background: #1ebe5d;
+      color: #fff;
+      transform: translateY(-2px);
+    }
+    .btn-whatsapp i { font-size: 1.3rem; }
   </style>
 </head>
 
@@ -207,7 +228,7 @@
               <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="pd_li4">Buy a managed, production-grade setup when you go live</span></li>
               <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i><span data-i18n="pd_li5">Share, reuse, or sell executable process apps in the marketplace</span></li>
             </ul>
-            <a href="/#contact" class="btn-get-started mt-4 d-inline-block" data-i18n="pd_req">Request a Demo</a>
+            <a href="https://wa.me/525522436914?text=Hi%2C%20I'd%20like%20to%20request%20a%20demo%20of%20Process%20Depot." class="btn-whatsapp mt-4 d-inline-flex" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> <span data-i18n="pd_req">Request a Demo</span></a>
           </div>
 
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
@@ -372,7 +393,7 @@
             <p data-i18n="pd_bcta_p">Bring a process you already know. In a short session we model it, simulate its ROI, and show you how it deploys, so you can judge Process Depot on your own operations.</p>
           </div>
           <div class="col-xl-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="/#contact" data-i18n="pd_bcta_btn">Request a Demo</a>
+            <a class="btn-whatsapp align-middle" href="https://wa.me/525522436914?text=Hi%2C%20I'd%20like%20to%20request%20a%20demo%20of%20Process%20Depot." target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> <span data-i18n="pd_bcta_btn">Request a Demo</span></a>
           </div>
         </div>
       </div>
