@@ -875,6 +875,27 @@
   <script src="assets/js/translations.js?v=20260921"></script>
   <script src="assets/js/i18n.js"></script>
 
+  <!-- Lead tracking: fire a GA4 generate_lead event on WhatsApp / contact / email CTAs -->
+  <script>
+    (function () {
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest('a[href]');
+        if (!a || typeof gtag !== 'function') return;
+        var href = a.getAttribute('href') || '';
+        var method = null;
+        if (/^https?:\/\/(wa\.me|api\.whatsapp\.com)/i.test(href) || /^tel:/i.test(href)) method = 'whatsapp';
+        else if (/^mailto:/i.test(href)) method = 'email';
+        else if (/#contact/i.test(href)) method = 'contact_form';
+        if (!method) return;
+        gtag('event', 'generate_lead', {
+          lead_method: method,
+          page_path: location.pathname,
+          link_url: href
+        });
+      }, true);
+    })();
+  </script>
+
 </body>
 
 </html>
